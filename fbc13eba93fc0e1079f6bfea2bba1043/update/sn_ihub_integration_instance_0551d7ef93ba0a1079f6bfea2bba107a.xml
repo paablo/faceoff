@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ihub_integration_instance">
+    <sn_ihub_integration_instance action="INSERT_OR_UPDATE">
+        <description>Data source for opponents using steam games</description>
+        <integration_table>sys_data_source</integration_table>
+        <integration_type/>
+        <internal_name/>
+        <name>Steam Games</name>
+        <record_id>8951d7ef93ba0a1079f6bfea2bba107b</record_id>
+        <sys_class_name>sn_ihub_integration_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-06-21 09:33:39</sys_created_on>
+        <sys_id>0551d7ef93ba0a1079f6bfea2bba107a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Steam Games</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sn_ihub_integration_instance_0551d7ef93ba0a1079f6bfea2bba107a</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-06-21 09:33:39</sys_updated_on>
+    </sn_ihub_integration_instance>
+</record_update>

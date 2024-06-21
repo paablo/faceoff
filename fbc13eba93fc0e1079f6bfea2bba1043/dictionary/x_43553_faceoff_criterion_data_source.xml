@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="44b3df6f93fa0a1079f6bfea2bba10fa" label="Criterion Data Source" max_length="40" name="x_43553_faceoff_criterion_data_source" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="URL endpoint" max_length="1024" name="url_endpoint" type="url"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Parameters" max_length="4000" name="parameters" type="simple_name_values"/>
+    </element>
+</database>

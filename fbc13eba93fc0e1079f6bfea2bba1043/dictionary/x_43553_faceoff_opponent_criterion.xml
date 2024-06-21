@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="64ffc76f93ba0a1079f6bfea2bba1041" label="Opponent criterion" max_length="40" name="x_43553_faceoff_opponent_criterion" type="collection">
+        <element default="1000" function_definition="1000" label="Weight" mandatory="true" max_length="40" name="weight" type="integer"/>
+        <element label="Criterion" mandatory="true" max_length="32" name="criterion" reference="x_43553_faceoff_criterion" type="reference"/>
+        <element label="Opponent" mandatory="true" max_length="32" name="opponent" reference="x_43553_faceoff_opponent" type="reference"/>
+        <index name="index">
+            <element name="criterion"/>
+        </index>
+        <index name="index2">
+            <element name="opponent"/>
+        </index>
+    </element>
+</database>

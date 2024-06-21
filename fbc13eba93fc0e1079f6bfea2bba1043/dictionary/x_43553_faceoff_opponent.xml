@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9dbc836b93ba0a1079f6bfea2bba1070" label="Opponent" max_length="40" name="x_43553_faceoff_opponent" type="collection">
+        <element label="Avatar" max_length="40" name="avatar" type="user_image"/>
+        <element label="Data source" max_length="32" name="data_source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="data_source"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
