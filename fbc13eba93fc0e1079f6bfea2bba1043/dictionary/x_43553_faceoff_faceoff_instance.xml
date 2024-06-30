@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="44691b6b933e0a1079f6bfea2bba1006" label="Faceoff Instance" max_length="40" name="x_43553_faceoff_faceoff_instance" type="collection">
+        <element choice="1" label="Winner" max_length="40" name="winner" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Opponent 1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Opponent 2" sequence="1" value="2"/>
+            </choice>
+        </element>
+        <element label="Opponent 2" max_length="32" name="opponent_2" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Opponent 1" max_length="32" name="opponent_1" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element choice="1" default="New" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="New"/>
+                <element inactive_on_update="false" label="Abandoned" sequence="2" value="Abandoned"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="Completed"/>
+            </choice>
+        </element>
+        <element label="Referee" max_length="32" name="referee" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="opponent_1"/>
+        </index>
+        <index name="index2">
+            <element name="opponent_2"/>
+        </index>
+        <index name="index3">
+            <element name="referee"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="09a3c36e938fc65079f6bfea2bba10c6" label="Opponent Judgement Eligibility" max_length="40" name="x_43553_faceoff_opponent_judgement_eligibility" type="collection">
+        <element label="Opponent" max_length="32" name="opponent" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Weight" max_length="40" name="weight" type="integer"/>
+        <element label="Judge" max_length="32" name="judge" reference="x_43553_faceoff_judge" type="reference"/>
+        <index name="index">
+            <element name="judge"/>
+        </index>
+        <index name="index2">
+            <element name="opponent"/>
+        </index>
+    </element>
+</database>

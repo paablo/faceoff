@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0f0eb449934bce1079f6bfea2bba1002" extends="x_43553_faceoff_opponent" label="Steam Game" max_length="40" name="x_43553_faceoff_steam_game" type="collection"/>
+</database>

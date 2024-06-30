@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="description" table="x_43553_faceoff_opponent">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="x_43553_faceoff_opponent" table="x_43553_faceoff_steam_game">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
+        <calculation/>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Description</column_label>
+        <column_label/>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,16 +21,16 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>description</element>
+        <element/>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Collection">collection</internal_type>
         <mandatory>false</mandatory>
-        <max_length>2048</max_length>
-        <name>x_43553_faceoff_opponent</name>
+        <max_length>40</max_length>
+        <name>x_43553_faceoff_steam_game</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -51,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-06-21 09:15:34</sys_created_on>
-        <sys_name>Description</sys_name>
+        <sys_created_on>2024-06-25 14:41:03</sys_created_on>
+        <sys_name>x_43553_faceoff_steam_game</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
-        <sys_update_name>sys_dictionary_x_43553_faceoff_opponent_description</sys_update_name>
+        <sys_update_name>sys_dictionary_x_43553_faceoff_steam_game_null</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-06-28 13:09:14</sys_updated_on>
+        <sys_updated_on>2024-06-25 14:41:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
