@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-06-30 16:50:13</sys_created_on>
+        <sys_id>6f8b4be693cfc65079f6bfea2bba100c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_43553_faceoff_judge_integration.x_43553_faceoff.admin</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_security_acl display_value="x_43553_faceoff_judge_integration">6b8b0be693cfc65079f6bfea2bba10fd</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6f8b4be693cfc65079f6bfea2bba100c</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-06-30 16:50:13</sys_updated_on>
+        <sys_user_role display_value="x_43553_faceoff.admin" name="x_43553_faceoff.admin">4a3847e393ba0a1079f6bfea2bba1061</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

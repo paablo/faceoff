@@ -5,6 +5,7 @@
         <element label="URL endpoint" max_length="1024" name="url_endpoint" type="url"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="Parameters" max_length="4000" name="parameters" type="simple_name_values"/>
+        <element label="API Key" max_length="40" name="api_key" type="string"/>
         <element label="Refresh policy" max_length="255" name="refresh_policy" type="glide_duration"/>
     </element>
 </database>
