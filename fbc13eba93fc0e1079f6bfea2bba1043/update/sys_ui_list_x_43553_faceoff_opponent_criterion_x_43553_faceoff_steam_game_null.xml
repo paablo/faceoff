@@ -3,47 +3,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>criterion</element>
-            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">c12ba62a93cbc65079f6bfea2bba1058</list_id>
+            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">a4cbceac9353829079f6bfea2bba10ac</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 14:28:35</sys_created_on>
-            <sys_id>052ba62a93cbc65079f6bfea2bba1059</sys_id>
+            <sys_created_on>2024-07-06 17:19:19</sys_created_on>
+            <sys_id>60cbceac9353829079f6bfea2bba10ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 14:28:35</sys_updated_on>
+            <sys_updated_on>2024-07-06 17:19:19</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>weight</element>
-            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">c12ba62a93cbc65079f6bfea2bba1058</list_id>
+            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">a4cbceac9353829079f6bfea2bba10ac</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 14:28:35</sys_created_on>
-            <sys_id>4d2bea2a93cbc65079f6bfea2bba105a</sys_id>
+            <sys_created_on>2024-07-06 17:19:19</sys_created_on>
+            <sys_id>68cbceac9353829079f6bfea2bba10ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 14:28:35</sys_updated_on>
+            <sys_updated_on>2024-07-06 17:19:19</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_updated_on</element>
-            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">c12ba62a93cbc65079f6bfea2bba1058</list_id>
+            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">a4cbceac9353829079f6bfea2bba10ac</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 14:28:35</sys_created_on>
-            <sys_id>412bea2a93cbc65079f6bfea2bba105b</sys_id>
+            <sys_created_on>2024-07-06 17:19:19</sys_created_on>
+            <sys_id>6ccbceac9353829079f6bfea2bba10ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 14:28:35</sys_updated_on>
+            <sys_updated_on>2024-07-06 17:19:19</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rank</element>
+            <list_id display_value="x_43553_faceoff_opponent_criterion" element="NULL" name="x_43553_faceoff_opponent_criterion" parent="x_43553_faceoff_steam_game" relationship="NULL" sys_domain="global" view="Default view">a4cbceac9353829079f6bfea2bba10ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-06 17:19:19</sys_created_on>
+            <sys_id>60cbceac9353829079f6bfea2bba10af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-06 17:19:19</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -57,10 +72,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 14:28:35</sys_created_on>
+            <sys_created_on>2024-07-06 17:19:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c12ba62a93cbc65079f6bfea2bba1058</sys_id>
+            <sys_id>a4cbceac9353829079f6bfea2bba10ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_43553_faceoff_opponent_criterion</sys_name>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -68,7 +83,7 @@
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_ui_list_x_43553_faceoff_opponent_criterion_x_43553_faceoff_steam_game_null</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 14:28:35</sys_updated_on>
+            <sys_updated_on>2024-07-06 17:19:19</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

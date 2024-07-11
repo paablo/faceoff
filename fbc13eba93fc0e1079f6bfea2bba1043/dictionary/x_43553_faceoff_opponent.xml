@@ -2,8 +2,11 @@
     <element db_object_id="9dbc836b93ba0a1079f6bfea2bba1070" label="Opponent" max_length="40" name="x_43553_faceoff_opponent" type="collection">
         <element label="Avatar" max_length="40" name="avatar" type="user_image"/>
         <element label="Data source" max_length="32" name="data_source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
+        <element label="Preview image URL" max_length="1024" name="preview_image_url" type="url"/>
         <element label="Description" max_length="2048" name="description" type="string"/>
+        <element label="Website" max_length="512" name="website" type="url"/>
         <element label="Name" max_length="256" name="name" type="string"/>
+        <element label="Preview image" max_length="40" name="preview_image" type="user_image"/>
         <element label="Corelation ID" max_length="40" name="corelation_id" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>

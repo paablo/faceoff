@@ -42,6 +42,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rank</element>
+            <position>4</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-05 09:51:14</sys_created_on>
+            <sys_id>f29b5b8893dfce5079f6bfea2bba1065</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-05 09:51:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

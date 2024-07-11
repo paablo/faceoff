@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="bc4a633b930f8e5079f6bfea2bba109a" sys_domain="global" table="x_43553_faceoff_faceoff_instance" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:03:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0523163d935b421079f6bfea2bba1048</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_43553_faceoff_faceoff_instance" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">bc4a633b930f8e5079f6bfea2bba109a</sys_ui_form>
+            <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:03:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-04 16:16:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d4a633b930f8e5079f6bfea2bba10dd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_43553_faceoff_faceoff_instance" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">bc4a633b930f8e5079f6bfea2bba109a</sys_ui_form>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:04:34</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_43553_faceoff_faceoff_instance</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-04 16:16:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc4a633b930f8e5079f6bfea2bba109a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_43553_faceoff_faceoff_instance</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_form_sections_bc4a633b930f8e5079f6bfea2bba109a</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-04 16:16:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_43553_faceoff.FaceOffUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FaceOffUtils</name>
+        <script><![CDATA[var FaceOffUtils = Class.create();
+FaceOffUtils.prototype = {
+    initialize: function() {},
+
+    getOpponentCriteria: function(opponentSysId, criteriaSysId) {
+        var opponentCriteriaGr = new GlideRecord('x_43553_faceoff_opponent_criterion');
+        opponentCriteriaGr.addQuery('opponent', opponentSysId);
+        opponentCriteriaGr.addQuery('criterion', criteriaSysId);
+        opponentCriteriaGr.query();
+        opponentCriteriaGr.next();
+
+        return opponentCriteriaGr;
+    },
+
+    faceOffNextBestMatch: function(faceOffGr) {
+		var nextFaceOffGr;
+        var nextBestMatchesGr = this.getNextBestMatches(faceOffGr.opponent_selections, faceOffGr.opponent_2);
+		while(nextBestMatchesGr.next()){
+			var nextBestMatchingOpponentGr = nextBestMatchesGr.selected_opponent.getRefRecord();
+			nextFaceOffGr = this.getNextFaceoff(nextBestMatchingOpponentGr.sys_id, faceOffGr.criterion);
+			if (!gs.nil(nextFaceOffGr) && nextFaceOffGr.getTableName() == 'x_43553_faceoff_faceoff_instance') {
+				break;
+			}
+			// continue through matches until a faceoff can be created
+		}
+
+		return nextFaceOffGr;
+    },
+
+    getNextBestMatches: function(opponentSelectionInstanceSysId, selectedOpponentSysId) {
+
+        var qry = `opponent_selecion_instance=${opponentSelectionInstanceSysId}^selected_opponent!=${selectedOpponentSysId}`;
+        var selectionRankingGr = new GlideRecord('x_43553_faceoff_opponent_selection_ranking');
+        selectionRankingGr.addEncodedQuery(qry);
+        selectionRankingGr.orderBy('ranking');
+        selectionRankingGr.setLimit(1);
+        selectionRankingGr.query();
+
+        return selectionRankingGr;
+    },
+
+    faceOff: function(opponentCriterionGr) {
+        var faceOffGr;
+        // get opponent criterion
+
+        var inputs = {};
+        inputs['opponent_criterion'] = opponentCriterionGr; // GlideRecord of table: x_43553_faceoff_opponent_criterion 
+        //inputs['algorithm'] = ; // GlideRecord of table: x_43553_faceoff_algorithm_1 
+        var judgeGr = new GlideRecord('x_43553_faceoff_judge');
+        judgeGr.get('fc230b2e938fc65079f6bfea2bba10f2');
+
+        inputs['judge'] = judgeGr; // GlideRecord of table: x_43553_faceoff_judge 
+
+        // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+        try {
+            var result = sn_fd.FlowAPI.getRunner().subflow('x_43553_faceoff.faceoff').inForeground().withInputs(inputs).run();
+            var outputs = result.getOutputs();
+            faceOffGr = outputs['faceoff']; // Reference
+        } catch (e) {
+            gs.addErrorMessage('Failed to initiate faceoff. Please try another opponent or criterion.');
+            return opponentCriterionGr;
+        }
+
+        return faceOffGr;
+    },
+
+    getNextFaceoff: function(opponentSysId, criteriaSysId) {
+        var opponentCriterionGr = this.getOpponentCriteria(opponentSysId, criteriaSysId);
+        return this.faceOff(opponentCriterionGr);
+    },
+
+    type: 'FaceOffUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-07 17:01:50</sys_created_on>
+        <sys_id>64015b3c931fc29079f6bfea2bba10ec</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>FaceOffUtils</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_script_include_64015b3c931fc29079f6bfea2bba10ec</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-10 20:15:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

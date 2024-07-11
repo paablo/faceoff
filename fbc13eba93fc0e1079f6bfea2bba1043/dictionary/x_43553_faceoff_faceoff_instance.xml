@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="44691b6b933e0a1079f6bfea2bba1006" label="Faceoff Instance" max_length="40" name="x_43553_faceoff_faceoff_instance" type="collection">
+        <element label="Judge" max_length="32" name="judge" reference="x_43553_faceoff_judge" type="reference"/>
         <element choice="1" label="Winner" max_length="40" name="winner" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Opponent 1" sequence="0" value="1"/>
-                <element inactive_on_update="false" label="Opponent 2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Opponent 2" sequence="1" value="0"/>
             </choice>
         </element>
         <element label="Opponent 2" max_length="32" name="opponent_2" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Opponent selections" max_length="32" name="opponent_selections" reference="x_43553_faceoff_opponent_selection_instance" type="reference"/>
+        <element label="Leaderboard" max_length="32" name="leaderboard" reference="x_43553_faceoff_faceoff_leaderboard" type="reference"/>
         <element label="Opponent 1" max_length="32" name="opponent_1" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Opponent 1 avatar" max_length="40" name="opponent_1_avater" type="user_image"/>
         <element choice="1" default="New" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="New"/>
@@ -15,16 +19,30 @@
                 <element inactive_on_update="false" label="Completed" sequence="1" value="Completed"/>
             </choice>
         </element>
-        <element label="Referee" max_length="32" name="referee" reference="sys_user" type="reference"/>
+        <element label="Criterion" max_length="32" name="criterion" reference="x_43553_faceoff_criterion" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Winning opponent" max_length="32" name="winning_opponent" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Opponent 2 avatar" max_length="40" name="opponent_2_avatar" type="user_image"/>
         <index name="index">
-            <element name="opponent_1"/>
+            <element name="criterion"/>
         </index>
         <index name="index2">
-            <element name="opponent_2"/>
+            <element name="judge"/>
         </index>
         <index name="index3">
-            <element name="referee"/>
+            <element name="leaderboard"/>
+        </index>
+        <index name="index4">
+            <element name="opponent_1"/>
+        </index>
+        <index name="index5">
+            <element name="opponent_2"/>
+        </index>
+        <index name="index6">
+            <element name="opponent_selections"/>
+        </index>
+        <index name="index7">
+            <element name="winning_opponent"/>
         </index>
     </element>
 </database>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="df203c6f930b0e5079f6bfea2bba101a" label="Opponent Selection Instance" max_length="40" name="x_43553_faceoff_opponent_selection_instance" type="collection">
+        <element label="Criterion" max_length="32" name="criterion" reference="x_43553_faceoff_criterion" type="reference"/>
+        <element label="Algorithm" max_length="32" name="algorithm" reference="x_43553_faceoff_algorithm_1" type="reference"/>
+        <element label="Primary opponent" mandatory="true" max_length="32" name="primary_opponent" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Battle instance" max_length="32" name="battle_instance" reference="x_43553_faceoff_faceoff_instance" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="algorithm"/>
+        </index>
+        <index name="index2">
+            <element name="battle_instance"/>
+        </index>
+        <index name="index3">
+            <element name="criterion"/>
+        </index>
+        <index name="index4">
+            <element name="primary_opponent"/>
+        </index>
+    </element>
+</database>

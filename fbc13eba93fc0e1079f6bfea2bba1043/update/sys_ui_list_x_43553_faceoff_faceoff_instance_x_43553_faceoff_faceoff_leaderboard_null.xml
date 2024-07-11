@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_43553_faceoff_faceoff_leaderboard" relationship="" sys_domain="global" table="x_43553_faceoff_faceoff_instance" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3747b639939f421079f6bfea2bba10a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>criterion</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3f47b639939f421079f6bfea2bba10a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>judge</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3347b639939f421079f6bfea2bba10a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>leaderboard</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3747b639939f421079f6bfea2bba10a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opponent_1</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3b47b639939f421079f6bfea2bba10a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opponent_2</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3f47b639939f421079f6bfea2bba10a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3347b639939f421079f6bfea2bba10a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>winner</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="x_43553_faceoff_faceoff_leaderboard" relationship="NULL" sys_domain="global" view="Default view">f347b639939f421079f6bfea2bba10a3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_id>3747b639939f421079f6bfea2bba10a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_43553_faceoff_faceoff_instance</name>
+            <parent>x_43553_faceoff_faceoff_leaderboard</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 17:42:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f347b639939f421079f6bfea2bba10a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_43553_faceoff_faceoff_instance</sys_name>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_list_x_43553_faceoff_faceoff_instance_x_43553_faceoff_faceoff_leaderboard_null</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 17:42:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

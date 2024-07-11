@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="138b5a6893d3829079f6bfea2bba1086" label="Leaderboard ranking" max_length="40" name="x_43553_faceoff_leaderboard_ranking" type="collection">
+        <element label="Opponent" max_length="32" name="opponent" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element default="1000" label="Elo" max_length="40" name="elo" type="integer"/>
+        <element label="Rank" max_length="40" name="rank" type="integer"/>
+        <element label="Leaderboard" max_length="32" name="leaderboard" reference="x_43553_faceoff_faceoff_leaderboard" type="reference"/>
+        <element default="0" label="Faceoff count" max_length="40" name="faceoff_count" type="integer"/>
+        <index name="index">
+            <element name="leaderboard"/>
+        </index>
+        <index name="index2">
+            <element name="opponent"/>
+        </index>
+    </element>
+</database>

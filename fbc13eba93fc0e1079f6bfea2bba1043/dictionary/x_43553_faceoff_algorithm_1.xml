@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="44fe28ab930b0e5079f6bfea2bba100b" label="Opponent Selection Algorithm" max_length="40" name="x_43553_faceoff_algorithm_1" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Criterion weight" max_length="40" name="criterion_weight" type="integer"/>
+        <element default="1" label="Elo weight" max_length="40" name="elo_weight" type="integer"/>
+        <element label="Name" max_length="40" name="namen" type="string"/>
+        <element label="Opponent source" max_length="32" name="opponent_source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Opponent weight" max_length="40" name="opponent_weight" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="100" function_definition="100" label="Age weight" mandatory="true" max_length="40" name="age_weight" type="integer"/>
+        <element default="30" label="Age policy (days)" max_length="40" name="age_policy_days" type="integer"/>
+        <index name="index">
+            <element name="opponent_source"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
