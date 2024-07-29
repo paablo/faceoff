@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Game state" section_id="801a1feb933e0a1079f6bfea2bba10c3" sys_domain="global" table="x_43553_faceoff_faceoff_instance" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>ee06de71939b421079f6bfea2bba10e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>1</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>6606de71939b421079f6bfea2bba10e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>judge</element>
+            <position>2</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>ea06de71939b421079f6bfea2bba10e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>6206de71939b421079f6bfea2bba10e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent_selections</element>
+            <position>4</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>e606de71939b421079f6bfea2bba10e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>winner</element>
+            <position>5</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>6e06de71939b421079f6bfea2bba10e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>winning_opponent</element>
+            <position>6</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+            <sys_id>e206de71939b421079f6bfea2bba10e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Game state</caption>
+            <header>false</header>
+            <name>x_43553_faceoff_faceoff_instance</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-06-21 10:11:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>801a1feb933e0a1079f6bfea2bba10c3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_43553_faceoff_faceoff_instance</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_section_801a1feb933e0a1079f6bfea2bba10c3</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-10 15:08:30</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>sys_ui_section_801a1feb933e0a1079f6bfea2bba10c3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Game state" section_id="801a1feb933e0a1079f6bfea2bba10c3" sys_domain="global" table="x_43553_faceoff_faceoff_instance" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>ee06de71939b421079f6bfea2bba10e0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>status</element><position>1</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>6606de71939b421079f6bfea2bba10e1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>judge</element><position>2</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>ea06de71939b421079f6bfea2bba10e1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>6206de71939b421079f6bfea2bba10e2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>opponent_selections</element><position>4</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>e606de71939b421079f6bfea2bba10e2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>winner</element><position>5</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>6e06de71939b421079f6bfea2bba10e2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>winning_opponent</element><position>6</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-10 15:16:39</sys_created_on><sys_id>e206de71939b421079f6bfea2bba10e3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Game state" display_value="Game state" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">801a1feb933e0a1079f6bfea2bba10c3</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:16:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Game state</caption><header>false</header><name>x_43553_faceoff_faceoff_instance</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-06-21 10:11:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>801a1feb933e0a1079f6bfea2bba10c3</sys_id><sys_mod_count>3</sys_mod_count><sys_name>x_43553_faceoff_faceoff_instance</sys_name><sys_overrides/><sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package><sys_policy/><sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope><sys_update_name>sys_ui_section_801a1feb933e0a1079f6bfea2bba10c3</sys_update_name><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-10 15:08:30</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1863951440</payload_hash>
+        <record_name>Faceoff Instance</record_name>
+        <reverted_from/>
+        <source>4519d3e3933e0a1079f6bfea2bba10ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-10 15:16:39</sys_created_on>
+        <sys_id>b606de71939b421079f6bfea2bba10e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1909d37d19f0000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-10 15:16:39</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>7e06de718e9b4210840f33c92f8b68e4</update_guid>
+        <update_guid_history>7e06de718e9b4210840f33c92f8b68e4:1863951440,f5f49231229b42104b09b851973f089e:-1756722389,1b249ebd0f5b42107eb8f4a969399d82:564477130,ebe2123d845b42108071632ad80d8133:-972370078,c6b29af9db5b4210b38c23d02e69dfdc:16870233,d55ca3fb380f8e507485e4ff286c659a:933857241,454a633be80f8e50d21178964fea5df2:416705890,784a633b290f8e507aeeeca60c36bd99:-1746281079,dc18e7379f0f8e503fecd5c611d5b39d:818254463,3de5e37f75cb8e50b60924ad8b52be2e:-1293516154,d5d567bfc3cb8e50eb67ea1646214659:601567031,e80441ebd88b0e504e08e3db27b1a0af:348185064,4e2c1be3cd7e0a10644f3f58f1ba5cc1:-1186967501,909a53ef093e0a10746f44802fbc31aa:1242115151,3e6a9b23c97e0a1089ae4f540cdcbad2:-1191373041,494a9b6f313e0a10eeeca2e7a35e35ed:-2063196509,fb2adbaf3f3e0a10e8f755dd3e649794:-825336810,c41a176f2a3e0a10d5dea708f96644e1:1410409897,401a176f893e0a1046e89269513a96df:-1819472457</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 05:27:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>6a2a266bed6143d693e2fa1e4c55c589</sys_id>
+        <sys_metadata>801a1feb933e0a1079f6bfea2bba10c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Game state</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent display_value="Faceoff Instance">44691b6b933e0a1079f6bfea2bba1006</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_801a1feb933e0a1079f6bfea2bba10c3</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_801a1feb933e0a1079f6bfea2bba10c3">b606de71939b421079f6bfea2bba10e5</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-20 05:27:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

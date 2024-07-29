@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	c.data.action = 'faceoff';
+	c.server.update().then(function(){
+	 c.data.action = undefined;
+	 //spUtil.addInfoMessage('Redirecting you to FaceOff screen');
+		if (!c.data.error)
+	 		location.search = c.data.redirectURL;
+ });
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>fo-loading</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>fo-loading</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* INPUTS
+	criterion
+	primary opponent
+	none
+	*/
+	data.algorithm = $sp.getParameter('algorithm');
+  /* case 1 - no param */
+	// get no1 opponent
+	if (input) {
+		if (input.action == 'faceoff') {
+			
+			switch (data.algorithm) {
+				default:
+					faceOffRandom();
+			}
+		}
+	}
+	
+	function faceOffRandom() {
+		var competitorsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
+		var fo = new FaceOffUtils();
+		var faceOffGr = fo.faceOff(competitorsCriterionGr);
+		faceOff(faceOffGr);
+	}
+	
+	function faceOffMostPlayed() {
+		var opponentSysId = FaceOffUtils.GetMostPlayedCompetitor();
+		var fo = new FaceOffUtils();
+		var nextFaceOffGr = fo.startFaceOffFromOpponentSysId(opponentSysId);
+		faceOff(nextFaceOffGr)
+	}
+	
+	function faceOff(nextFaceOffGr) {
+		if (nextFaceOffGr && nextFaceOffGr.isValidRecord() && nextFaceOffGr.getTableName() == 'x_43553_faceoff_faceoff_instance') {
+			var tableName = nextFaceOffGr.getTableName();
+			var url = '?id=fo_form&table='+ tableName +'&sys_id=' + nextFaceOffGr.getValue('sys_id');
+			data.redirectURL = url;		
+		} else {
+			data.error = "Error: Could not find opponents!";
+		}
+
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-28 00:13:22</sys_created_on>
+        <sys_id>2ee3f71bc3eb8a10ee26b3edd4013102</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>fo-loading</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_widget_2ee3f71bc3eb8a10ee26b3edd4013102</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-28 02:58:03</sys_updated_on>
+        <template><![CDATA[
+<div class="wrapper panel">
+   <div class="panel-body">
+   <h1>Please wait while we find competitors to rank.</h1>
+     <span ng-if="!c.data.error">
+ 			<br>
+      <h2 class="success" ng-if="c.data.redirectURL">Competitors Found!</h2>
+      <img ng-if="!c.data.redirectURL" src="x_43553_faceoff.loading.trans.gif" width="200" height="200"/>
+      <p>Two competitors will be selected from your competitor pool. Decide which one is better for the given criterion. This will rank the games.</p>
+      <p class="text-muted">Tip: If you were looking for the best game for the criterion and you could only pick one, what would you choose?</p>
+      <p ng-if="c.data.redirectURL"><a href="{{c.data.redirectURL}}">Click here if you are not automatically redirected</a></p>
+     </span>
+     <span ng-if="c.data.error">
+       <h2 class="error" ng-if="c.data.error">{{c.data.error}}</h2>
+       <p><a href="javascript:location.reload();">Click here to try again</a></p>
+     </span>
+     
+   </div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

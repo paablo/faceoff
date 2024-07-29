@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="acd39163930f0e5079f6bfea2bba100f" sys_domain="global" table="x_43553_faceoff_faceoff_leaderboard" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>ladder_name</element>
             <position>0</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 10:41:01</sys_created_on>
-            <sys_id>e4d3d163930f0e5079f6bfea2bba100d</sys_id>
+            <sys_created_on>2024-07-26 11:38:28</sys_created_on>
+            <sys_id>6a8d337ec3630a10ee26b3edd40131ed</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_faceoff_leaderboard" sys_domain="global" view="Default view">acd39163930f0e5079f6bfea2bba100f</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 10:41:01</sys_updated_on>
+            <sys_updated_on>2024-07-26 11:38:28</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>criterion</element>
+            <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 10:59:13</sys_created_on>
-            <sys_id>1bf71da7930f0e5079f6bfea2bba10cb</sys_id>
+            <sys_created_on>2024-07-26 11:38:28</sys_created_on>
+            <sys_id>628d337ec3630a10ee26b3edd40131ee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_faceoff_leaderboard" sys_domain="global" view="Default view">acd39163930f0e5079f6bfea2bba100f</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 10:59:13</sys_updated_on>
+            <sys_updated_on>2024-07-26 11:38:28</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ranked_competitors</element>
+            <position>2</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-26 11:38:28</sys_created_on>
+            <sys_id>6a8d337ec3630a10ee26b3edd40131ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_faceoff_leaderboard" sys_domain="global" view="Default view">acd39163930f0e5079f6bfea2bba100f</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-26 11:38:28</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>source</element>
-            <position>2</position>
+            <element>.split</element>
+            <position>3</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 10:59:39</sys_created_on>
-            <sys_id>79189da7930f0e5079f6bfea2bba10fa</sys_id>
+            <sys_created_on>2024-07-26 11:38:28</sys_created_on>
+            <sys_id>628d337ec3630a10ee26b3edd40131ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_faceoff_leaderboard" sys_domain="global" view="Default view">acd39163930f0e5079f6bfea2bba100f</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 10:59:39</sys_updated_on>
+            <sys_updated_on>2024-07-26 11:38:28</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>unranked_competitors</element>
+            <position>4</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-26 11:38:28</sys_created_on>
+            <sys_id>6a8d337ec3630a10ee26b3edd40131ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_faceoff_leaderboard" sys_domain="global" view="Default view">acd39163930f0e5079f6bfea2bba100f</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-26 11:38:28</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

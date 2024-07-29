@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">638da41fc3ab4a10ee26b3edd4013110</sp_column>
+        <sp_widget display_value="fo-related-list">34e0132ec3678610ee26b3edd40131ec</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-27 09:47:49</sys_created_on>
+        <sys_id>efcdec1fc3ab4a10ee26b3edd4013122</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_instance_efcdec1fc3ab4a10ee26b3edd4013122</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-27 10:57:42</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table": {
+		"value": "x_43553_faceoff_opponent_judgement_eligibility",
+		"displayValue": "x_43553_faceoff_opponent_judgement_eligibility"
+	},
+	"fields": {
+		"value": "",
+		"displayValue": ""
+	},
+	"default_filter": {
+		"value": "judge=fc230b2e938fc65079f6bfea2bba10f2",
+		"displayValue": "judge=fc230b2e938fc65079f6bfea2bba10f2"
+	},
+	"headertitle": {
+		"value": "My Competitors with selected Criterion",
+		"displayValue": "My Competitors with selected Criterion"
+	},
+	"related_field": {
+		"value": "opponent.criterion",
+		"displayValue": "opponent.criterion"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=efcdec1fc3ab4a10ee26b3edd4013122"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>sp_instance_efcdec1fc3ab4a10ee26b3edd4013122</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;638da41fc3ab4a10ee26b3edd4013110&lt;/sp_column&gt;&lt;sp_widget display_value="fo-related-list"&gt;34e0132ec3678610ee26b3edd40131ec&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sn-nerd&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-27 09:47:49&lt;/sys_created_on&gt;&lt;sys_id&gt;efcdec1fc3ab4a10ee26b3edd4013122&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="FaceOff" source="x_43553_faceoff"&gt;fbc13eba93fc0e1079f6bfea2bba1043&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="FaceOff"&gt;fbc13eba93fc0e1079f6bfea2bba1043&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_efcdec1fc3ab4a10ee26b3edd4013122&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sn-nerd&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-27 10:57:42&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"table": {
+		"value": "x_43553_faceoff_opponent_judgement_eligibility",
+		"displayValue": "x_43553_faceoff_opponent_judgement_eligibility"
+	},
+	"fields": {
+		"value": "",
+		"displayValue": ""
+	},
+	"default_filter": {
+		"value": "judge=fc230b2e938fc65079f6bfea2bba10f2",
+		"displayValue": "judge=fc230b2e938fc65079f6bfea2bba10f2"
+	},
+	"headertitle": {
+		"value": "My Competitors with selected Criterion",
+		"displayValue": "My Competitors with selected Criterion"
+	},
+	"related_field": {
+		"value": "opponent.criterion",
+		"displayValue": "opponent.criterion"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=efcdec1fc3ab4a10ee26b3edd4013122"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2116197772</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4519d3e3933e0a1079f6bfea2bba10ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-27 10:57:42</sys_created_on>
+        <sys_id>13cdf017c32f4a10ee26b3edd401319e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190f3d6dc380000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-27 10:57:42</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>53cd30d3e72f4a10cad301de93b2a4d0</update_guid>
+        <update_guid_history>53cd30d3e72f4a10cad301de93b2a4d0:-2116197772,aebd70177d2f4a102eb66f1620de65ea:762830864,b38cb093942f4a1029af12d4384babb9:-2116197772,947c7c53ff2f4a108e5b4bced8b23f9b:2085702442,813cb813f82f4a10f43a2c52bd332aab:435821036,702c7813972f4a10834b68a59c15fdee:1431103368,6b0c78df38eb4a1056817bbe968ffadb:1023753080,6ecab4dfedeb4a10f4589e643ed17531:2021437045,a7cdec1f02ab4a105e9af059a94fbc24:506014896</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">467e3cd3c32f4a10ee26b3edd4013166</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-27 11:00:38</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>1ed3771d102c4dd58da6b5aef3ba2281</sys_id>
+        <sys_metadata>efcdec1fc3ab4a10ee26b3edd4013122</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>sp_instance_efcdec1fc3ab4a10ee26b3edd4013122</sys_update_name>
+        <sys_update_version display_value="sp_instance_efcdec1fc3ab4a10ee26b3edd4013122">13cdf017c32f4a10ee26b3edd401319e</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-27 11:00:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Opponent Details" section_id="4b763f74936b425079f6bfea2bba1033" sys_domain="global" table="x_43553_faceoff_opponent_judgement_eligibility" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent.name</element>
+            <position>0</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-20 06:01:01</sys_created_on>
+            <sys_id>85c6b3b4936b425079f6bfea2bba10d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-20 06:01:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent.avatar</element>
+            <position>1</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-20 06:01:01</sys_created_on>
+            <sys_id>8dc6b3b4936b425079f6bfea2bba10d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-20 06:01:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-20 06:01:01</sys_created_on>
+            <sys_id>85c6b3b4936b425079f6bfea2bba10d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-20 06:01:01</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent.preview_image</element>
+            <position>3</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-20 06:01:01</sys_created_on>
+            <sys_id>8dc6b3b4936b425079f6bfea2bba10d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-20 06:01:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Opponent Details</caption>
+            <header>false</header>
+            <name>x_43553_faceoff_opponent_judgement_eligibility</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-20 05:59:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b763f74936b425079f6bfea2bba1033</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_43553_faceoff_opponent_judgement_eligibility</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_section_4b763f74936b425079f6bfea2bba1033</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-20 05:59:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>sys_ui_section_4b763f74936b425079f6bfea2bba1033</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Opponent Details" section_id="4b763f74936b425079f6bfea2bba1033" sys_domain="global" table="x_43553_faceoff_opponent_judgement_eligibility" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>opponent.name</element><position>0</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 06:01:01</sys_created_on><sys_id>85c6b3b4936b425079f6bfea2bba10d2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-20 06:01:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>opponent.avatar</element><position>1</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 06:01:01</sys_created_on><sys_id>8dc6b3b4936b425079f6bfea2bba10d2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-20 06:01:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 06:01:01</sys_created_on><sys_id>85c6b3b4936b425079f6bfea2bba10d3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-20 06:01:01</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>opponent.preview_image</element><position>3</position><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 06:01:01</sys_created_on><sys_id>8dc6b3b4936b425079f6bfea2bba10d3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Opponent Details" display_value="Opponent Details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">4b763f74936b425079f6bfea2bba1033</sys_ui_section><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-20 06:01:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Opponent Details</caption><header>false</header><name>x_43553_faceoff_opponent_judgement_eligibility</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 05:59:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4b763f74936b425079f6bfea2bba1033</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_43553_faceoff_opponent_judgement_eligibility</sys_name><sys_overrides/><sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package><sys_policy/><sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope><sys_update_name>sys_ui_section_4b763f74936b425079f6bfea2bba1033</sys_update_name><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-20 05:59:47</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1161890432</payload_hash>
+        <record_name>Opponent Judgement Eligibility</record_name>
+        <reverted_from/>
+        <source>4519d3e3933e0a1079f6bfea2bba10ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 06:01:01</sys_created_on>
+        <sys_id>01c6b3b4936b425079f6bfea2bba10d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190cebab6ad0000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-20 06:01:01</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>c5c6b3b4c36b4250f949bbcab9574dd5</update_guid>
+        <update_guid_history>c5c6b3b4c36b4250f949bbcab9574dd5:-1161890432,c7763f74ac6b42505980ab7ea3440875:1431116880</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 06:02:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>62c6e295c2d843f0bde8cfdd9e315810</sys_id>
+        <sys_metadata>4b763f74936b425079f6bfea2bba1033</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Opponent Details</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent display_value="My Competitors">09a3c36e938fc65079f6bfea2bba10c6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_4b763f74936b425079f6bfea2bba1033</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_4b763f74936b425079f6bfea2bba1033">01c6b3b4936b425079f6bfea2bba10d6</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-20 06:02:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

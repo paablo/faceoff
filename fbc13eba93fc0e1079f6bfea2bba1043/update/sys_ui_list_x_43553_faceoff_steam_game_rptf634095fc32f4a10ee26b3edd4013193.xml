@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_43553_faceoff_steam_game" version="2" view="RPTf634095fc32f4a10ee26b3edd4013193">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_43553_faceoff_steam_game" element="NULL" name="x_43553_faceoff_steam_game" parent="NULL" relationship="NULL" sys_domain="global" view="4734095fc32f4a10ee26b3edd40131ad">c734095fc32f4a10ee26b3edd40131ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-27 11:25:49</sys_created_on>
+            <sys_id>4334095fc32f4a10ee26b3edd40131af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-27 11:25:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_43553_faceoff_steam_game</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-27 11:25:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c734095fc32f4a10ee26b3edd40131ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_43553_faceoff_steam_game</sys_name>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_list_x_43553_faceoff_steam_game_RPTf634095fc32f4a10ee26b3edd4013193</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-27 11:25:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptf634095fc32f4a10ee26b3edd4013193" name="RPTf634095fc32f4a10ee26b3edd4013193">4734095fc32f4a10ee26b3edd40131ad</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

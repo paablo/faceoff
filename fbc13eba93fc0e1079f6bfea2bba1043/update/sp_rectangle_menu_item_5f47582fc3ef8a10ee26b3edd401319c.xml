@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>gamepad</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>My Competitors</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="competitor">7b312157c3ef4a10ee26b3edd4013122</sp_page>
+        <sp_rectangle_menu display_value="FO Header Menu">08abefb0932b425079f6bfea2bba1079</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-28 02:48:50</sys_created_on>
+        <sys_id>5f47582fc3ef8a10ee26b3edd401319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Competitors</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_5f47582fc3ef8a10ee26b3edd401319c</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-28 02:48:50</sys_updated_on>
+        <table/>
+        <type>url</type>
+        <url>?spa=1&amp;table=x_43553_faceoff_opponent_judgement_eligibility&amp;id=list&amp;filter=judge.user%3Djavascript:gs.getUserID()</url>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=5f47582fc3ef8a10ee26b3edd401319c"/>
+</record_update>

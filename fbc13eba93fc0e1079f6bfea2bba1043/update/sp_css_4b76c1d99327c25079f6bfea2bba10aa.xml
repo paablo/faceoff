@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>// White text&#13;
+body {&#13;
+ color: #FFFFFF; &#13;
+}&#13;
+&#13;
+// Search widgets&#13;
+.vfa20ec02cb31020000f8d856634c9ce9 input[name="q"] {&#13;
+    color: white !important;&#13;
+}&#13;
+&#13;
+.sp-list-menu-item .active {&#13;
+    color: #278efc !important;&#13;
+}&#13;
+&#13;
+// Darker background so white text is readable&#13;
+element.style {&#13;
+    background-color: gray !important;&#13;
+}&#13;
+&#13;
+.vc4c6264f47211200ba13a5554ee490ca {&#13;
+ color: gray !important; &#13;
+}&#13;
+&#13;
+#opponent_1\.avatar &gt; div &gt; span &gt; span &gt; img, #opponent_2\.avatar &gt; div &gt; span &gt; span &gt; img {&#13;
+  max-width:512px !important;&#13;
+  max-height:512px !important;&#13;
+}</css>
+        <name>fo-style-overide</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-21 06:28:14</sys_created_on>
+        <sys_id>4b76c1d99327c25079f6bfea2bba10aa</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>fo-style-overide</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_css_4b76c1d99327c25079f6bfea2bba10aa</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-28 01:52:06</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_css>
+</record_update>

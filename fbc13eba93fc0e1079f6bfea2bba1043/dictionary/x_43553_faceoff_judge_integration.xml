@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ee8bc7e693cfc65079f6bfea2bba10a1" label="Judge Integration" max_length="40" name="x_43553_faceoff_judge_integration" type="collection">
         <element display="true" label="Judge" max_length="32" name="judge" reference="x_43553_faceoff_judge" type="reference"/>
-        <element default="16" function_definition="16" label="k value" max_length="255" name="k_value" type="integer"/>
+        <element default="16" function_definition="16" label="Max k value" max_length="255" name="k_value" type="integer"/>
         <element label="Profile" max_length="40" name="profile" type="string"/>
         <element label="Master data source" max_length="32" name="master_data_source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
         <index name="index">

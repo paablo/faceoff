@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>rank,opponent.name,opponent.avatar,elo</field_list>
+        <filter table="x_43553_faceoff_leaderboard_ranking">ranked=true^leaderboard=a5ae0c919397469079f6bfea2bba1049<item endquery="false" field="ranked" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_table="x_43553_faceoff_faceoff_leaderboard" display_value="Best FPS Steam Game" endquery="false" field="leaderboard" goto="false" newquery="false" operator="=" or="false" value="a5ae0c919397469079f6bfea2bba1049"/>
+        </filter>
+        <glyph>trophy</glyph>
+        <id/>
+        <maximum_entries>20</maximum_entries>
+        <order>3</order>
+        <order_by>rank</order_by>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">786dc7a6c3638610ee26b3edd4013161</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-25 13:30:13</sys_created_on>
+        <sys_id>bd8d43e6c3678610ee26b3edd401314b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Rankings</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_instance_table_bd8d43e6c3678610ee26b3edd401314b</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-25 13:51:45</sys_updated_on>
+        <table>x_43553_faceoff_leaderboard_ranking</table>
+        <title>Rankings</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=bd8d43e6c3678610ee26b3edd401314b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>sp_instance_table_bd8d43e6c3678610ee26b3edd401314b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list>rank,opponent.name,opponent.avatar,elo</field_list><filter table="x_43553_faceoff_leaderboard_ranking">ranked=true^leaderboard=a5ae0c919397469079f6bfea2bba1049<item endquery="false" field="ranked" goto="false" newquery="false" operator="=" or="false" value="true"/><item display_table="x_43553_faceoff_faceoff_leaderboard" display_value="Best FPS Steam Game" endquery="false" field="leaderboard" goto="false" newquery="false" operator="=" or="false" value="a5ae0c919397469079f6bfea2bba1049"/></filter><glyph>trophy</glyph><id/><maximum_entries>20</maximum_entries><order>3</order><order_by>rank</order_by><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="1">786dc7a6c3638610ee26b3edd4013161</sp_column><sp_page/><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-25 13:30:13</sys_created_on><sys_id>bd8d43e6c3678610ee26b3edd401314b</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Rankings</sys_name><sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package><sys_policy/><sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope><sys_update_name>sp_instance_table_bd8d43e6c3678610ee26b3edd401314b</sys_update_name><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-25 13:51:45</sys_updated_on><table>x_43553_faceoff_leaderboard_ranking</table><title>Rankings</title><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=bd8d43e6c3678610ee26b3edd401314b"/></record_update>]]></payload>
+        <payload_hash>1347766558</payload_hash>
+        <record_name>Rankings</record_name>
+        <reverted_from/>
+        <source>4519d3e3933e0a1079f6bfea2bba10ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-25 13:51:45</sys_created_on>
+        <sys_id>9172df6ec3678610ee26b3edd40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190ea297d150000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-25 13:51:45</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>1972df6e6e6786107aa669c453d29dd3</update_guid>
+        <update_guid_history>1972df6e6e6786107aa669c453d29dd3:1347766558,075e032a4f678610a20a09df78385964:-1987096227,e92e4be6de6786101328f32751bf290e:-583702073,f98d43e628678610d79c034a9924664d:-1219232454</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Rankings">5d8ed32ec3a78610ee26b3edd40131bc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-25 14:44:28</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>854274ea445f4098a2c268be796fca40</sys_id>
+        <sys_metadata>bd8d43e6c3678610ee26b3edd401314b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rankings</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>sp_instance_table_bd8d43e6c3678610ee26b3edd401314b</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_bd8d43e6c3678610ee26b3edd401314b">9172df6ec3678610ee26b3edd40131d4</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-25 14:44:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

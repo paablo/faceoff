@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>win_1</action_name>
+        <action_name>win_2</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -34,7 +34,11 @@
 current.update();
 var fo = new FaceOffUtils();
 var nextFaceOffGr = fo.faceOffNextBestMatch(current);
-action.setRedirectURL(nextFaceOffGr);]]></script>
+action.setRedirectURL(nextFaceOffGr);
+
+// SP redirect
+var tableName = nextFaceOffGr.getTableName();
+gs.getUser().savePreference(tableName + '.redirectURL', '?id=fo_form&table='+ tableName +'&sys_id=' + nextFaceOffGr.getValue('sys_id'));]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -45,7 +49,7 @@ action.setRedirectURL(nextFaceOffGr);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b51d3a7c939bc29079f6bfea2bba1038</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>No2 Wins</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -53,7 +57,7 @@ action.setRedirectURL(nextFaceOffGr);]]></script>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_ui_action_b51d3a7c939bc29079f6bfea2bba1038</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-10 16:20:22</sys_updated_on>
+        <sys_updated_on>2024-07-28 03:20:48</sys_updated_on>
         <table>x_43553_faceoff_faceoff_instance</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

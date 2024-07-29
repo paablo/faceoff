@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="9dbc836b93ba0a1079f6bfea2bba1070" label="Opponent" max_length="40" name="x_43553_faceoff_opponent" type="collection">
         <element label="Avatar" max_length="40" name="avatar" type="user_image"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;    //Get all criterion ascending&#13;&#10;    var criterions = [];&#13;&#10;    var competitorsCriteriaGr = new GlideRecord('x_43553_faceoff_opponent_criterion');&#13;&#10;    competitorsCriteriaGr.addQuery('opponent', current.getValue('sys_id'));&#13;&#10;    competitorsCriteriaGr.orderBy('criterion.name');&#13;&#10;    competitorsCriteriaGr.query();&#13;&#10;    while (competitorsCriteriaGr.next()) {&#13;&#10;        criterions.push(competitorsCriteriaGr.getDisplayValue('criterion'));&#13;&#10;    }&#13;&#10;    return criterions.join(&quot;, &quot;); // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Tags" max_length="256" name="tags" type="string" virtual="true"/>
         <element label="Data source" max_length="32" name="data_source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
         <element label="Preview image URL" max_length="1024" name="preview_image_url" type="url"/>
         <element label="Description" max_length="2048" name="description" type="string"/>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">786dc7a6c3638610ee26b3edd4013161</sp_column>
+        <sp_widget display_value="fo-related-list">34e0132ec3678610ee26b3edd40131ec</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-27 10:15:38</sys_created_on>
+        <sys_id>87243897c3eb4a10ee26b3edd4013144</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_instance_87243897c3eb4a10ee26b3edd4013144</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-27 10:39:25</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table": {
+		"value": "x_43553_faceoff_leaderboard_ranking",
+		"displayValue": "x_43553_faceoff_leaderboard_ranking"
+	},
+	"fields": {
+		"value": "rank,opponent.name,opponent.avatar,elo",
+		"displayValue": "rank,opponent.name,opponent.avatar,elo"
+	},
+	"query": {
+		"value": "ranked=true",
+		"displayValue": "ranked=true"
+	},
+	"related_field": {
+		"value": "leaderboard",
+		"displayValue": "leaderboard"
+	},
+	"filter": {
+		"value": "leaderboard",
+		"displayValue": "leaderboard"
+	},
+	"default_filter": {
+		"value": "ranked=true",
+		"displayValue": "ranked=true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=87243897c3eb4a10ee26b3edd4013144"/>
+</record_update>

@@ -2,31 +2,17 @@
     <sys_ui_related sys_domain="global" table="x_43553_faceoff_faceoff_leaderboard" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Faceoff Leaderboard - Default view" name="x_43553_faceoff_faceoff_leaderboard" related_list="NULL" sys_domain="global" view="Default view">79bda6609357829079f6bfea2bba10fb</list_id>
+            <list_id display_value="Faceoff Leaderboard - Default view" name="x_43553_faceoff_faceoff_leaderboard" related_list="NULL" sys_domain="global" view="Default view">f793b19d932bc25079f6bfea2bba1066</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_43553_faceoff_leaderboard_ranking.leaderboard</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-06 19:47:41</sys_created_on>
-            <sys_id>75bda6609357829079f6bfea2bba10fd</sys_id>
+            <sys_created_on>2024-07-21 09:45:00</sys_created_on>
+            <sys_id>b393b19d932bc25079f6bfea2bba1067</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-06 19:47:41</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Faceoff Leaderboard - Default view" name="x_43553_faceoff_faceoff_leaderboard" related_list="NULL" sys_domain="global" view="Default view">79bda6609357829079f6bfea2bba10fb</list_id>
-            <order_by/>
-            <position>1</position>
-            <related_list>x_43553_faceoff_faceoff_instance.leaderboard</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-06 19:47:41</sys_created_on>
-            <sys_id>7dbda6609357829079f6bfea2bba10fd</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-06 19:47:41</sys_updated_on>
+            <sys_updated_on>2024-07-21 09:45:00</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Faceoff Leaderboard - Default view</calculated_name>
@@ -37,10 +23,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-06 19:47:41</sys_created_on>
+            <sys_created_on>2024-07-21 09:45:00</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>79bda6609357829079f6bfea2bba10fb</sys_id>
+            <sys_id>f793b19d932bc25079f6bfea2bba1066</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Faceoff Leaderboard - Default view</sys_name>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -48,7 +34,7 @@
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_ui_related_x_43553_faceoff_faceoff_leaderboard_null</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-06 19:47:41</sys_updated_on>
+            <sys_updated_on>2024-07-21 09:45:00</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

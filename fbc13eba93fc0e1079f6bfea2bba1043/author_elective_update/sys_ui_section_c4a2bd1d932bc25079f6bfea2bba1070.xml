@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="c4a2bd1d932bc25079f6bfea2bba1070" sys_domain="global" table="x_43553_faceoff_faceoff_leaderboard" version="3" view="">
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_43553_faceoff_faceoff_leaderboard</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-21 09:40:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4a2bd1d932bc25079f6bfea2bba1070</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_43553_faceoff_faceoff_leaderboard</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_section_c4a2bd1d932bc25079f6bfea2bba1070</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-21 09:40:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>sys_ui_section_c4a2bd1d932bc25079f6bfea2bba1070</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="c4a2bd1d932bc25079f6bfea2bba1070" sys_domain="global" table="x_43553_faceoff_faceoff_leaderboard" version="3" view=""><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_43553_faceoff_faceoff_leaderboard</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-21 09:40:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c4a2bd1d932bc25079f6bfea2bba1070</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_43553_faceoff_faceoff_leaderboard</sys_name><sys_overrides/><sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package><sys_policy/><sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope><sys_update_name>sys_ui_section_c4a2bd1d932bc25079f6bfea2bba1070</sys_update_name><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-21 09:40:39</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-130687888</payload_hash>
+        <record_name>Faceoff Leaderboard</record_name>
+        <reverted_from/>
+        <source>4519d3e3933e0a1079f6bfea2bba10ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-21 09:44:20</sys_created_on>
+        <sys_id>86733d1d932bc25079f6bfea2bba10e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190d4ad88340000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-21 09:44:20</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>0e733d1dd52bc25059e772f5ab29abe5</update_guid>
+        <update_guid_history>0e733d1dd52bc25059e772f5ab29abe5:-130687888,52433d5d9d2bc2509a1fc4ca8873760f:99653977</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-21 09:44:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>4ee08a214b8946d5a553694208dcadc1</sys_id>
+        <sys_metadata>c4a2bd1d932bc25079f6bfea2bba1070</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent display_value="Faceoff Leaderboard">88d39163930f0e5079f6bfea2bba1066</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_c4a2bd1d932bc25079f6bfea2bba1070</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_c4a2bd1d932bc25079f6bfea2bba1070">86733d1d932bc25079f6bfea2bba10e6</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-21 09:44:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

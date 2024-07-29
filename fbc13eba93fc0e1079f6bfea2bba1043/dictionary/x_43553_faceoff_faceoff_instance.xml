@@ -3,7 +3,7 @@
         <element label="Judge" max_length="32" name="judge" reference="x_43553_faceoff_judge" type="reference"/>
         <element choice="1" label="Winner" max_length="40" name="winner" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Opponent 1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Opponent 1" sequence="0" value="1.0"/>
                 <element inactive_on_update="false" label="Opponent 2" sequence="1" value="0"/>
             </choice>
         </element>

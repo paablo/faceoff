@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="09a3c36e938fc65079f6bfea2bba10c6" label="Opponent Judgement Eligibility" max_length="40" name="x_43553_faceoff_opponent_judgement_eligibility" type="collection">
-        <element label="Opponent" max_length="32" name="opponent" reference="x_43553_faceoff_opponent" type="reference"/>
-        <element label="rank" max_length="40" name="rank" type="integer"/>
-        <element label="Weight" max_length="40" name="weight" type="integer"/>
+    <element db_object_id="09a3c36e938fc65079f6bfea2bba10c6" label="My Competitors" max_length="40" name="x_43553_faceoff_opponent_judgement_eligibility" text_index="true" type="collection">
+        <element display="true" label="Opponent" max_length="32" name="opponent" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="Experience ranking" max_length="40" name="rank" type="integer"/>
+        <element label="Your experience" max_length="40" name="weight" type="integer"/>
         <element label="Judge" max_length="32" name="judge" reference="x_43553_faceoff_judge" type="reference"/>
         <index name="index">
             <element name="judge"/>

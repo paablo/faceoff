@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source">
+    <m2m_sp_portal_search_source action="DELETE">
+        <order>100</order>
+        <sp_portal display_value="Face Off Steam Games">db5dd33093e7425079f6bfea2bba103e</sp_portal>
+        <sp_search_source display_value="Steam Games">e4316bb093e7425079f6bfea2bba10bc</sp_search_source>
+        <sys_class_name>m2m_sp_portal_search_source</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 04:27:38</sys_created_on>
+        <sys_id>c561ab3493e7425079f6bfea2bba1080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Face Off Steam Games.Steam Games</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>m2m_sp_portal_search_source_c561ab3493e7425079f6bfea2bba1080</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-20 04:27:38</sys_updated_on>
+    </m2m_sp_portal_search_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>m2m_sp_portal_search_source_c561ab3493e7425079f6bfea2bba1080</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source"><m2m_sp_portal_search_source action="INSERT_OR_UPDATE"><order>100</order><sp_portal display_value="Face Off Steam Games">db5dd33093e7425079f6bfea2bba103e</sp_portal><sp_search_source display_value="Steam Games">e4316bb093e7425079f6bfea2bba10bc</sp_search_source><sys_class_name>m2m_sp_portal_search_source</sys_class_name><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 04:27:38</sys_created_on><sys_id>c561ab3493e7425079f6bfea2bba1080</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Face Off Steam Games.Steam Games</sys_name><sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package><sys_policy/><sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope><sys_update_name>m2m_sp_portal_search_source_c561ab3493e7425079f6bfea2bba1080</sys_update_name><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-07-20 04:27:38</sys_updated_on></m2m_sp_portal_search_source></record_update>]]></payload>
+        <payload_hash>-497077069</payload_hash>
+        <record_name>Face Off Steam Games.Steam Games</record_name>
+        <reverted_from/>
+        <source>4519d3e3933e0a1079f6bfea2bba10ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 04:27:38</sys_created_on>
+        <sys_id>0961ab3493e7425079f6bfea2bba1082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190ce6537110000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-20 04:27:38</sys_updated_on>
+        <type>Search Source</type>
+        <update_guid>0d61ab3400e7425063b3028060bcdb81</update_guid>
+        <update_guid_history>0d61ab3400e7425063b3028060bcdb81:-497077069</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Face Off Steam Games.Steam Games">f435c5199327c25079f6bfea2bba1070</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-21 06:22:11</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_search_source">m2m_sp_portal_search_source</sys_db_object>
+        <sys_id>5f9d5cc747a246d494e4e61631e2b424</sys_id>
+        <sys_metadata>c561ab3493e7425079f6bfea2bba1080</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Face Off Steam Games.Steam Games</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_search_source_c561ab3493e7425079f6bfea2bba1080</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_search_source_c561ab3493e7425079f6bfea2bba1080">0961ab3493e7425079f6bfea2bba1082</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-21 06:22:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

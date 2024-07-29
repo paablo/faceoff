@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="weight" label="Weight" language="en" table="x_43553_faceoff_opponent_judgement_eligibility">
+    <sys_documentation element="weight" label="Your experience" language="en" table="x_43553_faceoff_opponent_judgement_eligibility">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>weight</element>
             <help/>
             <hint/>
-            <label>Weight</label>
+            <label>Your experience</label>
             <language>en</language>
             <name>x_43553_faceoff_opponent_judgement_eligibility</name>
-            <plural/>
+            <plural>Your experiences</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>sn-nerd</sys_created_by>
             <sys_created_on>2024-06-30 16:16:47</sys_created_on>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_name>Weight</sys_name>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>Your experience</sys_name>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
             <sys_policy/>
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_documentation_x_43553_faceoff_opponent_judgement_eligibility_weight_en</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 16:16:48</sys_updated_on>
+            <sys_updated_on>2024-07-25 09:35:10</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

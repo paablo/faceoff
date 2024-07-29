@@ -1,63 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="" section_id="59a3872e938fc65079f6bfea2bba104f" sys_domain="global" table="x_43553_faceoff_opponent_judgement_eligibility" version="3" view="">
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>opponent</element>
-            <position>1</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 16:16:08</sys_created_on>
-            <sys_id>e0c30b2e938fc65079f6bfea2bba10c7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 16:16:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>judge</element>
-            <position>2</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 16:16:26</sys_created_on>
-            <sys_id>c9d3472e938fc65079f6bfea2bba103a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 16:16:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
+    <sys_ui_section caption="Your details" section_id="59a3872e938fc65079f6bfea2bba104f" sys_domain="global" table="x_43553_faceoff_opponent_judgement_eligibility" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>weight</element>
-            <position>3</position>
+            <position>0</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-06-30 16:16:47</sys_created_on>
-            <sys_id>cae3876e938fc65079f6bfea2bba101d</sys_id>
+            <sys_created_on>2024-07-25 09:36:29</sys_created_on>
+            <sys_id>4208da26c3638610ee26b3edd40131ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
+            <sys_ui_section caption="Your details" display_value="Your details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 16:16:47</sys_updated_on>
+            <sys_updated_on>2024-07-25 09:36:29</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-07-25 09:36:29</sys_created_on>
+            <sys_id>4e08da26c3638610ee26b3edd40131ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Your details" display_value="Your details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-07-25 09:36:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>rank</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-05 09:51:14</sys_created_on>
-            <sys_id>f29b5b8893dfce5079f6bfea2bba1065</sys_id>
+            <sys_created_on>2024-07-25 09:36:29</sys_created_on>
+            <sys_id>4608da26c3638610ee26b3edd40131af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
+            <sys_ui_section caption="Your details" display_value="Your details" name="x_43553_faceoff_opponent_judgement_eligibility" sys_domain="global" view="Default view">59a3872e938fc65079f6bfea2bba104f</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-05 09:51:14</sys_updated_on>
+            <sys_updated_on>2024-07-25 09:36:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption/>
+            <caption>Your details</caption>
             <header>false</header>
             <name>x_43553_faceoff_opponent_judgement_eligibility</name>
             <roles/>
@@ -67,7 +53,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>59a3872e938fc65079f6bfea2bba104f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>x_43553_faceoff_opponent_judgement_eligibility</sys_name>
             <sys_overrides/>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -75,7 +61,7 @@
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_ui_section_59a3872e938fc65079f6bfea2bba104f</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-30 16:15:39</sys_updated_on>
+            <sys_updated_on>2024-07-20 06:01:00</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

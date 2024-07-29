@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>opponent_1.preview_image</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 05:40:28</sys_created_on>
+        <sys_id>4812bb7c932b425079f6bfea2bba10c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>opponent_1.preview_image</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_ui_policy_action_4812bb7c932b425079f6bfea2bba10c5</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-20 05:40:28</sys_updated_on>
+        <table>x_43553_faceoff_faceoff_instance</table>
+        <ui_policy display_value="Make OP1 Preview RO">0c12bb7c932b425079f6bfea2bba10c2</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=4812bb7c932b425079f6bfea2bba10c5"/>
+</record_update>
