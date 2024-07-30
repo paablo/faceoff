@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=271000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1883423000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -22,7 +22,7 @@
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id>60af0bb8931fc29079f6bfea2bba1079</remote_trigger_id>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
@@ -35,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>399ec7f4931fc29079f6bfea2bba1017</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Faceoff judged</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -43,7 +43,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_hub_flow_399ec7f4931fc29079f6bfea2bba1017</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:14</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=399ec7f4931fc29079f6bfea2bba1017"/>
@@ -81,14 +81,14 @@
         <identifier>399ec7f4931fc29079f6bfea2bba1017</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-07 16:54:21</sys_created_on>
-        <sys_id>e8af0bb8931fc29079f6bfea2bba1079</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2024-07-29 12:00:13</sys_created_on>
+        <sys_id>264fd337c36b4e10ee26b3edd40131a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <trigger display_value="">60af0bb8931fc29079f6bfea2bba1079</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=399ec7f4931fc29079f6bfea2bba1017^sys_idNOT INe8af0bb8931fc29079f6bfea2bba1079"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=399ec7f4931fc29079f6bfea2bba1017^sys_idNOT IN264fd337c36b4e10ee26b3edd40131a6"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=399ec7f4931fc29079f6bfea2bba1017^sys_idNOT IN0bce0338931fc29079f6bfea2bba1017"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -99,10 +99,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:50:42</sys_created_on>
         <sys_id>0bce0338931fc29079f6bfea2bba1017</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:14</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -323,14 +323,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:05</sys_created_on>
         <sys_id>e0eecf38931fc29079f6bfea2bba1082</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -407,14 +407,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:05</sys_created_on>
         <sys_id>f8eecf38931fc29079f6bfea2bba1089</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -448,10 +448,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:50:49</sys_created_on>
         <sys_id>7cde8b38931fc29079f6bfea2bba10bf</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:14</sys_updated_on>
         <ui_id>43654bb4-080f-44d9-8893-21d6ddec3dbe</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7cde8b38931fc29079f6bfea2bba10bf"/>
@@ -677,7 +677,7 @@
         <outputs/>
         <parent_flow display_value="Faceoff judged">399ec7f4931fc29079f6bfea2bba1017</parent_flow>
         <remote_trigger_id/>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
@@ -687,7 +687,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f8eecf38931fc29079f6bfea2bba10dc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -695,7 +695,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:20</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=f8eecf38931fc29079f6bfea2bba10dc"/>
@@ -710,10 +710,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:06</sys_created_on>
         <sys_id>85eecf38931fc29079f6bfea2bba10fc</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -934,14 +934,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:06</sys_created_on>
         <sys_id>b8eecf38931fc29079f6bfea2bba10de</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:20</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1018,14 +1018,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:06</sys_created_on>
         <sys_id>c9eecf38931fc29079f6bfea2bba10f1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:20</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1059,10 +1059,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:06</sys_created_on>
         <sys_id>81eecf38931fc29079f6bfea2bba10fe</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:20</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <ui_id>43654bb4-080f-44d9-8893-21d6ddec3dbe</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=81eecf38931fc29079f6bfea2bba10fe"/>
@@ -1277,17 +1277,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c5ee0378931fc29079f6bfea2bba101b","name":"plan","plan_signature":null}}</plan>
         <plan_id>399ec7f4931fc29079f6bfea2bba1017</plan_id>
-        <snapshot>bfef03f8931fc29079f6bfea2bba104a</snapshot>
+        <snapshot>39d7a3f3c3ab4e10ee26b3edd401315a</snapshot>
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:51:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5ee0378931fc29079f6bfea2bba101b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-07 16:54:21</sys_updated_on>
+        <sys_updated_on>2024-07-29 12:00:13</sys_updated_on>
         <trigger display_value="">60af0bb8931fc29079f6bfea2bba1079</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=399ec7f4931fc29079f6bfea2bba1017"/>

@@ -27,7 +27,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Rank Games</name>
+        <name>Rank Similar Games</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var fo = new FaceOffUtils();
@@ -47,15 +47,15 @@ gs.getUser().savePreference(tableName + '.redirectURL', '?id=fo_form&table='+ ta
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>058ccc63c3af8a10ee26b3edd4013187</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Rank Games</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Rank Similar Games</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_ui_action_058ccc63c3af8a10ee26b3edd4013187</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-28 02:19:09</sys_updated_on>
+        <sys_updated_on>2024-07-29 09:00:06</sys_updated_on>
         <table>x_43553_faceoff_criterion</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
