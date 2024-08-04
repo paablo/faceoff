@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>leaderboard_updated</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Faceoff Leaderboard Record","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"8dc34c57-e437-4b08-86a5-cccc3e5e1373":["input1"]},"attributes":null}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Leaderboard updated</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:11:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4ae3e74c333c250ee26b3edd40131e0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Leaderboard updated</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_hub_flow_f4ae3e74c333c250ee26b3edd40131e0</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:13:36</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f4ae3e74c333c250ee26b3edd40131e0^sys_idNOT IN66cefeb4c333c250ee26b3edd40131a3"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Leaderboard updated</comment>
+        <display_text/>
+        <flow display_value="Leaderboard updated">f4ae3e74c333c250ee26b3edd40131e0</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:10</sys_created_on>
+        <sys_id>66cefeb4c333c250ee26b3edd40131a3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:13:13</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=66cefeb4c333c250ee26b3edd40131a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>66cefeb4c333c250ee26b3edd40131a3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:10</sys_created_on>
+        <sys_id>a6cefeb4c333c250ee26b3edd40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:12:10</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>66cefeb4c333c250ee26b3edd40131a3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:10</sys_created_on>
+        <sys_id>aecefeb4c333c250ee26b3edd40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:12:10</sys_updated_on>
+        <value>x_43553_faceoff_faceoff_leaderboard</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=66cefeb4c333c250ee26b3edd40131a3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f4ae3e74c333c250ee26b3edd40131e0^sys_idNOT INb4ae3e74c333c250ee26b3edd40131e1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f4ae3e74c333c250ee26b3edd40131e0</id>
+        <name>Leaderboard updated</name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:11:29</sys_created_on>
+        <sys_id>b4ae3e74c333c250ee26b3edd40131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:11:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b4ae3e74c333c250ee26b3edd40131e1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f4ae3e74c333c250ee26b3edd40131e0^sys_idNOT IN5bee3238c333c250ee26b3edd40131cf"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment>Create/Update completion stats for users</comment>
+        <display_text/>
+        <flow display_value="Leaderboard updated">f4ae3e74c333c250ee26b3edd40131e0</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="Create/Update Leaderboard Completion">705bb670c333c250ee26b3edd40131a4</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:45</sys_created_on>
+        <sys_id>5bee3238c333c250ee26b3edd40131cf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:13:26</sys_updated_on>
+        <ui_id>8dc34c57-e437-4b08-86a5-cccc3e5e1373</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5bee3238c333c250ee26b3edd40131cf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>5bee3238c333c250ee26b3edd40131cf</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:46</sys_created_on>
+        <sys_id>a3ee3238c333c250ee26b3edd40131fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:12:57</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Wait For Completion">53ee3238c333c250ee26b3edd40131d1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5bee3238c333c250ee26b3edd40131cf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input1</field>
+        <id>5bee3238c333c250ee26b3edd40131cf</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:57</sys_created_on>
+        <sys_id>56feb238c333c250ee26b3edd4013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:12:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_705bb670c333c250ee26b3edd40131a4</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>5bee3238c333c250ee26b3edd40131cf</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:46</sys_created_on>
+        <sys_id>2fee3238c333c250ee26b3edd40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:12:46</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_5bee3238c333c250ee26b3edd40131cf</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_5bee3238c333c250ee26b3edd40131cf^id=5bee3238c333c250ee26b3edd40131cf"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=5bee3238c333c250ee26b3edd40131cf^sys_idNOT IN53ee3238c333c250ee26b3edd40131d1"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="">5bee3238c333c250ee26b3edd40131cf</model>
+        <model_id>5bee3238c333c250ee26b3edd40131cf</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_5bee3238c333c250ee26b3edd40131cf</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 12:12:45</sys_created_on>
+        <sys_id>53ee3238c333c250ee26b3edd40131d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:12:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5bee3238c333c250ee26b3edd40131cf"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f4ae3e74c333c250ee26b3edd40131e0"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f4ae3e74c333c250ee26b3edd40131e0"/>
+</record_update>

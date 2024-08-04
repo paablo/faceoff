@@ -25,17 +25,17 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-20 06:29:54</sys_created_on>
         <sys_id>631dff3093ab425079f6bfea2bba1071</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>My Steam Profile</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sp_rectangle_menu_item_631dff3093ab425079f6bfea2bba1071</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-28 02:50:38</sys_updated_on>
+        <sys_updated_on>2024-08-04 02:06:01</sys_updated_on>
         <table/>
         <type>url</type>
-        <url>?spa=1&amp;table=x_43553_faceoff_judge_integration&amp;id=list&amp;filter=judge.user%3Djavascript:gs.getUserID()</url>
+        <url>?id=fo_profile</url>
         <url_target/>
     </sp_rectangle_menu_item>
     <sys_translated_text action="delete_multiple" query="documentkey=631dff3093ab425079f6bfea2bba1071"/>

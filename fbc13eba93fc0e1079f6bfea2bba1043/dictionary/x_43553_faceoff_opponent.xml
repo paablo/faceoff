@@ -10,6 +10,8 @@
         <element label="Preview image" max_length="40" name="preview_image" type="user_image"/>
         <element label="Corelation ID" max_length="40" name="corelation_id" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="javascript:&quot;https://store.steampowered.com/app/&quot; + current.getValue('correlation_id');" label="Source URL" max_length="1024" name="source_url" read_only="true" type="url"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Avatar URL" max_length="1024" name="avatar_url" type="url"/>
         <element label="Release" max_length="32" name="release" type="string"/>

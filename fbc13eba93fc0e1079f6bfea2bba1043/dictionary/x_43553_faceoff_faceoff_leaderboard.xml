@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="88d39163930f0e5079f6bfea2bba1066" label="Faceoff Leaderboard" max_length="40" name="x_43553_faceoff_faceoff_leaderboard" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;   return FaceOffUtils.CountCompetitorsOnLeaderboard(current);&#13;&#10;&#13;&#10;})(current);" label="Seeded competitors" max_length="40" name="ranked_competitors" read_only="true" type="integer" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;   return FaceOffUtils.CountCompetitorsOnLeaderboard(current);&#13;&#10;&#13;&#10;})(current);" default="0" label="Seeded competitors" max_length="40" name="ranked_competitors" read_only="true" type="integer"/>
         <element label="Source" max_length="32" name="source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
-        <element default="1" function_definition="5" label="Placement matches" max_length="40" name="placement_matches" type="integer"/>
+        <element default="0" label="Total competitors" max_length="40" name="total_competitors" read_only="true" type="integer"/>
+        <element default="4" function_definition="5" label="Placement matches required" max_length="40" name="placement_matches" type="integer"/>
         <element label="Criterion" max_length="32" name="criterion" reference="x_43553_faceoff_criterion" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;return FaceOffUtils.CountCompetitorsOnLeaderboard(current,false);&#13;&#10;&#13;&#10;})(current);" label="Unseeded competitors" max_length="40" name="unranked_competitors" type="integer" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;return FaceOffUtils.CountCompetitorsOnLeaderboard(current,false);&#13;&#10;&#13;&#10;})(current);" default="0" label="Unseeded competitors" max_length="40" name="unranked_competitors" type="integer" virtual="true"/>
         <element default="javascript:&quot;Best &quot; + current.criterion.getDisplayValue() + &quot; &quot; + current.source.getDisplayValue();" display="true" label="Ladder name" max_length="40" name="ladder_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var confidenceLevel = 0;&#13;&#10;&#9;var seededGames = current.getValue('ranked_competitors');&#13;&#10;&#13;&#10;&#9;if (seededGames == 0)&#13;&#10;&#9;&#9;return confidenceLevel;&#13;&#10;&#13;&#10;&#9;var unseededGames = current.getValue('unranked_competitors');&#13;&#10;&#9;confidenceLevel = (seededGames / unseededGames).toFixed(2);&#13;&#10;&#13;&#10;&#9;return confidenceLevel;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="0.00" label="Ranking completion (%)" max_length="40" name="ranking_confidence" read_only="true" type="float"/>
         <index name="index">
             <element name="criterion"/>
         </index>

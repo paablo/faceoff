@@ -25,116 +25,145 @@ FaceOffUtils.CountCompetitorsOnLeaderboard = function(leaderboardGr, isRanked) {
     return rankedCompetitorsCount; // return the calculated value
 };
 
-FaceOffUtils.GetCurrentJudgeSysId = function() {
+FaceOffUtils.GetCurrentJudgeIntegration = function() {
 	var sysId = '';
-	var judgeGr = new GlideRecord('x_43553_faceoff_judge');
-	judgeGr.addQuery('user',gs.getUserID());
-	judgeGr.setLimit(1);
-	judgeGr.query();
-	if (judgeGr.next()) {
-		sysId = judgeGr.getValue('sys_id');
+	var judgeSysId = FaceOffUtils.GetCurrentJudgeSysId();
+	var integrationGr = new GlideRecord('x_43553_faceoff_judge_integration');
+	integrationGr.addQuery('judge',judgeSysId);
+	integrationGr.setLimit(1);
+	integrationGr.query();
+	if (integrationGr.next()) {
+		sysId = integrationGr.getUniqueValue();
 	}
 
 	return sysId;
 };
+FaceOffUtils.GetCurrentJudgeSysId = function() {
+    var sysId = '';
+    var judgeGr = new GlideRecord('x_43553_faceoff_judge');
+    judgeGr.addQuery('user', gs.getUserID());
+    judgeGr.setLimit(1);
+    judgeGr.query();
+    if (judgeGr.next()) {
+        sysId = judgeGr.getValue('sys_id');
+    }
+
+    return sysId;
+};
 
 FaceOffUtils.GetMostPlayedCompetitor = function() {
-	var mostPlayedOpponentSysId;
-	var mostPlayedCompetitorGr = new GlideRecord('x_43553_faceoff_opponent_judgement_eligibility');
-	mostPlayedCompetitorGr.addQuery('judge',FaceOffUtils.GetCurrentJudgeSysId());
-	mostPlayedCompetitorGr.orderByDesc('weight');
-	mostPlayedCompetitorGr.setLimit(1);
-	mostPlayedCompetitorGr.query();
-	if( mostPlayedCompetitorGr.next()) {
-	mostPlayedOpponentSysId = mostPlayedCompetitorGr.getValue('opponent');
-	}
-	return mostPlayedOpponentSysId;
+    var mostPlayedOpponentSysId;
+    var mostPlayedCompetitorGr = new GlideRecord('x_43553_faceoff_opponent_judgement_eligibility');
+    mostPlayedCompetitorGr.addQuery('judge', FaceOffUtils.GetCurrentJudgeSysId());
+    mostPlayedCompetitorGr.orderByDesc('weight');
+    mostPlayedCompetitorGr.setLimit(1);
+    mostPlayedCompetitorGr.query();
+    if (mostPlayedCompetitorGr.next()) {
+        mostPlayedOpponentSysId = mostPlayedCompetitorGr.getValue('opponent');
+    }
+    return mostPlayedOpponentSysId;
 };
 
 FaceOffUtils.GetRandomCompetitorsCriterion = function() {
-	// get a random competitor first, so even probability of any criterion
-	var randomCriterion = new FaceOffUtils().getRandomRecord('x_43553_faceoff_criterion');
-	// loook at criterion, join on my competitors
-	var opponentsCriterionGr = new GlideRecord('x_43553_faceoff_opponent_criterion');
-	// must be a criterion of an opponent that the user can judge
-	var qry = opponentsCriterionGr.addQuery('criterion',randomCriterion.getValue('sys_id'));
-	var jQry = opponentsCriterionGr.addJoinQuery('x_43553_faceoff_opponent_judgement_eligibility','opponent','opponent');
-	jQry.addCondition('judge',FaceOffUtils.GetCurrentJudgeSysId());
-	opponentsCriterionGr.query();
-	var totalRecords = opponentsCriterionGr.getRowCount();
-	var randomNumber = Math.floor(Math.random()*totalRecords);
-	var count = 0;
-	// if no results, drop the criterion query to gaurentee a results
-	if (!opponentsCriterionGr.hasNext()) {
-		qry.addOrCondition('criterion','!=','');
-		opponentsCriterionGr.query();
-	}
-	// GlideRecord.setLocation() not available in scope, so have to cycle through all records
-	while(opponentsCriterionGr.next()) {
-		count++;
-		if (count == randomNumber) {
-			gs.info(opponentsCriterionGr.getDisplayValue() + '');
-			break;
-		}
-	}
+    // get a random criterion first, so even probability of any criterion
+    var randomCriterionSysId = new FaceOffUtils().getRandomCriterionWithPotentialMatch();
+    // loook at criterion, join on my competitors
+    var opponentsCriterionGr = new GlideRecord('x_43553_faceoff_opponent_criterion');
+    // must be a criterion of an opponent that the user can judge
+    var qry = opponentsCriterionGr.addQuery('criterion', randomCriterionSysId);
+    var jQry = opponentsCriterionGr.addJoinQuery('x_43553_faceoff_opponent_judgement_eligibility', 'opponent', 'opponent');
+    jQry.addCondition('judge', FaceOffUtils.GetCurrentJudgeSysId());
+    opponentsCriterionGr.query();
+    var totalRecords = opponentsCriterionGr.getRowCount();
+    var randomNumber = Math.floor(Math.random() * totalRecords);
+    var count = 0;
+    // GlideRecord.setLocation() not available in scope, so have to cycle through all records
+    while (opponentsCriterionGr.next()) {
+        count++;
+        if (count == randomNumber) {
+            gs.info(opponentsCriterionGr.getDisplayValue() + '');
+            break;
+        }
+    }
 
-	return opponentsCriterionGr;
+    return opponentsCriterionGr;
 };
 FaceOffUtils.prototype = {
     initialize: function() {
-        this.algoGr = new GlideRecord('x_43553_faceoff_algorithm_1');
-        this.algoGr.get('07327c23934b0e5079f6bfea2bba103e');
+
+        this.algoGr = this.getDefaultOpponentSelectionAlogGr();
         this.judgeGr = new GlideRecord('x_43553_faceoff_judge');
         this.judgeGr.get(FaceOffUtils.GetCurrentJudgeSysId());
+		this.judgeSysId = this.judgeGr.getValue('sys_id');
     },
 
-	getRandomRecord: function(tableName) {
-		var randomGr = new GlideRecord(tableName);
-		randomGr.query();
-		var totalRecords = randomGr.getRowCount();
-		var randomNumber = Math.floor(Math.random()*totalRecords);
-		var count = 0;
+	getDefaultOpponentSelectionAlogGr: function() {
+		var algoGr;
+		var judgeSysId = FaceOffUtils.GetCurrentJudgeSysId();
+		var integrationGr = new GlideRecord('x_43553_faceoff_judge_integration');
+		integrationGr.addQuery('judge',judgeSysId);
+		integrationGr.setLimit(1);
+		integrationGr.query();
+		if (integrationGr.next()) {
+			algoGr = integrationGr.default_next_competitor_selection_algorithm.getRefRecord();
+		} 
 
-		// GlideRecord.setLocation() not available in scope, so have to cycle through all records
-		while(randomGr.next()) {
-			count++;
-			if (count == randomNumber) {
-				break;
-			}
-		}
-
-		return randomGr;
+		return algoGr;
 	},
 
-	startFaceOffFromCriterion: function(criterionGr) {
-		// get most exp competitor that has criterion
-		var competitorSysId;
+	// Get a random criterion with at least 2 of users competitors so a match up can be made
+    getRandomCriterionWithPotentialMatch: function() {
+        var criterions = [];
+        var ga = new GlideAggregate('x_43553_faceoff_users_rankable_criterions');
+        ga.addQuery("myco_judge=" + this.judgeSysId);
+        ga.groupBy("opcr_criterion");
+        ga.addAggregate("COUNT");
+        ga.orderByAggregate("COUNT");
+        ga.query();
+        while (ga.next()) {
+            var competitorCount = ga.getAggregate("COUNT");
+            var criterionDisplay = ga.getDisplayValue("opcr_criterion");
+            if (competitorCount > 1) {
+                criterions.push(ga.getValue("opcr_criterion"));
+            }
+        }
 
-		// Get my most experienced competitor that has the criterion
-		var myCompetitorGr = new GlideRecord('x_43553_faceoff_opponent_judgement_eligibility');
-		myCompetitorGr.addQuery('judge',FaceOffUtils.GetCurrentJudgeSysId());
-		var criterionJoinQry = myCompetitorGr.addJoinQuery('x_43553_faceoff_opponent_criterion','opponent','opponent');
-		criterionJoinQry.addCondition('criterion',criterionGr.getValue('sys_id'));
-		myCompetitorGr.orderByDesc('weight');
-		myCompetitorGr.setLimit(1);
-		myCompetitorGr.query();
-		if(myCompetitorGr.next()) {
-		competitorSysId = myCompetitorGr.getValue('opponent');
-		}
+        var totalRecords = criterions.length;
+        var randomNumber = Math.floor(Math.random() * totalRecords);
+        var randomCriteria = criterions[randomNumber];
 
-		// Get competitors criterion record for faceoff
-		var opponentCriteriaGr = new GlideRecord('x_43553_faceoff_opponent_criterion');
-		opponentCriteriaGr.addQuery('criterion',criterionGr.getValue('sys_id'));
-		opponentCriteriaGr.addQuery('opponent',competitorSysId);
-		opponentCriteriaGr.setLimit(1);
-		opponentCriteriaGr.query();
-		if (opponentCriteriaGr.next()) {
-			return this.faceOff(opponentCriteriaGr);
-		}
+		return randomCriteria;
+    },
 
-		// if nothing found, go back to criterion
-		return criterionGr;
-	},
+    startFaceOffFromCriterion: function(criterionGr) {
+        // get most exp competitor that has criterion
+        var competitorSysId;
+
+        // Get my most experienced competitor that has the criterion
+        var myCompetitorGr = new GlideRecord('x_43553_faceoff_opponent_judgement_eligibility');
+        myCompetitorGr.addQuery('judge', FaceOffUtils.GetCurrentJudgeSysId());
+        var criterionJoinQry = myCompetitorGr.addJoinQuery('x_43553_faceoff_opponent_criterion', 'opponent', 'opponent');
+        criterionJoinQry.addCondition('criterion', criterionGr.getValue('sys_id'));
+        myCompetitorGr.orderByDesc('weight');
+        myCompetitorGr.setLimit(1);
+        myCompetitorGr.query();
+        if (myCompetitorGr.next()) {
+            competitorSysId = myCompetitorGr.getValue('opponent');
+        }
+
+        // Get competitors criterion record for faceoff
+        var opponentCriteriaGr = new GlideRecord('x_43553_faceoff_opponent_criterion');
+        opponentCriteriaGr.addQuery('criterion', criterionGr.getValue('sys_id'));
+        opponentCriteriaGr.addQuery('opponent', competitorSysId);
+        opponentCriteriaGr.setLimit(1);
+        opponentCriteriaGr.query();
+        if (opponentCriteriaGr.next()) {
+            return this.faceOff(opponentCriteriaGr);
+        }
+
+        // if nothing found, go back to criterion
+        return criterionGr;
+    },
 
     startFaceOffFromOpponentSysId: function(opponentSysId) {
         // get top criterion
@@ -182,9 +211,9 @@ FaceOffUtils.prototype = {
         if (!opponentFound) {
             var leaderBoardGr = faceOffGr.leaderboard.getRefRecord();
             gs.addInfoMessage('Could not find opponents to face off for ' + leaderBoardGr.getDisplayValue() + ".");
-			gs.addInfoMessage("Finding random competitors to FaceOff");
-			var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
-			nextFaceOffGr = this.faceOff(opponentsCriterionGr);
+            gs.addInfoMessage("Finding random competitors to FaceOff");
+            var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
+            nextFaceOffGr = this.faceOff(opponentsCriterionGr);
         }
         return nextFaceOffGr;
     },
@@ -226,7 +255,13 @@ FaceOffUtils.prototype = {
 
     getNextFaceoff: function(opponentSysId, criteriaSysId) {
         var opponentCriterionGr = this.getOpponentCriteria(opponentSysId, criteriaSysId);
-        return this.faceOff(opponentCriterionGr);
+        var nextFaceOffGr = this.faceOff(opponentCriterionGr);
+		if (gs.nil(nextFaceOffGr)) {
+			gs.addInfoMessage("Could not find any matches. Finding random games to rank instead...");
+			var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
+			nextFaceOffGr = this.faceOff(opponentsCriterionGr);
+		}
+		return nextFaceOffGr;
     },
 
     type: 'FaceOffUtils'
@@ -235,13 +270,13 @@ FaceOffUtils.prototype = {
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 17:01:50</sys_created_on>
         <sys_id>64015b3c931fc29079f6bfea2bba10ec</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>FaceOffUtils</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_script_include_64015b3c931fc29079f6bfea2bba10ec</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 09:35:57</sys_updated_on>
+        <sys_updated_on>2024-08-04 03:51:04</sys_updated_on>
     </sys_script_include>
 </record_update>

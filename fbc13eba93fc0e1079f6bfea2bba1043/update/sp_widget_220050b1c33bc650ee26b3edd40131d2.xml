@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($location) {
+  /* widget controller */
+  var c = this;
+	c.redirect = function(url) {
+		console.log("Redirect to " + url);
+	$location.url(url);
+};
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>//Lazy hides for POC
+.sp-attachment-add {
+  display : none !important;
+}
+
+.action-btn[gsft_id="42df02e20a0a0b340080e61b551f2909"] {
+    display : none !important;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>fo-myprofile</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  scope.$on('spModel.uiActionComplete', function(event, response) {
+	scope.c.server.update().then(function(response) {
+		if (response.redirectURL) controller.redirect(response.redirectURL);
+	});
+});
+}]]></link>
+        <name>fo-myprofile</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+// see https://www.womennow.sn/posts/ui-action-portal-redirect
+data.options = {
+	view: 'default',
+	hideRelatedLists : true,
+	table:'x_43553_faceoff_judge_integration',
+	sys_id:FaceOffUtils.GetCurrentJudgeIntegration()
+};
+
+	
+data.widget = $sp.getWidget('widget-form', data.options);
+
+	var table = 'x_43553_faceoff_faceoff_instance';
+	var currentUser = gs.getUser();
+	//data.widget.data.table
+	var redirectURL = currentUser.getPreference(table + '.redirectURL');
+	if (redirectURL) {
+		data.redirectURL = redirectURL;
+		// clear user preference
+		currentUser.savePreference(table + '.redirectURL','');
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-04 02:02:35</sys_created_on>
+        <sys_id>220050b1c33bc650ee26b3edd40131d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>fo-myprofile</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_widget_220050b1c33bc650ee26b3edd40131d2</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-04 02:04:29</sys_updated_on>
+        <template><![CDATA[<div>
+<sp-widget widget="data.widget"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>4</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">786dc7a6c3638610ee26b3edd4013161</sp_column>
+        <sp_widget display_value="fo-my-unseeded-ranked">1f6b0628c3374250ee26b3edd40131b9</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-31 13:50:20</sys_created_on>
+        <sys_id>0bab8e28c3374250ee26b3edd40131de</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_instance_0bab8e28c3374250ee26b3edd40131de</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-04 01:28:37</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table": {
+		"value": "",
+		"displayValue": ""
+	},
+	"fields": {
+		"value": "opponent.name,opponent.avatar,faceoff_count",
+		"displayValue": "opponent.name,opponent.avatar,faceoff_count"
+	},
+	"default_filter": {
+		"value": "ranked=false",
+		"displayValue": "ranked=false"
+	},
+	"headertitle": {
+		"value": "My unseeded competitors",
+		"displayValue": "My unseeded competitors"
+	},
+	"related_field": {
+		"value": "leaderboard",
+		"displayValue": "leaderboard"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=0bab8e28c3374250ee26b3edd40131de"/>
+</record_update>

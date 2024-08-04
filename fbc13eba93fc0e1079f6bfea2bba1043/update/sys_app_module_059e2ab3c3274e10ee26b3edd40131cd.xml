@@ -13,7 +13,7 @@
         <mobile_title>Competitors</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_43553_faceoff_judge</name>
-        <order>310</order>
+        <order>910</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>059e2ab3c3274e10ee26b3edd40131cd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Profiles</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_app_module_059e2ab3c3274e10ee26b3edd40131cd</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 08:27:24</sys_updated_on>
+        <sys_updated_on>2024-07-31 10:02:24</sys_updated_on>
         <timeline_page/>
         <title>Profiles</title>
         <uncancelable>false</uncancelable>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $rootScope, $location, spUtil, $timeout, spAriaFocusManager) {
+	
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>fo-leaderboard-completion</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  scope.$on('spModel.uiActionComplete', function(event, response) {
+	scope.c.server.update().then(function(response) {
+		if (response.redirectURL) controller.redirect(response.redirectURL);
+	});
+});
+}]]></link>
+        <name>fo-leaderboard-completion</name>
+        <option_schema>[{"name":"table","section":"other","label":"Table","type":"string"},{"name":"fields","section":"other","label":"FIelds","type":"string"},{"name":"default_filter","section":"other","label":"Default filter","type":"string"},{"name":"headertitle","section":"other","label":"Header title","type":"string"},{"name":"related_field","section":"other","label":"Related field","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function($sp, input, data, options, gs) {
+
+	var tableName;
+	if (input) {
+		data.sys_id = input.sys_id;
+		data.table = input.table;
+	} else {
+		data.sys_id = $sp.getParameter('sys_id');
+		data.table = $sp.getParameter('table');
+	}
+
+	var filter = "judge=" + FaceOffUtils.GetCurrentJudgeSysId();
+	if (data.table == 'x_43553_faceoff_faceoff_leaderboard') {
+		filter = filter + "^leaderboard=" +data.sys_id;
+	} 
+
+  options.table = "x_43553_faceoff_leaderboard_completion";
+	//options.fields =  "rank,opponent.name,opponent.avatar,elo"
+	options.o= 'completion_rate';
+	options.d= 'completion_rate';
+	options.filter=filter;
+	options.window_size=20;
+	options.view = 'default';
+	options.useInstanceTitle = true; // to make sure Data Table widget uses headerTitle always
+	options.headerTitle = "My completion statistics";
+	options.show_breadcrumbs=false;
+	options.filterACLs = true;
+	options.page_id = 'fo-form';
+
+data.widget = $sp.getWidget('widget-data-table', options);
+
+})($sp, input, data, options, gs);
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-04 01:24:47</sys_created_on>
+        <sys_id>c167c075c3f7c650ee26b3edd4013159</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>fo-leaderboard-completion</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_widget_c167c075c3f7c650ee26b3edd4013159</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-04 01:40:06</sys_updated_on>
+        <template><![CDATA[<div>
+<sp-widget widget="data.widget"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>

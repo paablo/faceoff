@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="" section_id="2a6f242f930b0e5079f6bfea2bba105d" sys_domain="global" table="x_43553_faceoff_algorithm_1" version="3" view="">
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
-            <position>0</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>edc2b863934b0e5079f6bfea2bba1006</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>namen</element>
-            <position>1</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>e5c2b863934b0e5079f6bfea2bba1007</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>2</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>edc2b863934b0e5079f6bfea2bba1007</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>opponent_source</element>
-            <position>3</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>e5c2b863934b0e5079f6bfea2bba1008</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>criterion_weight</element>
-            <position>4</position>
-            <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>edc2b863934b0e5079f6bfea2bba1008</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
-            <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
+    <sys_ui_section caption="Opponent Selection Algorithm" section_id="2a6f242f930b0e5079f6bfea2bba105d" sys_domain="global" table="x_43553_faceoff_algorithm_1" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>age_weight</element>
-            <position>5</position>
+            <position>0</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>e5c2b863934b0e5079f6bfea2bba1009</sys_id>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>acf16cbdc37bc650ee26b3edd401310c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_weight</element>
-            <position>6</position>
+            <position>1</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:16:37</sys_created_on>
-            <sys_id>edc2b863934b0e5079f6bfea2bba1009</sys_id>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>a4f16cbdc37bc650ee26b3edd401310d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:16:37</sys_updated_on>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>elo_weight</element>
-            <position>7</position>
+            <position>2</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-11 20:28:34</sys_created_on>
-            <sys_id>6d07a49a931fc21079f6bfea2bba103b</sys_id>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>acf16cbdc37bc650ee26b3edd401310d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-11 20:28:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>criterion_weight</element>
+            <position>3</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>a4f16cbdc37bc650ee26b3edd401310e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>select_opponent_based_on</element>
+            <position>4</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>acf16cbdc37bc650ee26b3edd401310e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>a4f16cbdc37bc650ee26b3edd401310f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>6</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>acf16cbdc37bc650ee26b3edd401310f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent_source</element>
+            <position>7</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>a4f16cbdc37bc650ee26b3edd4013110</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,18 +116,18 @@
             <element>age_policy_days</element>
             <position>8</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-11 21:42:40</sys_created_on>
-            <sys_id>8bf7b4d2939fc21079f6bfea2bba1005</sys_id>
+            <sys_created_on>2024-08-04 03:20:49</sys_created_on>
+            <sys_id>acf16cbdc37bc650ee26b3edd4013110</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-11 21:42:40</sys_updated_on>
+            <sys_updated_on>2024-08-04 03:20:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption/>
+            <caption>Opponent Selection Algorithm</caption>
             <header>false</header>
             <name>x_43553_faceoff_algorithm_1</name>
             <roles/>
@@ -137,7 +137,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2a6f242f930b0e5079f6bfea2bba105d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>x_43553_faceoff_algorithm_1</sys_name>
             <sys_overrides/>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -145,7 +145,7 @@
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_ui_section_2a6f242f930b0e5079f6bfea2bba105d</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:01:56</sys_updated_on>
+            <sys_updated_on>2024-08-04 03:09:23</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

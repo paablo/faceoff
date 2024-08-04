@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="daf4a6fcc37f8250ee26b3edd4013115" label="Leaderboard completion" max_length="40" name="x_43553_faceoff_leaderboard_completion" type="collection">
+        <element label="Leaderboard" max_length="32" name="leaderboard" reference="x_43553_faceoff_faceoff_leaderboard" type="reference"/>
+        <element label="Judge" max_length="32" name="judge" reference="x_43553_faceoff_judge" type="reference"/>
+        <element label="Completion rate (%)" max_length="15" name="completion_rate" type="percent_complete"/>
+        <element default="0" label="My total count" max_length="40" name="my_total_count" type="integer"/>
+        <element label="trigger" max_length="40" name="trigger" type="glide_date_time"/>
+        <element default="0" label="My seeded count" max_length="40" name="my_seeded_count" type="integer"/>
+        <element default="0" label="My unseeded count" max_length="40" name="my_unseeded_count" type="integer"/>
+        <index name="index">
+            <element name="judge"/>
+        </index>
+        <index name="index2">
+            <element name="leaderboard"/>
+        </index>
+    </element>
+</database>

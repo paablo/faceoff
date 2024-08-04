@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="INSERT_OR_UPDATE">
+        <description/>
+        <label/>
+        <name>x_43553_faceoff_users_rankable_criterions</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-31 09:28:12</sys_created_on>
+        <sys_id>819f4d20c3ff0250ee26b3edd401319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_43553_faceoff_users_rankable_criterions</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_db_view_819f4d20c3ff0250ee26b3edd401319c</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-07-31 09:28:12</sys_updated_on>
+    </sys_db_view>
+</record_update>

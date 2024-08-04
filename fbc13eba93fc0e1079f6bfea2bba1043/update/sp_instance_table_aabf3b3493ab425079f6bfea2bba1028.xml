@@ -5,7 +5,7 @@
         <color>default</color>
         <css/>
         <display_field/>
-        <field_list>leaderboard,opponent.name,opponent.avatar,faceoff_count,opponent.website</field_list>
+        <field_list>leaderboard.ladder_name,leaderboard.ranking_confidence,opponent.name,opponent.avatar,faceoff_count</field_list>
         <filter table="x_43553_faceoff_leaderboard_ranking">rank=1<item endquery="false" field="rank" goto="false" newquery="false" operator="=" or="false" value="1"/>
         </filter>
         <glyph>trophy</glyph>
@@ -24,14 +24,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-20 06:40:10</sys_created_on>
         <sys_id>aabf3b3493ab425079f6bfea2bba1028</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Top Games</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sp_instance_table_aabf3b3493ab425079f6bfea2bba1028</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 09:09:10</sys_updated_on>
+        <sys_updated_on>2024-07-31 13:26:47</sys_updated_on>
         <table>x_43553_faceoff_leaderboard_ranking</table>
         <title>Top Games</title>
         <url/>

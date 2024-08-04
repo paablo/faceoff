@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="cd5f5c79c37bc650ee26b3edd401314d" sys_domain="global" table="x_43553_faceoff_algorithm_1" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:09:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>495f5c79c37bc650ee26b3edd4013151</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_43553_faceoff_algorithm_1" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">cd5f5c79c37bc650ee26b3edd401314d</sys_ui_form>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">0d5f1c79c37bc650ee26b3edd40131fe</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:09:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:09:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c55f5c79c37bc650ee26b3edd4013152</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_43553_faceoff_algorithm_1" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">cd5f5c79c37bc650ee26b3edd401314d</sys_ui_form>
+            <sys_ui_section caption="Opponent Selection Algorithm" display_value="Opponent Selection Algorithm" name="x_43553_faceoff_algorithm_1" sys_domain="global" view="Default view">2a6f242f930b0e5079f6bfea2bba105d</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:09:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_43553_faceoff_algorithm_1</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 03:09:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd5f5c79c37bc650ee26b3edd401314d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_43553_faceoff_algorithm_1</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+            <sys_update_name>sys_ui_form_sections_cd5f5c79c37bc650ee26b3edd401314d</sys_update_name>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 03:09:23</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -9,7 +9,7 @@
         </element>
         <element label="Opponent 2" max_length="32" name="opponent_2" reference="x_43553_faceoff_opponent" type="reference"/>
         <element label="Opponent selections" max_length="32" name="opponent_selections" reference="x_43553_faceoff_opponent_selection_instance" type="reference"/>
-        <element label="Leaderboard" max_length="32" name="leaderboard" reference="x_43553_faceoff_faceoff_leaderboard" type="reference"/>
+        <element label="Leaderboard" max_length="32" name="leaderboard" reference="x_43553_faceoff_faceoff_leaderboard" reference_cascade_rule="delete" type="reference"/>
         <element label="Opponent 1" max_length="32" name="opponent_1" reference="x_43553_faceoff_opponent" type="reference"/>
         <element label="Opponent 1 avatar" max_length="40" name="opponent_1_avater" type="user_image"/>
         <element choice="1" default="New" label="Status" max_length="40" name="status" type="choice">

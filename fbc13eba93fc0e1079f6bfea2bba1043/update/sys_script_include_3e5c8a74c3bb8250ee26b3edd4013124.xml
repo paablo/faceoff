@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_43553_faceoff.FaceOffLadderUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FaceOffLadderUtils</name>
+        <script><![CDATA[var FaceOffLadderUtils = Class.create();
+
+FaceOffLadderUtils.UpdateMyLeaderboardCompletion = function(myLeaderboardCompletionGr, noUpdate) {
+	var f = new FaceOffLadderUtils(myLeaderboardCompletionGr.leaderboard.getRefRecord());
+	f.getMyCompletionRate(myLeaderboardCompletionGr.getValue('judge'));
+	myLeaderboardCompletionGr.my_total_count = f.myTotalRankable;
+	myLeaderboardCompletionGr.my_unseeded_count = f.myUnSeeded;
+	myLeaderboardCompletionGr.my_seeded_count = f.mySeeded;
+	myLeaderboardCompletionGr.completion_rate = f.myCompletionRate;
+
+	if (!noUpdate)
+		myLeaderboardCompletionGr.update();
+
+};
+
+FaceOffLadderUtils.prototype = {
+    initialize: function(leaderboardGr) {
+		this.leaderboardGr = leaderboardGr;
+		this.mySeeded = 0;
+		this.myUnSeeded = 0;
+		this.myTotalRankable = 0;
+		this.myCompletionRate = 0;
+    },
+
+	getMyCompletionRate: function(judgeSysID) {
+		if (gs.nil(judgeSysID)) {
+			judgeSysID = FaceOffUtils.GetCurrentJudgeSysId();
+		}
+		var mySeeded=0;
+		var myUnSeeded=0;
+		var myTotalRankable = 0;
+		var ga = new GlideAggregate('x_43553_faceoff_my_competitors_rankings');
+		ga.addQuery('myco_judge',judgeSysID);
+		ga.addQuery('lera_leaderboard',this.leaderboardGr.getValue('sys_id'));
+		ga.addAggregate('COUNT','lera_ranked');
+		ga.query();
+		
+		while (ga.next()) {
+			var rank = ga.lera_ranked;
+			var rankcount = ga.getAggregate('COUNT', 'lera_ranked');
+			if (rank) {
+				this.mySeeded=rankcount;
+			} else {
+				this.myUnSeeded=rankcount;
+			}
+
+		}
+
+		this.myTotalRankable = parseInt(this.mySeeded) + parseInt(this.myUnSeeded);
+		this.myCompletionRate = this.getPercentage(
+			this.mySeeded,
+			this.myTotalRankable
+		);
+	},
+
+	calculateCompletionRate: function() {
+		return this.getPercentage(
+			this.leaderboardGr.getValue('ranked_competitors'),
+			this.leaderboardGr.getValue('total_competitors')
+		);  // return the calculated value
+	},
+
+	getPercentage: function(a,b) {
+		var confidenceLevel = 0;
+
+		if (a == 0)
+			return confidenceLevel;
+
+		confidenceLevel = ((a / b).toFixed(3) * 100);
+
+		return confidenceLevel;  // return the calculated value
+	},
+
+    type: 'FaceOffLadderUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 08:41:39</sys_created_on>
+        <sys_id>3e5c8a74c3bb8250ee26b3edd4013124</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>FaceOffLadderUtils</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_script_include_3e5c8a74c3bb8250ee26b3edd4013124</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 12:37:42</sys_updated_on>
+    </sys_script_include>
+</record_update>

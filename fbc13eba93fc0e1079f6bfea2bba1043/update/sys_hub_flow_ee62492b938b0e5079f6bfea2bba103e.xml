@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>copy_of_create_opponent_and_criteria_from_steam_game</internal_name>
-        <label_cache>[{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.Record","label":"17 - Look Up Record➛Faceoff Leaderboard Record","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"],"c2e562d4-0182-4b35-b75d-96328107e14c":["leaderboard"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.status","label":"17 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"28d0f0d5-a4f0-48a3-9e6b-a95386679228":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c2c1cfec-d156-480a-8e5d-174c5a0413ce.status","label":"19 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7d707383-c794-4b1e-b380-0a9260f4c6ad":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.opponent","label":"16 - Create or Update Record➛Opponent criterion Record➛Opponent","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"opponent","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"]}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.criterion","label":"16 - Create or Update Record➛Opponent criterion Record➛Criterion","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"criterion","usedInstances":{"e5d42d60-36e6-49d9-913f-61b6771cf677":["conditions"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar_url","label":"2 - Import Steam Game Opponent➛steam game➛Avatar URL","reference":"","reference_display":"Avatar URL","type":"url","base_type":"url","usedInstances":{"d6125345-c67b-45be-b270-823f34a7e5bb":["condition"]}},{"name":"subflow.correlation_id","label":"Input➛correlation id","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["appid"],"4afe46be-7955-4ed0-923d-0ac48f4bb957":["appid"]}},{"name":"9f58f0a5-ca6b-4ffb-b470-5598089f29ea.record","label":"13 - Create Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.weight","label":"9 - For Each➛tag➛weight","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["weight"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["weight"],"779a871f-5629-4c76-8cf9-f022f530e800":["weight"]}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.Record","label":"4 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"0e8a95b4-bbe8-42fb-a6c8-65464bbe941a":["record"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable","label":"2 - Import Steam Game Opponent➛steam game","reference":"x_43553_faceoff_steam_game","reference_display":"Steam Game","type":"reference","base_type":"reference","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"1e247688-3bf4-497d-bc8a-21faaedeca32":["opponent"],"185cdecf-038a-442e-b879-13776effaaad":["opponent-0"],"bad68df0-055e-43a4-82fa-a7e177cf62b7":["opponent"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["opponent"],"779a871f-5629-4c76-8cf9-f022f530e800":["opponent"],"c2e562d4-0182-4b35-b75d-96328107e14c":["opponent"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"106f986b-f5e0-462b-b340-026ae8944969"}},{"name":"subflow.data_source","label":"Input➛data source","reference":"x_43553_faceoff_opponent_primary_data_source","reference_display":"Opponent Primary Data Source","type":"reference","base_type":"reference","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["source"]}},{"name":"4afe46be-7955-4ed0-923d-0ac48f4bb957.tags","label":"5 - Import Steam Game Tags Criterion➛tags","reference_display":"tags","type":"array.object","base_type":"array.object","usedInstances":{"c273d194-7570-4ea4-b623-cbe0f977b9b7":["items"]},"attributes":{"sourceId":"ade109e4-3c8e-40e3-bf03-2af9263cb44d","child_name":"tag","uiUniqueId":"a6e318e4-f9d4-416f-a2c8-98aa33005767","uiTypeLabel":"Array.Object","co_type_name":"FDf8d4f40aa44b0650a935fd6d1b2bcf9d","child_label":"tag","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"88e40cf4-124c-4744-baf7-019c411468fc","uiType":"array.object","child_type":"object","child_uiUniqueId":"62337e70-45a9-44b3-a853-e621515add02"}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.name","label":"9 - For Each➛tag➛name","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"9f58f0a5-ca6b-4ffb-b470-5598089f29ea":["name"],"c3adefa2-ef6a-4d89-a295-c56a8884b821":["conditions"],"d7821126-841e-4f92-be10-46bc428e86b2":["conditions"]}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.status","label":"4 - Look Up Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","usedInstances":{}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.__action_status__.code","label":"4 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.status","label":"10 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"289d64d0-f403-4b17-b453-a5d5824d3f6f":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.Record","label":"10 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eec9886a-1c04-4e49-8185-517de449cef9.Record","label":"10 - Look Up Record➛Opponent criterion Record","reference":"x_43553_faceoff_opponent_criterion","reference_display":"Opponent criterion","type":"reference","base_type":"reference","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["record"]}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.error_message","label":"10 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar","label":"2 - Import Steam Game Opponent➛steam game➛Avatar","reference":"","reference_display":"Avatar","type":"user_image","base_type":"user_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}},{"name":"flow_variable.rank","label":"Flow Variables➛rank","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["rank"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["rank"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fc66f81-6abf-44cc-8b33-56fbddde9107"}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.preview_image","label":"2 - Import Steam Game Opponent➛steam game➛Preview image","reference":"","reference_display":"Preview image","type":"user_image","base_type":"user_image","parent_table_name":"x_43553_faceoff_steam_game","column_name":"preview_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}}]</label_cache>
+        <label_cache>[{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.preview_image","label":"2 - Import Steam Game Opponent➛steam game➛Preview image","reference":"","reference_display":"Preview image","type":"user_image","base_type":"user_image","parent_table_name":"x_43553_faceoff_steam_game","column_name":"preview_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}},{"name":"flow_variable.rank","label":"Flow Variables➛rank","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["rank"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["rank"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fc66f81-6abf-44cc-8b33-56fbddde9107"}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar","label":"2 - Import Steam Game Opponent➛steam game➛Avatar","reference":"","reference_display":"Avatar","type":"user_image","base_type":"user_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.error_message","label":"10 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"eec9886a-1c04-4e49-8185-517de449cef9.Record","label":"10 - Look Up Record➛Opponent criterion Record","reference":"x_43553_faceoff_opponent_criterion","reference_display":"Opponent criterion","type":"reference","base_type":"reference","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["record"]}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.Record","label":"10 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion Record","type":"reference","base_type":"reference","usedInstances":{"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.status","label":"10 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"289d64d0-f403-4b17-b453-a5d5824d3f6f":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.__action_status__.code","label":"4 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.status","label":"4 - Look Up Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","usedInstances":{}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.name","label":"9 - For Each➛tag➛name","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"9f58f0a5-ca6b-4ffb-b470-5598089f29ea":["name"],"c3adefa2-ef6a-4d89-a295-c56a8884b821":["conditions"],"d7821126-841e-4f92-be10-46bc428e86b2":["conditions"]}},{"name":"4afe46be-7955-4ed0-923d-0ac48f4bb957.tags","label":"5 - Import Steam Game Tags Criterion➛tags","reference_display":"tags","type":"array.object","base_type":"array.object","usedInstances":{"c273d194-7570-4ea4-b623-cbe0f977b9b7":["items"]},"attributes":{"sourceId":"ade109e4-3c8e-40e3-bf03-2af9263cb44d","child_name":"tag","uiUniqueId":"a6e318e4-f9d4-416f-a2c8-98aa33005767","uiTypeLabel":"Array.Object","co_type_name":"FDf8d4f40aa44b0650a935fd6d1b2bcf9d","child_label":"tag","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"88e40cf4-124c-4744-baf7-019c411468fc","uiType":"array.object","child_type":"object","child_uiUniqueId":"62337e70-45a9-44b3-a853-e621515add02"}},{"name":"subflow.data_source","label":"Input➛data source","reference":"x_43553_faceoff_opponent_primary_data_source","reference_display":"Opponent Primary Data Source","type":"reference","base_type":"reference","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["source"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable","label":"2 - Import Steam Game Opponent➛steam game","reference":"x_43553_faceoff_steam_game","reference_display":"steam game","type":"reference","base_type":"reference","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"1e247688-3bf4-497d-bc8a-21faaedeca32":["opponent"],"185cdecf-038a-442e-b879-13776effaaad":["opponent-0"],"bad68df0-055e-43a4-82fa-a7e177cf62b7":["opponent"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["opponent"],"779a871f-5629-4c76-8cf9-f022f530e800":["opponent"],"c2e562d4-0182-4b35-b75d-96328107e14c":["opponent"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"106f986b-f5e0-462b-b340-026ae8944969"}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.Record","label":"4 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"0e8a95b4-bbe8-42fb-a6c8-65464bbe941a":["record"]}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.weight","label":"9 - For Each➛tag➛weight","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["weight"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["weight"],"779a871f-5629-4c76-8cf9-f022f530e800":["weight"]}},{"name":"9f58f0a5-ca6b-4ffb-b470-5598089f29ea.record","label":"13 - Create Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion Record","type":"reference","base_type":"reference","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.correlation_id","label":"Input➛correlation id","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["appid"],"4afe46be-7955-4ed0-923d-0ac48f4bb957":["appid"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar_url","label":"2 - Import Steam Game Opponent➛steam game➛Avatar URL","reference":"","reference_display":"Avatar URL","type":"url","base_type":"url","usedInstances":{"d6125345-c67b-45be-b270-823f34a7e5bb":["condition"]}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.criterion","label":"16 - Create or Update Record➛Opponent criterion Record➛Criterion","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"criterion","usedInstances":{"e5d42d60-36e6-49d9-913f-61b6771cf677":["conditions"]}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.opponent","label":"16 - Create or Update Record➛Opponent criterion Record➛Opponent","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"opponent","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"]}},{"name":"c2c1cfec-d156-480a-8e5d-174c5a0413ce.status","label":"19 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7d707383-c794-4b1e-b380-0a9260f4c6ad":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.status","label":"17 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"28d0f0d5-a4f0-48a3-9e6b-a95386679228":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.Record","label":"17 - Look Up Record➛Faceoff Leaderboard Record","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"],"c2e562d4-0182-4b35-b75d-96328107e14c":["leaderboard"],"eec39f0a-3cb1-4869-9a47-10d653f81620":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.Record.total_competitors","label":"17 - Look Up Record➛Faceoff Leaderboard Record➛Total competitors","reference":"","reference_display":"Total competitors","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_faceoff_leaderboard","column_name":"total_competitors","usedInstances":{"264ff237-4a37-47d1-8d4e-bf1a1fbb9a88":["variable-0"]}},{"name":"flow_variable.variable","label":"Flow Variables➛competitorCount","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"eec39f0a-3cb1-4869-9a47-10d653f81620":["total_competitors"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"acaebac9-1356-4496-abb8-c6e01eca284e"}}]</label_cache>
         <master_snapshot>456309ab938b0e5079f6bfea2bba105c</master_snapshot>
         <name>Create Opponent and Criteria from Steam Game v2</name>
         <natlang/>
@@ -27,7 +27,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>sn-nerd</sys_created_by>
@@ -35,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ee62492b938b0e5079f6bfea2bba103e</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name>Create Opponent and Criteria from Steam Game v2</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -43,7 +43,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_hub_flow_ee62492b938b0e5079f6bfea2bba103e</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ee62492b938b0e5079f6bfea2bba103e"/>
@@ -128,14 +128,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>3a62492b938b0e5079f6bfea2bba104c</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:13</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -212,14 +212,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>f262492b938b0e5079f6bfea2bba1046</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:13</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -319,7 +319,7 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3e62492b938b0e5079f6bfea2bba1052"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ee62492b938b0e5079f6bfea2bba103e"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT IN01bc74da939fc21079f6bfea2bba10c5,0f62492b938b0e5079f6bfea2bba10ff,1762892b938b0e5079f6bfea2bba100d,4362492b938b0e5079f6bfea2bba10c1,5b62892b938b0e5079f6bfea2bba101a,680c301a939fc21079f6bfea2bba10d6,9762892b938b0e5079f6bfea2bba1007,c362492b938b0e5079f6bfea2bba10ed,cb62492b938b0e5079f6bfea2bba10aa,f92bf41a939fc21079f6bfea2bba1024"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT IN01bc74da939fc21079f6bfea2bba10c5,0dd61ab8c3fb8250ee26b3edd401310d,0f62492b938b0e5079f6bfea2bba10ff,1762892b938b0e5079f6bfea2bba100d,4362492b938b0e5079f6bfea2bba10c1,5b62892b938b0e5079f6bfea2bba101a,680c301a939fc21079f6bfea2bba10d6,9762892b938b0e5079f6bfea2bba1007,c362492b938b0e5079f6bfea2bba10ed,cb62492b938b0e5079f6bfea2bba10aa,f92bf41a939fc21079f6bfea2bba1024"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -330,16 +330,16 @@
         <display_text/>
         <flow display_value="Create Opponent and Criteria from Steam Game v2">ee62492b938b0e5079f6bfea2bba103e</flow>
         <generation_source/>
-        <order>21</order>
+        <order>22</order>
         <parent_ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:03:17</sys_created_on>
         <sys_id>01bc74da939fc21079f6bfea2bba10c5</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
         <ui_id>c2e562d4-0182-4b35-b75d-96328107e14c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=01bc74da939fc21079f6bfea2bba10c5"/>
@@ -425,6 +425,132 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update leaderboard competitor count</comment>
+        <display_text/>
+        <flow display_value="Create Opponent and Criteria from Steam Game v2">ee62492b938b0e5079f6bfea2bba103e</flow>
+        <generation_source/>
+        <order>23</order>
+        <parent_ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:17:34</sys_created_on>
+        <sys_id>0dd61ab8c3fb8250ee26b3edd401310d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <ui_id>eec39f0a-3cb1-4869-9a47-10d653f81620</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0dd61ab8c3fb8250ee26b3edd401310d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0dd61ab8c3fb8250ee26b3edd401310d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:11</sys_created_on>
+        <sys_id>def61ab8c3fb8250ee26b3edd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:11</sys_updated_on>
+        <value>x_43553_faceoff_faceoff_leaderboard</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0dd61ab8c3fb8250ee26b3edd401310d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:41</sys_created_on>
+        <sys_id>e117d2f8c3fb8250ee26b3edd401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <value>x_43553_faceoff_faceoff_leaderboard</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0dd61ab8c3fb8250ee26b3edd401310d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0dd61ab8c3fb8250ee26b3edd401310d</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:41</sys_created_on>
+        <sys_id>ad17d2f8c3fb8250ee26b3edd401311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{e5d42d60-36e6-49d9-913f-61b6771cf677.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0dd61ab8c3fb8250ee26b3edd401310d</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:11</sys_created_on>
+        <sys_id>5ef61ab8c3fb8250ee26b3edd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{e5d42d60-36e6-49d9-913f-61b6771cf677.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0dd61ab8c3fb8250ee26b3edd401310d</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:41</sys_created_on>
+        <sys_id>e917d2f8c3fb8250ee26b3edd401311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0dd61ab8c3fb8250ee26b3edd401310d</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:11</sys_created_on>
+        <sys_id>d6f61ab8c3fb8250ee26b3edd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0dd61ab8c3fb8250ee26b3edd401310d</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:41</sys_created_on>
+        <sys_id>6117d2f8c3fb8250ee26b3edd401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>total_competitors={{flow_variable.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0dd61ab8c3fb8250ee26b3edd401310d</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:11</sys_created_on>
+        <sys_id>9af61ab8c3fb8250ee26b3edd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>total_competitors={{flow_variable.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0dd61ab8c3fb8250ee26b3edd401310d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0dd61ab8c3fb8250ee26b3edd401310d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type>
         <action_type_parent/>
         <attributes/>
@@ -438,10 +564,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:25:00</sys_created_on>
         <sys_id>0f62492b938b0e5079f6bfea2bba10ff</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>c3adefa2-ef6a-4d89-a295-c56a8884b821</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0f62492b938b0e5079f6bfea2bba10ff"/>
@@ -618,10 +744,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:25:00</sys_created_on>
         <sys_id>1762892b938b0e5079f6bfea2bba100d</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>779a871f-5629-4c76-8cf9-f022f530e800</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1762892b938b0e5079f6bfea2bba100d"/>
@@ -682,10 +808,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:59</sys_created_on>
         <sys_id>4362492b938b0e5079f6bfea2bba10c1</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>bad68df0-055e-43a4-82fa-a7e177cf62b7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4362492b938b0e5079f6bfea2bba10c1"/>
@@ -732,10 +858,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:25:00</sys_created_on>
         <sys_id>5b62892b938b0e5079f6bfea2bba101a</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>06e3387f-f976-4359-a872-47fa8c6e5f98</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5b62892b938b0e5079f6bfea2bba101a"/>
@@ -834,10 +960,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:00:15</sys_created_on>
         <sys_id>680c301a939fc21079f6bfea2bba10d6</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>e5d42d60-36e6-49d9-913f-61b6771cf677</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=680c301a939fc21079f6bfea2bba10d6"/>
@@ -988,10 +1114,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:25:00</sys_created_on>
         <sys_id>9762892b938b0e5079f6bfea2bba1007</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>9f58f0a5-ca6b-4ffb-b470-5598089f29ea</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9762892b938b0e5079f6bfea2bba1007"/>
@@ -1052,10 +1178,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:59</sys_created_on>
         <sys_id>c362492b938b0e5079f6bfea2bba10ed</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>4afe46be-7955-4ed0-923d-0ac48f4bb957</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c362492b938b0e5079f6bfea2bba10ed"/>
@@ -1130,10 +1256,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:59</sys_created_on>
         <sys_id>cb62492b938b0e5079f6bfea2bba10aa</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>911109f7-40d2-4823-b68b-5747d0cd78e6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cb62492b938b0e5079f6bfea2bba10aa"/>
@@ -1260,10 +1386,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 21:56:31</sys_created_on>
         <sys_id>f92bf41a939fc21079f6bfea2bba1024</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
         <ui_id>c2c1cfec-d156-480a-8e5d-174c5a0413ce</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f92bf41a939fc21079f6bfea2bba1024"/>
@@ -1399,7 +1525,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=f92bf41a939fc21079f6bfea2bba1024"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f92bf41a939fc21079f6bfea2bba1024"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ee62492b938b0e5079f6bfea2bba103e"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT IN0b878c5493d3029079f6bfea2bba1085,3662492b938b0e5079f6bfea2bba107f,3e62492b938b0e5079f6bfea2bba1068,5d3cbc5a939fc21079f6bfea2bba10a6,7262492b938b0e5079f6bfea2bba1062,a927005493d3029079f6bfea2bba1037,b262492b938b0e5079f6bfea2bba105a,f0abbcd6939fc21079f6bfea2bba100b,f662492b938b0e5079f6bfea2bba105d,f662492b938b0e5079f6bfea2bba107c,fa62492b938b0e5079f6bfea2bba1078,fe62492b938b0e5079f6bfea2bba1065"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT IN0b878c5493d3029079f6bfea2bba1085,3662492b938b0e5079f6bfea2bba107f,3e62492b938b0e5079f6bfea2bba1068,5d3cbc5a939fc21079f6bfea2bba10a6,7262492b938b0e5079f6bfea2bba1062,9d66da78c3fb8250ee26b3edd40131d6,a927005493d3029079f6bfea2bba1037,b262492b938b0e5079f6bfea2bba105a,f0abbcd6939fc21079f6bfea2bba100b,f662492b938b0e5079f6bfea2bba105d,f662492b938b0e5079f6bfea2bba107c,fa62492b938b0e5079f6bfea2bba1078,fe62492b938b0e5079f6bfea2bba1065"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">b1c70c5493d3029079f6bfea2bba10a7</block>
@@ -1423,10 +1549,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-05 13:03:12</sys_created_on>
         <sys_id>0b878c5493d3029079f6bfea2bba1085</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>23986448-dad6-41da-9cbe-06358cb9dbd2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1478,7 +1604,7 @@
         <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>22</order>
+        <order>24</order>
         <outputs_assigned>opponent</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
@@ -1487,10 +1613,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>3662492b938b0e5079f6bfea2bba107f</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
         <ui_id>185cdecf-038a-442e-b879-13776effaaad</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1536,10 +1662,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>3e62492b938b0e5079f6bfea2bba1068</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>c273d194-7570-4ea4-b623-cbe0f977b9b7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1586,10 +1712,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:01:08</sys_created_on>
         <sys_id>5d3cbc5a939fc21079f6bfea2bba10a6</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
         <ui_id>28d0f0d5-a4f0-48a3-9e6b-a95386679228</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1661,10 +1787,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>7262492b938b0e5079f6bfea2bba1062</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>e1423fb1-6b5b-4e21-b37c-6c85dd06e030</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1691,6 +1817,69 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=7262492b938b0e5079f6bfea2bba1062"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
+        <block display_value="">d517d2f8c3fb8250ee26b3edd4013119</block>
+        <comment>Increment leaderboard total competitor count</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Opponent and Criteria from Steam Game v2">ee62492b938b0e5079f6bfea2bba103e</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>variable</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>21</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:15:40</sys_created_on>
+        <sys_id>9d66da78c3fb8250ee26b3edd40131d6</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <ui_id>264ff237-4a37-47d1-8d4e-bf1a1fbb9a88</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9d66da78c3fb8250ee26b3edd40131d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9d66da78c3fb8250ee26b3edd40131d6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:16:47</sys_created_on>
+        <sys_id>e9a616f4c3fb8250ee26b3edd40131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:16:47</sys_updated_on>
+        <value/>
+        <variable display_value="competitorCount">4b56da78c3fb8250ee26b3edd401312d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d66da78c3fb8250ee26b3edd40131d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>9d66da78c3fb8250ee26b3edd40131d6</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:16:47</sys_created_on>
+        <sys_id>65a616f4c3fb8250ee26b3edd40131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:16:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_ee62492b938b0e5079f6bfea2bba103e</table>
+        <value>{{fd_transform:17cd7777-8839-47da-9f1c-a52681ee7a35}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ee62492b938b0e5079f6bfea2bba103e^id=9d66da78c3fb8250ee26b3edd40131d6"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9d66da78c3fb8250ee26b3edd40131d6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9d66da78c3fb8250ee26b3edd40131d6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">3b47c09493d3029079f6bfea2bba1017</block>
         <comment>Rank = 0</comment>
         <connected_to/>
@@ -1712,10 +1901,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-05 13:01:28</sys_created_on>
         <sys_id>a927005493d3029079f6bfea2bba1037</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>f542aa14-65b2-4d79-8b79-707cba6d466d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1762,10 +1951,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>b262492b938b0e5079f6bfea2bba105a</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>b138e73e-ce5b-4e99-9984-fe9ad2409acf</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1799,10 +1988,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 21:58:38</sys_created_on>
         <sys_id>f0abbcd6939fc21079f6bfea2bba100b</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
         <ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1875,10 +2064,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>f662492b938b0e5079f6bfea2bba105d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>52f0c84b-ac24-4548-bf8e-144af40605e1</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1950,10 +2139,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>f662492b938b0e5079f6bfea2bba107c</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>b93e063c-8ce6-4b6b-9f86-bf1e01445f73</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1987,10 +2176,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>fa62492b938b0e5079f6bfea2bba1078</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>289d64d0-f403-4b17-b453-a5d5824d3f6f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2062,10 +2251,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:24:58</sys_created_on>
         <sys_id>fe62492b938b0e5079f6bfea2bba1065</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:14</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <ui_id>663d7f8d-cc07-426b-b3a7-1f82642f54cf</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2075,8 +2264,125 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ee62492b938b0e5079f6bfea2bba103e^id=fe62492b938b0e5079f6bfea2bba1065"/>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=fe62492b938b0e5079f6bfea2bba1065"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=fe62492b938b0e5079f6bfea2bba1065"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ee62492b938b0e5079f6bfea2bba103e"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT INa6170c5493d3029079f6bfea2bba109d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT IN09a69278c3fb8250ee26b3edd4013105,cda69278c3fb8250ee26b3edd4013104"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ee62492b938b0e5079f6bfea2bba103e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e5d42d60-36e6-49d9-913f-61b6771cf677.Record.total_competitors}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:16:44</sys_created_on>
+        <sys_id>09a69278c3fb8250ee26b3edd4013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:16:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>17cd7777-8839-47da-9f1c-a52681ee7a35</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ee62492b938b0e5079f6bfea2bba103e</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>17cd7777-8839-47da-9f1c-a52681ee7a35</source_ui_id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:16:44</sys_created_on>
+        <sys_id>cda69278c3fb8250ee26b3edd4013104</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:41</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>930fe43d-447a-493b-a2a6-90b87f32645d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ee62492b938b0e5079f6bfea2bba103e^sys_idNOT IN4b56da78c3fb8250ee26b3edd401312d,a6170c5493d3029079f6bfea2bba109d"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=acaebac9-1356-4496-abb8-c6e01eca284e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>competitorCount</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Opponent and Criteria from Steam Game v2">ee62492b938b0e5079f6bfea2bba103e</model>
+        <model_id>ee62492b938b0e5079f6bfea2bba103e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_ee62492b938b0e5079f6bfea2bba103e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:15:31</sys_created_on>
+        <sys_id>4b56da78c3fb8250ee26b3edd401312d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2140,14 +2446,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-05 13:01:16</sys_created_on>
         <sys_id>a6170c5493d3029079f6bfea2bba109d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-05 13:05:55</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2247,7 +2553,7 @@
         <description/>
         <flow_priority/>
         <internal_name>create_opponent_and_criteria_from_steam_game_v2</internal_name>
-        <label_cache>[{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.Record","label":"17 - Look Up Record➛Faceoff Leaderboard Record","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"],"c2e562d4-0182-4b35-b75d-96328107e14c":["leaderboard"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.status","label":"17 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"28d0f0d5-a4f0-48a3-9e6b-a95386679228":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c2c1cfec-d156-480a-8e5d-174c5a0413ce.status","label":"19 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7d707383-c794-4b1e-b380-0a9260f4c6ad":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.opponent","label":"16 - Create or Update Record➛Opponent criterion Record➛Opponent","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"opponent","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"]}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.criterion","label":"16 - Create or Update Record➛Opponent criterion Record➛Criterion","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"criterion","usedInstances":{"e5d42d60-36e6-49d9-913f-61b6771cf677":["conditions"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar_url","label":"2 - Import Steam Game Opponent➛steam game➛Avatar URL","reference":"","reference_display":"Avatar URL","type":"url","base_type":"url","usedInstances":{"d6125345-c67b-45be-b270-823f34a7e5bb":["condition"]}},{"name":"subflow.correlation_id","label":"Input➛correlation id","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["appid"],"4afe46be-7955-4ed0-923d-0ac48f4bb957":["appid"]}},{"name":"9f58f0a5-ca6b-4ffb-b470-5598089f29ea.record","label":"13 - Create Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.weight","label":"9 - For Each➛tag➛weight","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["weight"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["weight"],"779a871f-5629-4c76-8cf9-f022f530e800":["weight"]}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.Record","label":"4 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"0e8a95b4-bbe8-42fb-a6c8-65464bbe941a":["record"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable","label":"2 - Import Steam Game Opponent➛steam game","reference":"x_43553_faceoff_steam_game","reference_display":"Steam Game","type":"reference","base_type":"reference","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"1e247688-3bf4-497d-bc8a-21faaedeca32":["opponent"],"185cdecf-038a-442e-b879-13776effaaad":["opponent-0"],"bad68df0-055e-43a4-82fa-a7e177cf62b7":["opponent"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["opponent"],"779a871f-5629-4c76-8cf9-f022f530e800":["opponent"],"c2e562d4-0182-4b35-b75d-96328107e14c":["opponent"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"106f986b-f5e0-462b-b340-026ae8944969"}},{"name":"subflow.data_source","label":"Input➛data source","reference":"x_43553_faceoff_opponent_primary_data_source","reference_display":"Opponent Primary Data Source","type":"reference","base_type":"reference","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["source"]}},{"name":"4afe46be-7955-4ed0-923d-0ac48f4bb957.tags","label":"5 - Import Steam Game Tags Criterion➛tags","reference_display":"tags","type":"array.object","base_type":"array.object","usedInstances":{"c273d194-7570-4ea4-b623-cbe0f977b9b7":["items"]},"attributes":{"sourceId":"ade109e4-3c8e-40e3-bf03-2af9263cb44d","child_name":"tag","uiUniqueId":"a6e318e4-f9d4-416f-a2c8-98aa33005767","uiTypeLabel":"Array.Object","co_type_name":"FDf8d4f40aa44b0650a935fd6d1b2bcf9d","child_label":"tag","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"88e40cf4-124c-4744-baf7-019c411468fc","uiType":"array.object","child_type":"object","child_uiUniqueId":"62337e70-45a9-44b3-a853-e621515add02"}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.name","label":"9 - For Each➛tag➛name","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"9f58f0a5-ca6b-4ffb-b470-5598089f29ea":["name"],"c3adefa2-ef6a-4d89-a295-c56a8884b821":["conditions"],"d7821126-841e-4f92-be10-46bc428e86b2":["conditions"]}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.status","label":"4 - Look Up Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","usedInstances":{}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.__action_status__.code","label":"4 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.status","label":"10 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"289d64d0-f403-4b17-b453-a5d5824d3f6f":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.Record","label":"10 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eec9886a-1c04-4e49-8185-517de449cef9.Record","label":"10 - Look Up Record➛Opponent criterion Record","reference":"x_43553_faceoff_opponent_criterion","reference_display":"Opponent criterion","type":"reference","base_type":"reference","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["record"]}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.error_message","label":"10 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar","label":"2 - Import Steam Game Opponent➛steam game➛Avatar","reference":"","reference_display":"Avatar","type":"user_image","base_type":"user_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}},{"name":"flow_variable.rank","label":"Flow Variables➛rank","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["rank"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["rank"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fc66f81-6abf-44cc-8b33-56fbddde9107"}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.preview_image","label":"2 - Import Steam Game Opponent➛steam game➛Preview image","reference":"","reference_display":"Preview image","type":"user_image","base_type":"user_image","parent_table_name":"x_43553_faceoff_steam_game","column_name":"preview_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}}]</label_cache>
+        <label_cache>[{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.preview_image","label":"2 - Import Steam Game Opponent➛steam game➛Preview image","reference":"","reference_display":"Preview image","type":"user_image","base_type":"user_image","parent_table_name":"x_43553_faceoff_steam_game","column_name":"preview_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}},{"name":"flow_variable.rank","label":"Flow Variables➛rank","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["rank"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["rank"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fc66f81-6abf-44cc-8b33-56fbddde9107"}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar","label":"2 - Import Steam Game Opponent➛steam game➛Avatar","reference":"","reference_display":"Avatar","type":"user_image","base_type":"user_image","usedInstances":{"52f0c84b-ac24-4548-bf8e-144af40605e1":["condition"]}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.error_message","label":"10 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"eec9886a-1c04-4e49-8185-517de449cef9.Record","label":"10 - Look Up Record➛Opponent criterion Record","reference":"x_43553_faceoff_opponent_criterion","reference_display":"Opponent criterion","type":"reference","base_type":"reference","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["record"]}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.Record","label":"10 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c3adefa2-ef6a-4d89-a295-c56a8884b821.status","label":"10 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"289d64d0-f403-4b17-b453-a5d5824d3f6f":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.__action_status__.code","label":"4 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.status","label":"4 - Look Up Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","usedInstances":{}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.name","label":"9 - For Each➛tag➛name","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"9f58f0a5-ca6b-4ffb-b470-5598089f29ea":["name"],"c3adefa2-ef6a-4d89-a295-c56a8884b821":["conditions"],"d7821126-841e-4f92-be10-46bc428e86b2":["conditions"]}},{"name":"4afe46be-7955-4ed0-923d-0ac48f4bb957.tags","label":"5 - Import Steam Game Tags Criterion➛tags","reference_display":"tags","type":"array.object","base_type":"array.object","usedInstances":{"c273d194-7570-4ea4-b623-cbe0f977b9b7":["items"]},"attributes":{"sourceId":"ade109e4-3c8e-40e3-bf03-2af9263cb44d","child_name":"tag","uiUniqueId":"a6e318e4-f9d4-416f-a2c8-98aa33005767","uiTypeLabel":"Array.Object","co_type_name":"FDf8d4f40aa44b0650a935fd6d1b2bcf9d","child_label":"tag","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"88e40cf4-124c-4744-baf7-019c411468fc","uiType":"array.object","child_type":"object","child_uiUniqueId":"62337e70-45a9-44b3-a853-e621515add02"}},{"name":"subflow.data_source","label":"Input➛data source","reference":"x_43553_faceoff_opponent_primary_data_source","reference_display":"Opponent Primary Data Source","type":"reference","base_type":"reference","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["source"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable","label":"2 - Import Steam Game Opponent➛steam game","reference":"x_43553_faceoff_steam_game","reference_display":"Steam Game","type":"reference","base_type":"reference","usedInstances":{"fbaee221-5f98-4ef3-88e6-7b76990d51c0":["conditions"],"eec9886a-1c04-4e49-8185-517de449cef9":["conditions"],"1e247688-3bf4-497d-bc8a-21faaedeca32":["opponent"],"185cdecf-038a-442e-b879-13776effaaad":["opponent-0"],"bad68df0-055e-43a4-82fa-a7e177cf62b7":["opponent"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["opponent"],"779a871f-5629-4c76-8cf9-f022f530e800":["opponent"],"c2e562d4-0182-4b35-b75d-96328107e14c":["opponent"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"106f986b-f5e0-462b-b340-026ae8944969"}},{"name":"d7821126-841e-4f92-be10-46bc428e86b2.Record","label":"4 - Look Up Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"0e8a95b4-bbe8-42fb-a6c8-65464bbe941a":["record"]}},{"name":"c273d194-7570-4ea4-b623-cbe0f977b9b7.item.weight","label":"9 - For Each➛tag➛weight","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"a4ec3444-e2ef-4a27-8911-50f522207def":["weight"],"06e3387f-f976-4359-a872-47fa8c6e5f98":["weight"],"779a871f-5629-4c76-8cf9-f022f530e800":["weight"]}},{"name":"9f58f0a5-ca6b-4ffb-b470-5598089f29ea.record","label":"13 - Create Record➛Criterion Record","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","usedInstances":{"779a871f-5629-4c76-8cf9-f022f530e800":["criterion"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.correlation_id","label":"Input➛correlation id","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"911109f7-40d2-4823-b68b-5747d0cd78e6":["appid"],"4afe46be-7955-4ed0-923d-0ac48f4bb957":["appid"]}},{"name":"911109f7-40d2-4823-b68b-5747d0cd78e6.variable.avatar_url","label":"2 - Import Steam Game Opponent➛steam game➛Avatar URL","reference":"","reference_display":"Avatar URL","type":"url","base_type":"url","usedInstances":{"d6125345-c67b-45be-b270-823f34a7e5bb":["condition"]}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.criterion","label":"16 - Create or Update Record➛Opponent criterion Record➛Criterion","reference":"x_43553_faceoff_criterion","reference_display":"Criterion","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"criterion","usedInstances":{"e5d42d60-36e6-49d9-913f-61b6771cf677":["conditions"]}},{"name":"06e3387f-f976-4359-a872-47fa8c6e5f98.record.opponent","label":"16 - Create or Update Record➛Opponent criterion Record➛Opponent","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_opponent_criterion","column_name":"opponent","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"]}},{"name":"c2c1cfec-d156-480a-8e5d-174c5a0413ce.status","label":"19 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7d707383-c794-4b1e-b380-0a9260f4c6ad":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.status","label":"17 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"28d0f0d5-a4f0-48a3-9e6b-a95386679228":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.Record","label":"17 - Look Up Record➛Faceoff Leaderboard Record","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","usedInstances":{"c2c1cfec-d156-480a-8e5d-174c5a0413ce":["conditions"],"c2e562d4-0182-4b35-b75d-96328107e14c":["leaderboard"],"eec39f0a-3cb1-4869-9a47-10d653f81620":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5d42d60-36e6-49d9-913f-61b6771cf677.Record.total_competitors","label":"17 - Look Up Record➛Faceoff Leaderboard Record➛Total competitors","reference":"","reference_display":"Total competitors","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_faceoff_leaderboard","column_name":"total_competitors","usedInstances":{"264ff237-4a37-47d1-8d4e-bf1a1fbb9a88":["variable-0"]}},{"name":"flow_variable.variable","label":"Flow Variables➛competitorCount","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"eec39f0a-3cb1-4869-9a47-10d653f81620":["total_competitors"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"acaebac9-1356-4496-abb8-c6e01eca284e"}}]</label_cache>
         <master>true</master>
         <name>Create Opponent and Criteria from Steam Game v2</name>
         <natlang/>
@@ -2264,7 +2570,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>456309ab938b0e5079f6bfea2bba105c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2272,7 +2578,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:11</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=456309ab938b0e5079f6bfea2bba105c"/>
@@ -2357,14 +2663,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:13</sys_created_on>
         <sys_id>496309ab938b0e5079f6bfea2bba105e</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:09</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2441,14 +2747,14 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:13</sys_created_on>
         <sys_id>496309ab938b0e5079f6bfea2bba1083</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2548,7 +2854,7 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cd6309ab938b0e5079f6bfea2bba109c"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=456309ab938b0e5079f6bfea2bba105c"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN040e709e939fc21079f6bfea2bba105c,0c0e709e939fc21079f6bfea2bba106e,1d6349ab938b0e5079f6bfea2bba1025,3d6349ab938b0e5079f6bfea2bba10a3,616349ab938b0e5079f6bfea2bba1096,696349ab938b0e5079f6bfea2bba1054,ad6349ab938b0e5079f6bfea2bba1073,ad6349ab938b0e5079f6bfea2bba1086,c40e709e939fc21079f6bfea2bba1076,e16349ab938b0e5079f6bfea2bba1090"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN040e709e939fc21079f6bfea2bba105c,0c0e709e939fc21079f6bfea2bba106e,1d6349ab938b0e5079f6bfea2bba1025,3d6349ab938b0e5079f6bfea2bba10a3,616349ab938b0e5079f6bfea2bba1096,696349ab938b0e5079f6bfea2bba1054,971796f8c3fb8250ee26b3edd40131f6,ad6349ab938b0e5079f6bfea2bba1073,ad6349ab938b0e5079f6bfea2bba1086,c40e709e939fc21079f6bfea2bba1076,e16349ab938b0e5079f6bfea2bba1090"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -2565,10 +2871,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:08:57</sys_created_on>
         <sys_id>040e709e939fc21079f6bfea2bba105c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>e5d42d60-36e6-49d9-913f-61b6771cf677</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=040e709e939fc21079f6bfea2bba105c"/>
@@ -2655,10 +2961,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:08:57</sys_created_on>
         <sys_id>0c0e709e939fc21079f6bfea2bba106e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>c2c1cfec-d156-480a-8e5d-174c5a0413ce</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c0e709e939fc21079f6bfea2bba106e"/>
@@ -2745,10 +3051,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>1d6349ab938b0e5079f6bfea2bba1025</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:49</sys_updated_on>
         <ui_id>911109f7-40d2-4823-b68b-5747d0cd78e6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1d6349ab938b0e5079f6bfea2bba1025"/>
@@ -2823,10 +3129,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:16</sys_created_on>
         <sys_id>3d6349ab938b0e5079f6bfea2bba10a3</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>06e3387f-f976-4359-a872-47fa8c6e5f98</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3d6349ab938b0e5079f6bfea2bba10a3"/>
@@ -2887,10 +3193,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:16</sys_created_on>
         <sys_id>616349ab938b0e5079f6bfea2bba1096</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>779a871f-5629-4c76-8cf9-f022f530e800</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=616349ab938b0e5079f6bfea2bba1096"/>
@@ -2951,10 +3257,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:15</sys_created_on>
         <sys_id>696349ab938b0e5079f6bfea2bba1054</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>bad68df0-055e-43a4-82fa-a7e177cf62b7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=696349ab938b0e5079f6bfea2bba1054"/>
@@ -2976,6 +3282,82 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Update leaderboard competitor count</comment>
+        <display_text/>
+        <flow display_value="Create Opponent and Criteria from Steam Game v2">456309ab938b0e5079f6bfea2bba105c</flow>
+        <generation_source/>
+        <order>23</order>
+        <parent_ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:48</sys_created_on>
+        <sys_id>971796f8c3fb8250ee26b3edd40131f6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
+        <ui_id>eec39f0a-3cb1-4869-9a47-10d653f81620</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=971796f8c3fb8250ee26b3edd40131f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>971796f8c3fb8250ee26b3edd40131f6</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:48</sys_created_on>
+        <sys_id>df1796f8c3fb8250ee26b3edd40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:48</sys_updated_on>
+        <value>x_43553_faceoff_faceoff_leaderboard</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=971796f8c3fb8250ee26b3edd40131f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>971796f8c3fb8250ee26b3edd40131f6</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:48</sys_created_on>
+        <sys_id>9b1796f8c3fb8250ee26b3edd40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{e5d42d60-36e6-49d9-913f-61b6771cf677.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>971796f8c3fb8250ee26b3edd40131f6</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:48</sys_created_on>
+        <sys_id>d71796f8c3fb8250ee26b3edd40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>971796f8c3fb8250ee26b3edd40131f6</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:48</sys_created_on>
+        <sys_id>5f1796f8c3fb8250ee26b3edd40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>total_competitors={{flow_variable.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=971796f8c3fb8250ee26b3edd40131f6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=971796f8c3fb8250ee26b3edd40131f6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Import Steam Game Tags Criterion">7ba41d629307c65079f6bfea2bba1086</action_type>
         <action_type_parent/>
         <attributes/>
@@ -2989,10 +3371,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:15</sys_created_on>
         <sys_id>ad6349ab938b0e5079f6bfea2bba1073</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>4afe46be-7955-4ed0-923d-0ac48f4bb957</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ad6349ab938b0e5079f6bfea2bba1073"/>
@@ -3041,10 +3423,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:15</sys_created_on>
         <sys_id>ad6349ab938b0e5079f6bfea2bba1086</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>c3adefa2-ef6a-4d89-a295-c56a8884b821</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ad6349ab938b0e5079f6bfea2bba1086"/>
@@ -3151,16 +3533,16 @@
         <display_text/>
         <flow display_value="Create Opponent and Criteria from Steam Game v2">456309ab938b0e5079f6bfea2bba105c</flow>
         <generation_source/>
-        <order>21</order>
+        <order>22</order>
         <parent_ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:08:57</sys_created_on>
         <sys_id>c40e709e939fc21079f6bfea2bba1076</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:11</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>c2e562d4-0182-4b35-b75d-96328107e14c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c40e709e939fc21079f6bfea2bba1076"/>
@@ -3221,10 +3603,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:16</sys_created_on>
         <sys_id>e16349ab938b0e5079f6bfea2bba1090</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>9f58f0a5-ca6b-4ffb-b470-5598089f29ea</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e16349ab938b0e5079f6bfea2bba1090"/>
@@ -3270,7 +3652,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=e16349ab938b0e5079f6bfea2bba1090"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e16349ab938b0e5079f6bfea2bba1090"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=456309ab938b0e5079f6bfea2bba105c"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN140e709e939fc21079f6bfea2bba10c8,456309ab938b0e5079f6bfea2bba10d0,500e709e939fc21079f6bfea2bba10c4,516309ab938b0e5079f6bfea2bba10d8,556309ab938b0e5079f6bfea2bba10dc,556309ab938b0e5079f6bfea2bba10df,5f649a2c9393829079f6bfea2bba1074,67649a2c9393829079f6bfea2bba108a,916309ab938b0e5079f6bfea2bba10e3,996309ab938b0e5079f6bfea2bba10d3,9d6309ab938b0e5079f6bfea2bba10e6,9d6309ab938b0e5079f6bfea2bba10e9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN140e709e939fc21079f6bfea2bba10c8,456309ab938b0e5079f6bfea2bba10d0,500e709e939fc21079f6bfea2bba10c4,516309ab938b0e5079f6bfea2bba10d8,556309ab938b0e5079f6bfea2bba10dc,556309ab938b0e5079f6bfea2bba10df,5f649a2c9393829079f6bfea2bba1074,67649a2c9393829079f6bfea2bba108a,916309ab938b0e5079f6bfea2bba10e3,996309ab938b0e5079f6bfea2bba10d3,9d6309ab938b0e5079f6bfea2bba10e6,9d6309ab938b0e5079f6bfea2bba10e9,ef17d6f8c3fb8250ee26b3edd4013142"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">31fdbc5e939fc21079f6bfea2bba1038</block>
@@ -3295,10 +3677,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:08:58</sys_created_on>
         <sys_id>140e709e939fc21079f6bfea2bba10c8</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:11</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3370,10 +3752,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>456309ab938b0e5079f6bfea2bba10d0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:49</sys_updated_on>
         <ui_id>b138e73e-ce5b-4e99-9984-fe9ad2409acf</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3407,10 +3789,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-11 22:08:58</sys_created_on>
         <sys_id>500e709e939fc21079f6bfea2bba10c4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>28d0f0d5-a4f0-48a3-9e6b-a95386679228</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3482,10 +3864,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>516309ab938b0e5079f6bfea2bba10d8</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>e1423fb1-6b5b-4e21-b37c-6c85dd06e030</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3533,10 +3915,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>556309ab938b0e5079f6bfea2bba10dc</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>663d7f8d-cc07-426b-b3a7-1f82642f54cf</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3570,10 +3952,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>556309ab938b0e5079f6bfea2bba10df</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>c273d194-7570-4ea4-b623-cbe0f977b9b7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3619,10 +4001,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-06 17:57:12</sys_created_on>
         <sys_id>5f649a2c9393829079f6bfea2bba1074</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>f542aa14-65b2-4d79-8b79-707cba6d466d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3669,10 +4051,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-06 17:57:12</sys_created_on>
         <sys_id>67649a2c9393829079f6bfea2bba108a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>23986448-dad6-41da-9cbe-06358cb9dbd2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3733,10 +4115,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>916309ab938b0e5079f6bfea2bba10e3</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>289d64d0-f403-4b17-b453-a5d5824d3f6f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3809,10 +4191,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>996309ab938b0e5079f6bfea2bba10d3</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>52f0c84b-ac24-4548-bf8e-144af40605e1</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3884,10 +4266,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>9d6309ab938b0e5079f6bfea2bba10e6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:10</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>b93e063c-8ce6-4b6b-9f86-bf1e01445f73</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3912,7 +4294,7 @@
         <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>22</order>
+        <order>24</order>
         <outputs_assigned>opponent</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
@@ -3921,10 +4303,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-03 09:29:14</sys_created_on>
         <sys_id>9d6309ab938b0e5079f6bfea2bba10e9</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:07:11</sys_updated_on>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
         <ui_id>185cdecf-038a-442e-b879-13776effaaad</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3946,8 +4328,105 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9d6309ab938b0e5079f6bfea2bba10e9"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9d6309ab938b0e5079f6bfea2bba10e9"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=456309ab938b0e5079f6bfea2bba105c"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN4b645a2c9393829079f6bfea2bba10dd"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d517d2f8c3fb8250ee26b3edd4013119</block>
+        <comment>Increment leaderboard total competitor count</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Opponent and Criteria from Steam Game v2">456309ab938b0e5079f6bfea2bba105c</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>variable</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>21</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7d707383-c794-4b1e-b380-0a9260f4c6ad</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:49</sys_created_on>
+        <sys_id>ef17d6f8c3fb8250ee26b3edd4013142</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
+        <ui_id>264ff237-4a37-47d1-8d4e-bf1a1fbb9a88</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ef17d6f8c3fb8250ee26b3edd4013142"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ef17d6f8c3fb8250ee26b3edd4013142</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:49</sys_created_on>
+        <sys_id>6f17d6f8c3fb8250ee26b3edd4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:49</sys_updated_on>
+        <value/>
+        <variable display_value="competitorCount">ba1796f8c3fb8250ee26b3edd401314f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ef17d6f8c3fb8250ee26b3edd4013142"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>ef17d6f8c3fb8250ee26b3edd4013142</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:49</sys_created_on>
+        <sys_id>eb17d6f8c3fb8250ee26b3edd4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_456309ab938b0e5079f6bfea2bba105c</table>
+        <value>{{fd_transform:17cd7777-8839-47da-9f1c-a52681ee7a35}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_456309ab938b0e5079f6bfea2bba105c^id=ef17d6f8c3fb8250ee26b3edd4013142"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ef17d6f8c3fb8250ee26b3edd4013142"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ef17d6f8c3fb8250ee26b3edd4013142"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN3f17d6f8c3fb8250ee26b3edd40131bc,f317d6f8c3fb8250ee26b3edd40131bd"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>456309ab938b0e5079f6bfea2bba105c</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>17cd7777-8839-47da-9f1c-a52681ee7a35</source_ui_id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:50</sys_created_on>
+        <sys_id>3f17d6f8c3fb8250ee26b3edd40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>930fe43d-447a-493b-a2a6-90b87f32645d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>456309ab938b0e5079f6bfea2bba105c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e5d42d60-36e6-49d9-913f-61b6771cf677.Record.total_competitors}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:50</sys_created_on>
+        <sys_id>f317d6f8c3fb8250ee26b3edd40131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:50</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>17cd7777-8839-47da-9f1c-a52681ee7a35</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=456309ab938b0e5079f6bfea2bba105c^sys_idNOT IN4b645a2c9393829079f6bfea2bba10dd,ba1796f8c3fb8250ee26b3edd401314f"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4019,6 +4498,89 @@
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
         <sys_updated_on>2024-07-06 17:57:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=acaebac9-1356-4496-abb8-c6e01eca284e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>competitorCount</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Opponent and Criteria from Steam Game v2">456309ab938b0e5079f6bfea2bba105c</model>
+        <model_id>456309ab938b0e5079f6bfea2bba105c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_456309ab938b0e5079f6bfea2bba105c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-01 09:18:47</sys_created_on>
+        <sys_id>ba1796f8c3fb8250ee26b3edd401314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-01 09:18:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

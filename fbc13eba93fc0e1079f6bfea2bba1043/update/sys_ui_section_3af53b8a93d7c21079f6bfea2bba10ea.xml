@@ -4,13 +4,13 @@
             <element>tags</element>
             <position>0</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-28 03:10:59</sys_created_on>
-            <sys_id>d49c146bc323ca10ee26b3edd4013194</sys_id>
+            <sys_created_on>2024-08-04 04:01:02</sys_created_on>
+            <sys_id>7d2ba071c3fbc650ee26b3edd4013193</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="More details" display_value="More details" name="x_43553_faceoff_steam_game" sys_domain="global" view="Default view">3af53b8a93d7c21079f6bfea2bba10ea</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-28 03:10:59</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:01:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,27 +18,41 @@
             <element>description</element>
             <position>1</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-28 03:10:59</sys_created_on>
-            <sys_id>dc9c146bc323ca10ee26b3edd4013194</sys_id>
+            <sys_created_on>2024-08-04 04:01:02</sys_created_on>
+            <sys_id>752ba071c3fbc650ee26b3edd4013194</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="More details" display_value="More details" name="x_43553_faceoff_steam_game" sys_domain="global" view="Default view">3af53b8a93d7c21079f6bfea2bba10ea</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-28 03:10:59</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:01:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source_url</element>
+            <position>2</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 04:01:02</sys_created_on>
+            <sys_id>7d2ba071c3fbc650ee26b3edd4013194</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="More details" display_value="More details" name="x_43553_faceoff_steam_game" sys_domain="global" view="Default view">3af53b8a93d7c21079f6bfea2bba10ea</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 04:01:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>more_details_url</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-28 03:10:59</sys_created_on>
-            <sys_id>d49c146bc323ca10ee26b3edd4013195</sys_id>
+            <sys_created_on>2024-08-04 04:01:02</sys_created_on>
+            <sys_id>752ba071c3fbc650ee26b3edd4013195</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="More details" display_value="More details" name="x_43553_faceoff_steam_game" sys_domain="global" view="Default view">3af53b8a93d7c21079f6bfea2bba10ea</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-28 03:10:59</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:01:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -3,25 +3,25 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>true</is_plain_text>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:33</sys_created_on>
-            <sys_id>721fa778932b425079f6bfea2bba109a</sys_id>
+            <sys_created_on>2024-08-04 04:07:19</sys_created_on>
+            <sys_id>719c6035c3fbc650ee26b3edd40131c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:33</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:19</sys_updated_on>
             <text>Choose the better game (1 or 2) based upon the criterion.</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>721fa778932b425079f6bfea2bba109a</element>
+            <element>719c6035c3fbc650ee26b3edd40131c8</element>
             <position>0</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>8b1fa778932b425079f6bfea2bba10a3</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>359ca035c3fbc650ee26b3edd4013143</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -29,13 +29,13 @@
             <element>leaderboard</element>
             <position>1</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>831fa778932b425079f6bfea2bba10a4</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>3d9ca035c3fbc650ee26b3edd4013143</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -43,13 +43,13 @@
             <element>.begin_split</element>
             <position>2</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>8b1fa778932b425079f6bfea2bba10a4</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>359ca035c3fbc650ee26b3edd4013144</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -57,167 +57,195 @@
             <element>opponent_1</element>
             <position>3</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>031fa778932b425079f6bfea2bba10be</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>3d9ca035c3fbc650ee26b3edd4013144</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent_1.release</element>
+            <position>4</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>359ca035c3fbc650ee26b3edd4013145</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_1.avatar</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>0b1fa778932b425079f6bfea2bba10be</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>3d9ca035c3fbc650ee26b3edd4013145</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_1.preview_image</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>031fa778932b425079f6bfea2bba10bf</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>359ca035c3fbc650ee26b3edd4013146</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_1.description</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>0b1fa778932b425079f6bfea2bba10bf</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>3d9ca035c3fbc650ee26b3edd4013146</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>opponent_1.website</element>
-            <position>7</position>
+            <element>opponent_1.source_url</element>
+            <position>8</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>031fa778932b425079f6bfea2bba10c0</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>359ca035c3fbc650ee26b3edd4013147</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>winner</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>0b1fa778932b425079f6bfea2bba10c0</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>3d9ca035c3fbc650ee26b3edd4013147</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>031fa778932b425079f6bfea2bba10c1</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>359ca035c3fbc650ee26b3edd4013148</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_2</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>0b1fa778932b425079f6bfea2bba10c1</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>719ca035c3fbc650ee26b3edd401316e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opponent_2.release</element>
+            <position>12</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>799ca035c3fbc650ee26b3edd401316e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_2.avatar</element>
-            <position>11</position>
+            <position>13</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>031fa778932b425079f6bfea2bba10c2</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>719ca035c3fbc650ee26b3edd401316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_2.preview_image</element>
-            <position>12</position>
+            <position>14</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>0b1fa778932b425079f6bfea2bba10c2</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>799ca035c3fbc650ee26b3edd401316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_2.description</element>
-            <position>13</position>
+            <position>15</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>031fa778932b425079f6bfea2bba10c3</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>719ca035c3fbc650ee26b3edd4013170</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>opponent_2.website</element>
-            <position>14</position>
+            <element>opponent_2.source_url</element>
+            <position>16</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-20 05:27:34</sys_created_on>
-            <sys_id>0b1fa778932b425079f6bfea2bba10c3</sys_id>
+            <sys_created_on>2024-08-04 04:07:20</sys_created_on>
+            <sys_id>799ca035c3fbc650ee26b3edd4013170</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Faceoff" display_value="Faceoff" name="x_43553_faceoff_faceoff_instance" sys_domain="global" view="Default view">b423163d935b421079f6bfea2bba1045</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-20 05:27:34</sys_updated_on>
+            <sys_updated_on>2024-08-04 04:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

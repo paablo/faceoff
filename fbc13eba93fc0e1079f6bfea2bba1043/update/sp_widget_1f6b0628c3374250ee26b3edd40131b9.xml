@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $rootScope, $location, spUtil, $timeout, spAriaFocusManager) {
+	var canNavigate = true;
+	if ($scope.data.dataTableWidget)
+		angular.extend($scope.data.dataTableWidget.options, $scope.options);
+
+	$scope.$on('data_table.click', callDataClick);
+
+	$scope.$on('select2.ready', function(e, $el){
+		if ($scope.data.invalid_table){
+			e.stopPropagation();
+			$el.select2('open');
+		}
+	})
+
+	$scope.selectedTable = {
+		displayValue: $scope.data.table,
+		value: $scope.data.table
+	}
+
+	function resetParams(){
+		delete $scope.data.p;
+		delete $scope.data.o;
+		delete $scope.data.d;
+		delete $scope.data.q;
+		delete $scope.data.table;
+	}
+
+	$scope.onChange = function() {
+		resetParams();
+		$scope.data.table = $scope.selectedTable.value;
+		$scope.data.fields = "";  // reset
+		$scope.data.invalid_table = false;
+		getData(true);
+	}
+	
+	function callDataClick(e, parms) {											
+			var oid = $location.search().id;
+			var p = $scope.data.page_id || 'form';
+			var s = {id: p, table: parms.table, sys_id: parms.sys_id, view: $scope.data.view};
+			if (oid == p) {
+				s.spa = 1;
+				var t = $location.search();
+				s = angular.extend(t, s);
+				$rootScope.$broadcast('$sp.list.click', s);
+			}
+
+			var newURL = $location.search(s);
+			spAriaFocusManager.navigateToLink(newURL.url());										
+	}
+
+	function getData(updateUrl) {
+		var f = $scope.data;
+		spUtil.update($scope).then(function(data) {
+				$scope.data.dataTableWidget = null;
+				$timeout(function(){
+					$scope.data.dataTableWidget = data.dataTableWidget;
+					angular.extend($scope.data.dataTableWidget.options, $scope.options);
+					if (updateUrl)
+						setPermalink(f.table);
+				});
+		});
+	}
+
+	function setPermalink(table) {
+		$scope.ignoreLocationChange = true;
+		var searchParms = $location.search();
+		var search = {
+			spa: 1,
+			table: table,
+			id: searchParms.id
+		};
+		$location.search(search);
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>fo-my-unseeded-ranked</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  scope.$on('spModel.uiActionComplete', function(event, response) {
+	scope.c.server.update().then(function(response) {
+		if (response.redirectURL) controller.redirect(response.redirectURL);
+	});
+});
+}]]></link>
+        <name>fo-my-unseeded-ranked</name>
+        <option_schema>[{"name":"table","section":"other","label":"Table","type":"string"},{"name":"fields","section":"other","label":"FIelds","type":"string"},{"name":"default_filter","section":"other","label":"Default filter","type":"string"},{"name":"headertitle","section":"other","label":"Header title","type":"string"},{"name":"related_field","section":"other","label":"Related field","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function($sp, input, data, options, gs) {
+
+var lea
+	if (input) {
+		data.sys_id = input.sys_id;
+	} else {
+		data.sys_id = $sp.getParameter('sys_id');
+	}
+	
+
+	
+
+	function getUnseededCompetitorSysIds(leaderboardSysId) {
+		// get your unseeded competitors
+		// cannot exporess join query as encoded qry, so doing it here first
+		var pageid = $sp.getParameter('id');
+		var yourUnseededLeaderboardRankings = []
+		var leaderBoardRankingGr = new GlideRecord('x_43553_faceoff_leaderboard_ranking')
+		leaderBoardRankingGr.addQuery('ranked','false');
+		
+		//exclude leaderboard filter if not on leaderboard page
+		if (!gs.nil(leaderboardSysId))
+			leaderBoardRankingGr.addQuery('leaderboard',data.sys_id);
+		
+		var jQry = leaderBoardRankingGr.addJoinQuery('x_43553_faceoff_opponent_judgement_eligibility', 'opponent', 'opponent');
+		jQry.addCondition('judge', FaceOffUtils.GetCurrentJudgeSysId());
+		leaderBoardRankingGr.query();
+		while (leaderBoardRankingGr.next()){
+			yourUnseededLeaderboardRankings.push(leaderBoardRankingGr.getValue('sys_id'));
+		}
+		
+		return yourUnseededLeaderboardRankings;
+	}
+	
+	var pageid = $sp.getParameter("id");
+	var leaderboardSysId;
+	if (pageid == "leaderboard") {
+		leaderboardSysId = data.sys_id;
+	}
+	
+  options.table = "x_43553_faceoff_leaderboard_ranking";
+	//options.fields =  "rank,opponent.name,opponent.avatar,elo"
+	options.o= 'faceoff_count';
+	options.d= 'faceoff_count';
+	options.filter="sys_idIN" + getUnseededCompetitorSysIds(leaderboardSysId);
+	options.window_size=20;
+	options.view = 'default';
+	options.useInstanceTitle = true; // to make sure Data Table widget uses headerTitle always
+	options.headerTitle = "My unseeded competitors";
+	options.show_breadcrumbs=false;
+	options.filterACLs = true;
+	options.page_id = 'fo-form';
+
+data.widget = $sp.getWidget('widget-data-table', options);
+
+})($sp, input, data, options, gs);
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-31 13:49:16</sys_created_on>
+        <sys_id>1f6b0628c3374250ee26b3edd40131b9</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>fo-my-unseeded-ranked</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_widget_1f6b0628c3374250ee26b3edd40131b9</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-04 02:12:42</sys_updated_on>
+        <template><![CDATA[<div>
+<sp-widget widget="data.widget"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>

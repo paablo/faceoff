@@ -3,7 +3,7 @@
         <element label="Criterion" max_length="32" name="criterion" reference="x_43553_faceoff_criterion" type="reference"/>
         <element label="Algorithm" max_length="32" name="algorithm" reference="x_43553_faceoff_algorithm_1" type="reference"/>
         <element label="Primary opponent" mandatory="true" max_length="32" name="primary_opponent" reference="x_43553_faceoff_opponent" type="reference"/>
-        <element label="Battle instance" max_length="32" name="battle_instance" reference="x_43553_faceoff_faceoff_instance" type="reference"/>
+        <element label="Battle instance" max_length="32" name="battle_instance" reference="x_43553_faceoff_faceoff_instance" reference_cascade_rule="delete" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="algorithm"/>
