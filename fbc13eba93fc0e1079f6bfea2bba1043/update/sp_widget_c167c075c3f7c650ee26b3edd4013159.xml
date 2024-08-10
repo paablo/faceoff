@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function($scope, $rootScope, $location, spUtil, $timeout, spAriaFocusManager) {
-	
-	
-}]]></client_script>
+        <client_script><![CDATA[api.controller=function($location,spAriaFocusManager,$scope) {
+  /* widget controller */
+  var c = this;
+	// Go to leaderboard record
+		$scope.$on('data_table.click', function(e, parms){
+			var s = {
+				id: "leaderboard", 
+				table: "x_43553_faceoff_faceoff_leaderboard", 
+				sys_id: parms.record.leaderboard.value, 
+				view: 'sp'
+			};
+			console.log('parms:');
+			console.log(parms);
+			var newURL = $location.search(s);
+			spAriaFocusManager.navigateToLink(newURL.url());
+	});
+
+};]]></client_script>
         <controller_as>c</controller_as>
         <css/>
         <data_table>sp_instance</data_table>
@@ -16,11 +30,7 @@
         <id>fo-leaderboard-completion</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {
-  scope.$on('spModel.uiActionComplete', function(event, response) {
-	scope.c.server.update().then(function(response) {
-		if (response.redirectURL) controller.redirect(response.redirectURL);
-	});
-});
+  
 }]]></link>
         <name>fo-leaderboard-completion</name>
         <option_schema>[{"name":"table","section":"other","label":"Table","type":"string"},{"name":"fields","section":"other","label":"FIelds","type":"string"},{"name":"default_filter","section":"other","label":"Default filter","type":"string"},{"name":"headertitle","section":"other","label":"Header title","type":"string"},{"name":"related_field","section":"other","label":"Related field","type":"string"}]</option_schema>
@@ -37,7 +47,8 @@
 		data.table = $sp.getParameter('table');
 	}
 
-	var filter = "judge=" + FaceOffUtils.GetCurrentJudgeSysId();
+	var filter = "judge=" + FaceOffUtils.GetCurrentJudgeSysId() +"^my_total_count>=2";
+	//var filter = "my_total_count>=2";
 	if (data.table == 'x_43553_faceoff_faceoff_leaderboard') {
 		filter = filter + "^leaderboard=" +data.sys_id;
 	} 
@@ -65,14 +76,14 @@ data.widget = $sp.getWidget('widget-data-table', options);
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-08-04 01:24:47</sys_created_on>
         <sys_id>c167c075c3f7c650ee26b3edd4013159</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>fo-leaderboard-completion</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy/>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sp_widget_c167c075c3f7c650ee26b3edd4013159</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-08-04 01:40:06</sys_updated_on>
+        <sys_updated_on>2024-08-08 13:05:13</sys_updated_on>
         <template><![CDATA[<div>
 <sp-widget widget="data.widget"></sp-widget>
 </div>]]></template>

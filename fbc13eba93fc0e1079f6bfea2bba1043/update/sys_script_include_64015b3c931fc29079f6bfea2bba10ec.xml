@@ -158,11 +158,16 @@ FaceOffUtils.prototype = {
         opponentCriteriaGr.setLimit(1);
         opponentCriteriaGr.query();
         if (opponentCriteriaGr.next()) {
-            return this.faceOff(opponentCriteriaGr);
+            nextFaceOffGr = this.faceOff(opponentCriteriaGr);
         }
 
-        // if nothing found, go back to criterion
-        return criterionGr;
+        if (gs.nil(nextFaceOffGr)) {
+			gs.addInfoMessage("Could not find any matches. Finding random games to rank instead...");
+			var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
+			nextFaceOffGr = this.faceOff(opponentsCriterionGr);
+		}
+		
+        return nextFaceOffGr;
     },
 
     startFaceOffFromOpponentSysId: function(opponentSysId) {
@@ -230,28 +235,59 @@ FaceOffUtils.prototype = {
 
     faceOff: function(opponentCriterionGr) {
         var faceOffGr;
-        // get opponent criterion
 
-        var inputs = {};
-        inputs['opponent_criterion'] = opponentCriterionGr; // GlideRecord of table: x_43553_faceoff_opponent_criterion 
-        inputs['algorithm'] = this.algoGr;
-        inputs['judge'] = this.judgeGr; // GlideRecord of table: x_43553_faceoff_judge 
-
-        // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
         try {
-            var result = sn_fd.FlowAPI.getRunner().subflow('x_43553_faceoff.faceoff').inForeground().withInputs(inputs).run();
-            var outputs = result.getOutputs();
-            var successful = outputs['successful'];
-            if (successful) {
+            var outputs = this._faceOff(opponentCriterionGr);
+			var hasMatch = outputs['successful'];
+            if (hasMatch) {
                 faceOffGr = outputs['faceoff']; // Reference
-            }
+            } else {
+				var opponentSelectionInstanceGr = outputs['selections'];
+				faceOffGr = this.tryAllMatches(opponentSelectionInstanceGr);		
+			}
         } catch (e) {
-            gs.addErrorMessage('Failed to initiate faceoff. Please try another opponent or criterion.');
+			var errMsg = 'Failed to initiate faceoff. Please try another opponent or criterion. Error: ' + e.toString();
+            gs.addErrorMessage(errMsg);
+			gs.error(errMsg + ":" + e);
             return opponentCriterionGr;
         }
 
         return faceOffGr;
     },
+
+	tryAllMatches: function(opponentSelectionInstanceGr) {
+		var faceOffGr;
+		var hasMatch;
+		// try again against next eligible result
+		// get all possible matches by doing a faceoff for each opponent
+		var opponentMatchesGr = new GlideRecord('x_43553_faceoff_opponent_selection_ranking');
+		opponentMatchesGr.addEncodedQuery('opponent_selecion_instance=' + opponentSelectionInstanceGr.getValue('sys_id'));
+		opponentMatchesGr.query();
+		while(opponentMatchesGr.next()) {
+			var nextOpponentCriterionGr = this.getOpponentCriteria(
+				opponentMatchesGr.getValue('selected_opponent'),
+				opponentSelectionInstanceGr.getValue('criterion')
+			);
+			outputs = this._faceOff(nextOpponentCriterionGr);
+			hasMatch = outputs['successful'];
+			if (hasMatch) {
+				faceOffGr = outputs['faceoff']; 
+				break;
+			}
+		}
+		return faceOffGr;
+	},
+	
+	_faceOff: function(opponentCriterionGr) {
+		var inputs = {};
+        inputs['opponent_criterion'] = opponentCriterionGr; // GlideRecord of table: x_43553_faceoff_opponent_criterion 
+        inputs['algorithm'] = this.algoGr;
+        inputs['judge'] = this.judgeGr; // GlideRecord of table: x_43553_faceoff_judge 
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_43553_faceoff.faceoff').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+
+		return outputs;
+	},
 
     getNextFaceoff: function(opponentSysId, criteriaSysId) {
         var opponentCriterionGr = this.getOpponentCriteria(opponentSysId, criteriaSysId);
@@ -270,13 +306,13 @@ FaceOffUtils.prototype = {
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 17:01:50</sys_created_on>
         <sys_id>64015b3c931fc29079f6bfea2bba10ec</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>FaceOffUtils</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_script_include_64015b3c931fc29079f6bfea2bba10ec</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-08-04 03:51:04</sys_updated_on>
+        <sys_updated_on>2024-08-07 14:53:01</sys_updated_on>
     </sys_script_include>
 </record_update>

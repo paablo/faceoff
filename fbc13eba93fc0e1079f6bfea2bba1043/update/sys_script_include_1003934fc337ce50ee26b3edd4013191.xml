@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_43553_faceoff.FaceOffExperiemental</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FaceOffExperiemental</name>
+        <script><![CDATA[var FaceOffExperiemental = Class.create();
+FaceOffExperiemental.prototype = {
+    initialize: function() {
+    },
+
+	getMyOpponentsWithCriterion: function() {
+		
+		var myGamesWithCriteria = [];
+		var myCriteria = ['Epic','Great Soundtrack','Story Rich'];
+		var encQry = this.makeGameWithCriterionRLQRY(myCriteria) + ''; 
+		var myCompetitorGr = new GlideRecord('x_43553_faceoff_steam_game');
+		myCompetitorGr.addEncodedQuery(encQry);
+		var jQry = myCompetitorGr.addJoinQuery('x_43553_faceoff_opponent_judgement_eligibility', 'sys_id', 'opponent');
+		jQry.addCondition('judge', FaceOffUtils.GetCurrentJudgeSysId());
+		gs.info(myCompetitorGr.getEncodedQuery())
+		myCompetitorGr.query();
+		while(myCompetitorGr.next()){
+			myGamesWithCriteria.push(myCompetitorGr.getDisplayValue());
+		}
+
+		return myGamesWithCriteria;
+	},
+
+	makeGameWithCriterionRLQRY: function(myCriteria) {
+		var l = myCriteria.length;
+		var startQry = `^RLQUERYx_43553_faceoff_opponent_criterion.opponent,>=${l}^criterion.name=`;
+		var endQry = "^ENDRLQUERY";
+		var qry = myCriteria.join("^ORcriterion.name=");
+		
+		return `${startQry}${qry}${endQry}`;
+	},
+
+    type: 'FaceOffExperiemental'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-08 13:28:21</sys_created_on>
+        <sys_id>1003934fc337ce50ee26b3edd4013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FaceOffExperiemental</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_script_include_1003934fc337ce50ee26b3edd4013191</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-08 13:28:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

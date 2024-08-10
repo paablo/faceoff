@@ -30,7 +30,10 @@
         <name>Save changes</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.update();]]></script>
+        <script><![CDATA[current.update();
+action.setRedirectURL(current);
+//sp redirect
+gs.getUser().savePreference('x_43553_faceoff_faceoff_instance' + '.redirectURL', '?id=fo_profile');]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -41,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4ced98f5c37bc650ee26b3edd4013129</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Save changes</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -49,7 +52,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_ui_action_4ced98f5c37bc650ee26b3edd4013129</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-08-04 03:03:34</sys_updated_on>
+        <sys_updated_on>2024-08-05 10:24:31</sys_updated_on>
         <table>x_43553_faceoff_judge_integration</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
