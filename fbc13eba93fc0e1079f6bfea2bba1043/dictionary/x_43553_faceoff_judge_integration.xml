@@ -4,10 +4,18 @@
         <element label="Can get games" max_length="255" name="can_get_games" read_only="true" type="boolean"/>
         <element display="true" label="Judge" max_length="32" name="judge" read_only="true" reference="x_43553_faceoff_judge" type="reference"/>
         <element default="16" function_definition="16" label="Max k value" max_length="255" name="k_value" type="integer"/>
+        <element choice="1" default="unknown" label="Game details status" max_length="40" name="game_details_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cannot get games" sequence="30" value="cannot_get_games"/>
+                <element inactive_on_update="false" label="Can get games" sequence="20" value="can_get_games"/>
+                <element inactive_on_update="false" label="Unknown" sequence="10" value="unknown"/>
+            </choice>
+        </element>
         <element label="Key" max_length="40" name="profile" read_only="true" type="string"/>
         <element label="Master data source" max_length="32" name="master_data_source" read_only="true" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
         <element default="07327c23934b0e5079f6bfea2bba103e" function_definition="07327c23934b0e5079f6bfea2bba103e" label="Default next competitor selection algorithm" max_length="32" name="default_next_competitor_selection_algorithm" reference="x_43553_faceoff_algorithm_1" type="reference"/>
         <element label="Last sync" max_length="255" name="last_sync" read_only="true" type="glide_date_time"/>
+        <element label="Avatar URL" max_length="1024" name="avatar_url" type="url"/>
         <index name="index">
             <element name="judge"/>
         </index>

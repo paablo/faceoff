@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a400cd3bc33b8290ee26b3edd40131b0" extends="task" label="FaceOff Feedback" max_length="40" name="x_43553_faceoff_faceoff_feedback" type="collection">
+        <element choice="1" label="Should I make this a real website" max_length="40" name="should_i_make_this_a_real_website" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" default="Feedback" function_definition="Feedback" label="Feedback type" max_length="40" name="feedback_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Feedback" sequence="0" value="Feedback"/>
+                <element inactive_on_update="false" label="Bug" sequence="2" value="Bug"/>
+                <element inactive_on_update="false" label="Enhancement" sequence="1" value="Enhancement"/>
+            </choice>
+        </element>
+    </element>
+</database>
