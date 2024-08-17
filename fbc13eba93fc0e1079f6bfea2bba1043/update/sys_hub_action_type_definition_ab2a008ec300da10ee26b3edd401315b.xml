@@ -1,0 +1,2942 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>get_profile_avatar_image</internal_name>
+        <label_cache>[{"name":"{{action.avatarurl}}","label":"action➛avatarURL","type":"action","ref":"","reference_display":"","base_type":"url","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.integration}}","label":"action➛integration","type":"action","ref":"","reference_display":"Judge Integration","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.judgeintegration}}","label":"action➛integration","type":"action","ref":"x_43553_faceoff_judge_integration","reference_display":"Judge Integration","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"dca617a7-4299-4160-8a6e-460def2c34e2"}},{"name":"{{action.judgeintegration.profile}}","label":"action➛integration➛Key","type":"action","ref":"","reference_display":"Key","base_type":"string","parent_table_name":"x_43553_faceoff_judge_integration","column_name":"profile","choices":null,"attributes":{}},{"name":"{{action.fields}}","label":"action➛fields","type":"action","ref":"","reference_display":"","base_type":"template_value","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7788b027-08d9-47b2-bc70-e60df56e939d].baseurl}}","label":"step➛Script step➛baseURL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9b10639-d78b-42f6-b94f-a522efc755cd"}},{"name":"{{step[7788b027-08d9-47b2-bc70-e60df56e939d].resourcepath}}","label":"step➛Script step➛resourcePath","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"78e3f0f7-936d-42c1-a252-f9ba4b76ce5f"}},{"name":"{{step[32ba6df7-7b7a-4fe5-b96d-8ae4cceabb33].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record}}","label":"step➛Look Up User Record➛User Record","type":"step","ref":"sys_user","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.name}}","label":"step➛Look Up User Record➛User Record➛Name","type":"step","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"sys_user","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.sys_id}}","label":"step➛Look Up User Record➛User Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>f4cd88c2c340da10ee26b3edd40131d3</master_snapshot>
+        <name>Get Profile Avatar Image</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:31:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ab2a008ec300da10ee26b3edd401315b</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Get Profile Avatar Image</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_ab2a008ec300da10ee26b3edd401315b</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:11</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=ab2a008ec300da10ee26b3edd401315b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ab2a008ec300da10ee26b3edd401315b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ab2a008ec300da10ee26b3edd401315b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:02</sys_created_on>
+        <sys_id>b2acc842c340da10ee26b3edd40131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:02</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">eeacc842c340da10ee26b3edd40131e1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ab2a008ec300da10ee26b3edd401315b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:02</sys_created_on>
+        <sys_id>feacc842c340da10ee26b3edd40131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:02</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">aeacc842c340da10ee26b3edd40131f3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b^id=ab2a008ec300da10ee26b3edd401315b"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=ab2a008ec300da10ee26b3edd401315b^sys_idNOT INa6acc842c340da10ee26b3edd40131b0,d6acc842c340da10ee26b3edd401316e,e64298cac340da10ee26b3edd4013113,ee4298cac340da10ee26b3edd401310a"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</action>
+        <cid>32ba6df7-7b7a-4fe5-b96d-8ae4cceabb33</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>a6acc842c340da10ee26b3edd40131b0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:51:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:52</sys_created_on>
+        <sys_id>0fdc4082c340da10ee26b3edd40131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:52</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:43:14</sys_created_on>
+        <sys_id>14fc0482c340da10ee26b3edd40131d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:43:14</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>26acc842c340da10ee26b3edd40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>49</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>2aacc842c340da10ee26b3edd40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Save As Attachment">f9df589687301300735f7d5e27cb0b2d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>62acc842c340da10ee26b3edd40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>66acc842c340da10ee26b3edd40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>6eacc842c340da10ee26b3edd40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:49:21</sys_created_on>
+        <sys_id>8e5e0c06c340da10ee26b3edd4013145</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:51:40</sys_updated_on>
+        <value>avatar.jpg</value>
+        <variable display_value="Attachment File Name">9458387787201300b3b67d5e27cb0b3b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>aaacc842c340da10ee26b3edd40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>aeacc842c340da10ee26b3edd40131dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:43:14</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:50:21</sys_created_on>
+        <sys_id>b49e8046c340da10ee26b3edd4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:50:21</sys_updated_on>
+        <value>x_43553_faceoff_judge_integration</value>
+        <variable display_value="Table">a9adb007b3c21300176b051a16a8dc9a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:52</sys_created_on>
+        <sys_id>cfdc4082c340da10ee26b3edd40131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:52</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>e6acc842c340da10ee26b3edd40131dd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:43:14</sys_updated_on>
+        <value/>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a6acc842c340da10ee26b3edd40131b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>eaacc842c340da10ee26b3edd40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>22acc842c340da10ee26b3edd40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_file_name</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:49:21</sys_created_on>
+        <sys_id>0e5e0c06c340da10ee26b3edd4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:49:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_file_record</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:50:21</sys_created_on>
+        <sys_id>349e8046c340da10ee26b3edd4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:50:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.judgeintegration}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>6eacc842c340da10ee26b3edd40131db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:43:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[7788b027-08d9-47b2-bc70-e60df56e939d].baseurl}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>aaacc842c340da10ee26b3edd40131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>e6acc842c340da10ee26b3edd40131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>e2acc842c340da10ee26b3edd40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:52</sys_created_on>
+        <sys_id>c7dc4082c340da10ee26b3edd40131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>eaacc842c340da10ee26b3edd40131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>62acc842c340da10ee26b3edd40131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:52</sys_created_on>
+        <sys_id>8bdc4082c340da10ee26b3edd40131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>26acc842c340da10ee26b3edd40131db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:43:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[7788b027-08d9-47b2-bc70-e60df56e939d].resourcepath}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:43:14</sys_created_on>
+        <sys_id>94fc0482c340da10ee26b3edd40131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:43:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>save_response_as_attachment</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>aeacc842c340da10ee26b3edd40131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>a6acc842c340da10ee26b3edd40131b0</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:50:21</sys_created_on>
+        <sys_id>709e8046c340da10ee26b3edd4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:50:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_a6acc842c340da10ee26b3edd40131b0"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</action>
+        <cid>7788b027-08d9-47b2-bc70-e60df56e939d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:00</sys_created_on>
+        <sys_id>d6acc842c340da10ee26b3edd401316e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:47:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6acc842c340da10ee26b3edd401316e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6acc842c340da10ee26b3edd401316e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>26acc842c340da10ee26b3edd40131ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:42</sys_updated_on>
+        <value/>
+        <variable display_value="">a2acc842c340da10ee26b3edd401318f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6acc842c340da10ee26b3edd401316e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>e6acc842c340da10ee26b3edd40131ac</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:47:56</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var regex = /(https:\/\/.+)(\/[a-f0-9]+\.jpg)/;&#13;
+    var matches = inputs.avatarURL.match(regex);&#13;
+    outputs.baseurl = matches[1];&#13;
+    outputs.resourcepath = matches[2];&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6acc842c340da10ee26b3edd401316e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>eeacc842c340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d6acc842c340da10ee26b3edd401316e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d6acc842c340da10ee26b3edd401316e</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>a6acc842c340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>avatarURL</field>
+        <id>d6acc842c340da10ee26b3edd401316e</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>a2acc842c340da10ee26b3edd40131ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d6acc842c340da10ee26b3edd401316e</table>
+        <value>{{action.avatarurl}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>d6acc842c340da10ee26b3edd401316e</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>6eacc842c340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d6acc842c340da10ee26b3edd401316e^id=d6acc842c340da10ee26b3edd401316e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d6acc842c340da10ee26b3edd401316e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d6acc842c340da10ee26b3edd401316e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d6acc842c340da10ee26b3edd401316e^sys_idNOT INa2acc842c340da10ee26b3edd401318f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>avatarURL</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">d6acc842c340da10ee26b3edd401316e</model>
+        <model_id>d6acc842c340da10ee26b3edd401316e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d6acc842c340da10ee26b3edd401316e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>a2acc842c340da10ee26b3edd401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d6acc842c340da10ee26b3edd401316e^sys_idNOT INaeacc842c340da10ee26b3edd4013197,e2acc842c340da10ee26b3edd4013193"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=78e3f0f7-936d-42c1-a252-f9ba4b76ce5f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>resourcepath</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>resourcePath</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">d6acc842c340da10ee26b3edd401316e</model>
+        <model_id>d6acc842c340da10ee26b3edd401316e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d6acc842c340da10ee26b3edd401316e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>aeacc842c340da10ee26b3edd4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d9b10639-d78b-42f6-b94f-a522efc755cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>baseurl</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>baseURL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">d6acc842c340da10ee26b3edd401316e</model>
+        <model_id>d6acc842c340da10ee26b3edd401316e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d6acc842c340da10ee26b3edd401316e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>e2acc842c340da10ee26b3edd4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6acc842c340da10ee26b3edd401316e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d6acc842c340da10ee26b3edd401316e^sys_idNOT IN6eacc842c340da10ee26b3edd40131a6,aeacc842c340da10ee26b3edd4013196"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>resourcepath</element>
+        <help/>
+        <hint/>
+        <label>resourcePath</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d6acc842c340da10ee26b3edd401316e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>6eacc842c340da10ee26b3edd40131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>baseurl</element>
+        <help/>
+        <hint/>
+        <label>baseURL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d6acc842c340da10ee26b3edd401316e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>aeacc842c340da10ee26b3edd4013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</action>
+        <cid>5d4650c1-000f-4b0a-93c4-8a0761a095b6</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create or Update Record step</label>
+        <order>4</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create or Update Record">8f5c107a53a3230034c6ddeeff7b129d</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>e64298cac340da10ee26b3edd4013113</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:17:46</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e64298cac340da10ee26b3edd4013113"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e64298cac340da10ee26b3edd4013113</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>624298cac340da10ee26b3edd4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:06:36</sys_updated_on>
+        <value>live_profile</value>
+        <variable display_value="Table">728c907a53a3230034c6ddeeff7b12e9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e64298cac340da10ee26b3edd4013113</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>ae4298cac340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:07:51</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">5eac547a53a3230034c6ddeeff7b12c7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e64298cac340da10ee26b3edd4013113"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>e64298cac340da10ee26b3edd4013113</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>6a4298cac340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:17:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_8f5c107a53a3230034c6ddeeff7b129d</table>
+        <value>type=user^photo={{step[32ba6df7-7b7a-4fe5-b96d-8ae4cceabb33].response_body}}^name={{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.name}}^table=sys_user^document={{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.sys_id}}^coalesce_fields=type,table,document</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e64298cac340da10ee26b3edd4013113</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>2e4298cac340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:06:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_8f5c107a53a3230034c6ddeeff7b129d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=e64298cac340da10ee26b3edd4013113"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e64298cac340da10ee26b3edd4013113"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e64298cac340da10ee26b3edd4013113"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e64298cac340da10ee26b3edd4013113"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e64298cac340da10ee26b3edd4013113"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</action>
+        <cid>045a455b-1aba-4363-a90b-36f14b4b2f72</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up User Record</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Record">dc9c26043b23220057a4a2e334efc447</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>ee4298cac340da10ee26b3edd401310a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:07:50</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee4298cac340da10ee26b3edd401310a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee4298cac340da10ee26b3edd401310a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>e64298cac340da10ee26b3edd4013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:06:36</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">f9cc66043b23220057a4a2e334efc42f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ee4298cac340da10ee26b3edd401310a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ee4298cac340da10ee26b3edd401310a</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>664298cac340da10ee26b3edd4013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:06:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value>user_name={{action.judgeintegration.profile}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lookup_table_name</field>
+        <id>ee4298cac340da10ee26b3edd401310a</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:06:36</sys_created_on>
+        <sys_id>ae4298cac340da10ee26b3edd4013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:06:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=ee4298cac340da10ee26b3edd401310a"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ee4298cac340da10ee26b3edd401310a"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ee4298cac340da10ee26b3edd401310a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee4298cac340da10ee26b3edd401310a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ee4298cac340da10ee26b3edd401310a"/>
+    <sys_hub_action_input action="delete_multiple" query="model=ab2a008ec300da10ee26b3edd401315b^sys_idNOT IN249e4046c340da10ee26b3edd40131de,d2acc842c340da10ee26b3edd4013158"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=dca617a7-4299-4160-8a6e-460def2c34e2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_43553_faceoff_judge_integration</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"murodese","value":"64a620c8c3c41210ee26b3edd40131ac","sys_id":"64a620c8c3c41210ee26b3edd40131ac"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>judgeintegration</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>integration</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</model>
+        <model_id>ab2a008ec300da10ee26b3edd401315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ab2a008ec300da10ee26b3edd401315b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_43553_faceoff_judge_integration">x_43553_faceoff_judge_integration</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:50:21</sys_created_on>
+        <sys_id>249e4046c340da10ee26b3edd40131de</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=249e4046c340da10ee26b3edd40131de"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=url,uiTypeLabel=URL,uiUniqueId=1acf240a-4a60-4820-90da-394269c9def7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>https://avatars.steamstatic.com/6b78617a016c02b64548d3cac501fd476640efb8.jpg</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>avatarurl</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="URL">url</internal_type>
+        <label>avatarURL</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</model>
+        <model_id>ab2a008ec300da10ee26b3edd401315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ab2a008ec300da10ee26b3edd401315b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:00</sys_created_on>
+        <sys_id>d2acc842c340da10ee26b3edd4013158</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d2acc842c340da10ee26b3edd4013158"/>
+    <sys_hub_action_output action="delete_multiple" query="model=ab2a008ec300da10ee26b3edd401315b^sys_idNOT INaeacc842c340da10ee26b3edd40131f3,eeacc842c340da10ee26b3edd40131e1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fc5fe5e9-576e-4e18-9d37-c6d26c4fa831,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</model>
+        <model_id>ab2a008ec300da10ee26b3edd401315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:02</sys_created_on>
+        <sys_id>aeacc842c340da10ee26b3edd40131f3</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aeacc842c340da10ee26b3edd40131f3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aeacc842c340da10ee26b3edd40131f3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=0a77bf34-fbc3-40ae-82e9-c9ba823602a9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</model>
+        <model_id>ab2a008ec300da10ee26b3edd401315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:01</sys_created_on>
+        <sys_id>eeacc842c340da10ee26b3edd40131e1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:50:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eeacc842c340da10ee26b3edd40131e1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eeacc842c340da10ee26b3edd40131e1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ab2a008ec300da10ee26b3edd401315b"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=ab2a008ec300da10ee26b3edd401315b^sys_idNOT INfeacc842c340da10ee26b3edd40131fe"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</action_type_id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:02</sys_created_on>
+        <sys_id>feacc842c340da10ee26b3edd40131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:02</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=feacc842c340da10ee26b3edd40131fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_ab2a008ec300da10ee26b3edd401315b^sys_idNOT IN689e4046c340da10ee26b3edd40131e2,9eacc842c340da10ee26b3edd401316b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>judgeintegration</element>
+        <help/>
+        <hint/>
+        <label>integration</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ab2a008ec300da10ee26b3edd401315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:50:21</sys_created_on>
+        <sys_id>689e4046c340da10ee26b3edd40131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:50:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>avatarurl</element>
+        <help/>
+        <hint>https://avatars.steamstatic.com/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.jpg</hint>
+        <label>avatarURL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ab2a008ec300da10ee26b3edd401315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:00</sys_created_on>
+        <sys_id>9eacc842c340da10ee26b3edd401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_ab2a008ec300da10ee26b3edd401315b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b^sys_idNOT IN7eacc842c340da10ee26b3edd40131f9,aeacc842c340da10ee26b3edd40131f2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:02</sys_created_on>
+        <sys_id>7eacc842c340da10ee26b3edd40131f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:42:02</sys_created_on>
+        <sys_id>aeacc842c340da10ee26b3edd40131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:42:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_ab2a008ec300da10ee26b3edd401315b"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=ab2a008ec300da10ee26b3edd401315b^sys_idNOT IN05cdc8c2c340da10ee26b3edd40131aa"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"05cdc8c2c340da10ee26b3edd40131aa","name":"plan","plan_signature":null}}</plan>
+        <snapshot>8c07d4c2c380da10ee26b3edd401316c</snapshot>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05cdc8c2c340da10ee26b3edd40131aa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:12</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>get_profile_avatar_image</internal_name>
+        <label_cache>[{"name":"{{action.avatarurl}}","label":"action➛avatarURL","type":"action","ref":"","reference_display":"","base_type":"url","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.integration}}","label":"action➛integration","type":"action","ref":"","reference_display":"Judge Integration","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.judgeintegration}}","label":"action➛integration","type":"action","ref":"x_43553_faceoff_judge_integration","reference_display":"Judge Integration","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"dca617a7-4299-4160-8a6e-460def2c34e2"}},{"name":"{{action.judgeintegration.profile}}","label":"action➛integration➛Key","type":"action","ref":"","reference_display":"Key","base_type":"string","parent_table_name":"x_43553_faceoff_judge_integration","column_name":"profile","choices":null,"attributes":{}},{"name":"{{action.fields}}","label":"action➛fields","type":"action","ref":"","reference_display":"","base_type":"template_value","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7788b027-08d9-47b2-bc70-e60df56e939d].baseurl}}","label":"step➛Script step➛baseURL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9b10639-d78b-42f6-b94f-a522efc755cd"}},{"name":"{{step[7788b027-08d9-47b2-bc70-e60df56e939d].resourcepath}}","label":"step➛Script step➛resourcePath","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"78e3f0f7-936d-42c1-a252-f9ba4b76ce5f"}},{"name":"{{step[32ba6df7-7b7a-4fe5-b96d-8ae4cceabb33].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record}}","label":"step➛Look Up User Record➛User Record","type":"step","ref":"sys_user","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.name}}","label":"step➛Look Up User Record➛User Record➛Name","type":"step","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"sys_user","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.sys_id}}","label":"step➛Look Up User Record➛User Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Get Profile Avatar Image</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Get Profile Avatar Image">ab2a008ec300da10ee26b3edd401315b</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4cd88c2c340da10ee26b3edd40131d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:09</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f4cd88c2c340da10ee26b3edd40131d3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f4cd88c2c340da10ee26b3edd40131d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f4cd88c2c340da10ee26b3edd40131d3</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>0dcdc8c2c340da10ee26b3edd401313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">85cdc8c2c340da10ee26b3edd4013136</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f4cd88c2c340da10ee26b3edd40131d3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>cdcdc8c2c340da10ee26b3edd401313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">b4cdc8c2c340da10ee26b3edd4013131</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3^id=f4cd88c2c340da10ee26b3edd40131d3"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=f4cd88c2c340da10ee26b3edd40131d3^sys_idNOT INb7f6d4c2c380da10ee26b3edd4013141,bccd88c2c340da10ee26b3edd40131df,bccdc8c2c340da10ee26b3edd401311b,fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</action>
+        <cid>5d4650c1-000f-4b0a-93c4-8a0761a095b6</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create or Update Record step</label>
+        <order>4</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create or Update Record">8f5c107a53a3230034c6ddeeff7b129d</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>b7f6d4c2c380da10ee26b3edd4013141</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b7f6d4c2c380da10ee26b3edd4013141</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>fff6d4c2c380da10ee26b3edd4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+        <value>live_profile</value>
+        <variable display_value="Table">728c907a53a3230034c6ddeeff7b12e9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>b7f6d4c2c380da10ee26b3edd4013141</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>bbf6d4c2c380da10ee26b3edd4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_8f5c107a53a3230034c6ddeeff7b129d</table>
+        <value>type=user^photo={{step[32ba6df7-7b7a-4fe5-b96d-8ae4cceabb33].response_body}}^name={{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.name}}^table=sys_user^document={{step[045a455b-1aba-4363-a90b-36f14b4b2f72].record.sys_id}}^coalesce_fields=type,table,document</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b7f6d4c2c380da10ee26b3edd4013141</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>7ff6d4c2c380da10ee26b3edd4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_8f5c107a53a3230034c6ddeeff7b129d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_b7f6d4c2c380da10ee26b3edd4013141"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</action>
+        <cid>7788b027-08d9-47b2-bc70-e60df56e939d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>bccd88c2c340da10ee26b3edd40131df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bccd88c2c340da10ee26b3edd40131df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccd88c2c340da10ee26b3edd40131df</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b4cdc8c2c340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var regex = /(https:\/\/.+)(\/[a-f0-9]+\.jpg)/;&#13;
+    var matches = inputs.avatarURL.match(regex);&#13;
+    outputs.baseurl = matches[1];&#13;
+    outputs.resourcepath = matches[2];&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccd88c2c340da10ee26b3edd40131df</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>f0cdc8c2c340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bccd88c2c340da10ee26b3edd40131df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>bccd88c2c340da10ee26b3edd40131df</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>bccdc8c2c340da10ee26b3edd4013117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>avatarURL</field>
+        <id>bccd88c2c340da10ee26b3edd40131df</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>fccdc8c2c340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_bccd88c2c340da10ee26b3edd40131df</table>
+        <value>{{action.avatarurl}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>bccd88c2c340da10ee26b3edd40131df</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>70cdc8c2c340da10ee26b3edd4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_bccd88c2c340da10ee26b3edd40131df^id=bccd88c2c340da10ee26b3edd40131df"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=bccd88c2c340da10ee26b3edd40131df"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=bccd88c2c340da10ee26b3edd40131df"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=bccd88c2c340da10ee26b3edd40131df^sys_idNOT INb0cd88c2c340da10ee26b3edd40131fc"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>avatarURL</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>avatarURL</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">bccd88c2c340da10ee26b3edd40131df</model>
+        <model_id>bccd88c2c340da10ee26b3edd40131df</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_bccd88c2c340da10ee26b3edd40131df</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b0cd88c2c340da10ee26b3edd40131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=bccd88c2c340da10ee26b3edd40131df^sys_idNOT INb0cdc8c2c340da10ee26b3edd4013105,bccdc8c2c340da10ee26b3edd4013100"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=78e3f0f7-936d-42c1-a252-f9ba4b76ce5f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>resourcepath</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>resourcePath</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">bccd88c2c340da10ee26b3edd40131df</model>
+        <model_id>bccd88c2c340da10ee26b3edd40131df</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_bccd88c2c340da10ee26b3edd40131df</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b0cdc8c2c340da10ee26b3edd4013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d9b10639-d78b-42f6-b94f-a522efc755cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>baseurl</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>baseURL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">bccd88c2c340da10ee26b3edd40131df</model>
+        <model_id>bccd88c2c340da10ee26b3edd40131df</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_bccd88c2c340da10ee26b3edd40131df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>bccdc8c2c340da10ee26b3edd4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bccd88c2c340da10ee26b3edd40131df"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_bccd88c2c340da10ee26b3edd40131df^sys_idNOT IN70cdc8c2c340da10ee26b3edd4013114,b0cdc8c2c340da10ee26b3edd4013104"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>resourcepath</element>
+        <help/>
+        <hint/>
+        <label>resourcePath</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_bccd88c2c340da10ee26b3edd40131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>70cdc8c2c340da10ee26b3edd4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>baseurl</element>
+        <help/>
+        <hint/>
+        <label>baseURL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_bccd88c2c340da10ee26b3edd40131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b0cdc8c2c340da10ee26b3edd4013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</action>
+        <cid>32ba6df7-7b7a-4fe5-b96d-8ae4cceabb33</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>bccdc8c2c340da10ee26b3edd401311b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>34cdc8c2c340da10ee26b3edd401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>38cdc8c2c340da10ee26b3edd401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>49</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>3ccdc8c2c340da10ee26b3edd401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Save As Attachment">f9df589687301300735f7d5e27cb0b2d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>70cdc8c2c340da10ee26b3edd401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>74cdc8c2c340da10ee26b3edd401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>78cdc8c2c340da10ee26b3edd401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b0cdc8c2c340da10ee26b3edd401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>bccdc8c2c340da10ee26b3edd401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:18</sys_created_on>
+        <sys_id>c5111c4ac340da10ee26b3edd40131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+        <value>avatar.jpg</value>
+        <variable display_value="Attachment File Name">9458387787201300b3b67d5e27cb0b3b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:18</sys_created_on>
+        <sys_id>cd111c4ac340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+        <value>x_43553_faceoff_judge_integration</value>
+        <variable display_value="Table">a9adb007b3c21300176b051a16a8dc9a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>f8cdc8c2c340da10ee26b3edd401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bccdc8c2c340da10ee26b3edd401311b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>fccdc8c2c340da10ee26b3edd401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>70cdc8c2c340da10ee26b3edd401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_file_name</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:18</sys_created_on>
+        <sys_id>4d111c4ac340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_file_record</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:18</sys_created_on>
+        <sys_id>89111c4ac340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.judgeintegration}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>bccdc8c2c340da10ee26b3edd401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[7788b027-08d9-47b2-bc70-e60df56e939d].baseurl}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>f8cdc8c2c340da10ee26b3edd401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>74cdc8c2c340da10ee26b3edd401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>f4cdc8c2c340da10ee26b3edd401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>38cdc8c2c340da10ee26b3edd401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b4cdc8c2c340da10ee26b3edd4013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>fccdc8c2c340da10ee26b3edd4013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>34cdc8c2c340da10ee26b3edd401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b0cdc8c2c340da10ee26b3edd401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[7788b027-08d9-47b2-bc70-e60df56e939d].resourcepath}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>3ccdc8c2c340da10ee26b3edd4013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>save_response_as_attachment</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>78cdc8c2c340da10ee26b3edd4013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>bccdc8c2c340da10ee26b3edd401311b</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:18</sys_created_on>
+        <sys_id>c1111c4ac340da10ee26b3edd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_bccdc8c2c340da10ee26b3edd401311b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</action>
+        <cid>045a455b-1aba-4363-a90b-36f14b4b2f72</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up User Record</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Record">dc9c26043b23220057a4a2e334efc447</step_type>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>fff6d4c2c380da10ee26b3edd4013138</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fff6d4c2c380da10ee26b3edd4013138</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>b7f6d4c2c380da10ee26b3edd401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">f9cc66043b23220057a4a2e334efc42f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>fff6d4c2c380da10ee26b3edd4013138</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>37f6d4c2c380da10ee26b3edd401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value>user_name={{action.judgeintegration.profile}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lookup_table_name</field>
+        <id>fff6d4c2c380da10ee26b3edd4013138</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:27:10</sys_created_on>
+        <sys_id>7ff6d4c2c380da10ee26b3edd401313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_fff6d4c2c380da10ee26b3edd4013138"/>
+    <sys_hub_action_input action="delete_multiple" query="model=f4cd88c2c340da10ee26b3edd40131d3^sys_idNOT IN74cd88c2c340da10ee26b3edd40131d7,7c111c4ac340da10ee26b3edd401316c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=url,uiTypeLabel=URL,uiUniqueId=1acf240a-4a60-4820-90da-394269c9def7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>https://avatars.steamstatic.com/6b78617a016c02b64548d3cac501fd476640efb8.jpg</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>avatarurl</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="URL">url</internal_type>
+        <label>avatarURL</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</model>
+        <model_id>f4cd88c2c340da10ee26b3edd40131d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>74cd88c2c340da10ee26b3edd40131d7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=74cd88c2c340da10ee26b3edd40131d7"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=dca617a7-4299-4160-8a6e-460def2c34e2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_43553_faceoff_judge_integration</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"murodese","value":"64a620c8c3c41210ee26b3edd40131ac","sys_id":"64a620c8c3c41210ee26b3edd40131ac"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>judgeintegration</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>integration</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</model>
+        <model_id>f4cd88c2c340da10ee26b3edd40131d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_43553_faceoff_judge_integration">x_43553_faceoff_judge_integration</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:17</sys_created_on>
+        <sys_id>7c111c4ac340da10ee26b3edd401316c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c111c4ac340da10ee26b3edd401316c"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f4cd88c2c340da10ee26b3edd40131d3^sys_idNOT IN85cdc8c2c340da10ee26b3edd4013136,b4cdc8c2c340da10ee26b3edd4013131"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fc5fe5e9-576e-4e18-9d37-c6d26c4fa831,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</model>
+        <model_id>f4cd88c2c340da10ee26b3edd40131d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>85cdc8c2c340da10ee26b3edd4013136</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:27:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=85cdc8c2c340da10ee26b3edd4013136"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=85cdc8c2c340da10ee26b3edd4013136"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=0a77bf34-fbc3-40ae-82e9-c9ba823602a9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</model>
+        <model_id>f4cd88c2c340da10ee26b3edd40131d3</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b4cdc8c2c340da10ee26b3edd4013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b4cdc8c2c340da10ee26b3edd4013131"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b4cdc8c2c340da10ee26b3edd4013131"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f4cd88c2c340da10ee26b3edd40131d3"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f4cd88c2c340da10ee26b3edd40131d3^sys_idNOT IN8dcdc8c2c340da10ee26b3edd4013140"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Profile Avatar Image">f4cd88c2c340da10ee26b3edd40131d3</action_type_id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>8dcdc8c2c340da10ee26b3edd4013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8dcdc8c2c340da10ee26b3edd4013140"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f4cd88c2c340da10ee26b3edd40131d3^sys_idNOT INb0111c4ac340da10ee26b3edd401318a,b4cd88c2c340da10ee26b3edd40131dd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>judgeintegration</element>
+        <help/>
+        <hint/>
+        <label>integration</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:17</sys_created_on>
+        <sys_id>b0111c4ac340da10ee26b3edd401318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:01:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>avatarurl</element>
+        <help/>
+        <hint>https://avatars.steamstatic.com/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.jpg</hint>
+        <label>avatarURL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b4cd88c2c340da10ee26b3edd40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f4cd88c2c340da10ee26b3edd40131d3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3^sys_idNOT INb4cdc8c2c340da10ee26b3edd4013135,c9cdc8c2c340da10ee26b3edd401313b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>b4cdc8c2c340da10ee26b3edd4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-17 06:46:49</sys_created_on>
+        <sys_id>c9cdc8c2c340da10ee26b3edd401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-17 06:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f4cd88c2c340da10ee26b3edd40131d3"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>ab2a008ec300da10ee26b3edd401315b</sys_id>
+        <latest_snapshot>f4cd88c2c340da10ee26b3edd40131d3</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch3-hotfix1-05-12-2024_05-16-2024_0813.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
