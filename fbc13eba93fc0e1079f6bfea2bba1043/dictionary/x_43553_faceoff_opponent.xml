@@ -6,6 +6,16 @@
         <element label="Preview image URL" max_length="1024" name="preview_image_url" type="url"/>
         <element label="Description" max_length="2048" name="description" type="string"/>
         <element label="Website" max_length="512" name="website" type="url"/>
+        <element choice="1" label="Tier ranking" max_length="40" name="tier_ranking" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="D" value="D"/>
+                <element inactive_on_update="false" label="A" value="A"/>
+                <element inactive_on_update="false" label="F" value="F"/>
+                <element inactive_on_update="false" label="B" value="B"/>
+                <element inactive_on_update="false" label="C" value="C"/>
+                <element inactive_on_update="false" label="S" value="S"/>
+            </choice>
+        </element>
         <element label="Name" max_length="256" name="name" type="string"/>
         <element label="Preview image" max_length="40" name="preview_image" type="user_image"/>
         <element label="Corelation ID" max_length="40" name="corelation_id" type="string"/>
