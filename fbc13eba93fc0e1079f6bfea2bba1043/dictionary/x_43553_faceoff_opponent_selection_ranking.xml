@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="8051f4ef930b0e5079f6bfea2bba107d" label="Opponent selection ranking " max_length="40" name="x_43553_faceoff_opponent_selection_ranking" type="collection">
         <element label="Ranking" max_length="40" name="ranking" type="integer"/>
+        <element label="Relevant" max_length="255" name="relevant" type="boolean"/>
         <element label="Opponent selecion instance" max_length="32" name="opponent_selecion_instance" reference="x_43553_faceoff_opponent_selection_instance" type="reference"/>
         <element label="Judge eligibility" max_length="40" name="judge_eligibility" type="integer"/>
         <element label="Criteria relevance" max_length="40" name="criteria_relevance" type="integer"/>

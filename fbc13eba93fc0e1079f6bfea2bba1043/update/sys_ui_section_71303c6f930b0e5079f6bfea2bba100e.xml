@@ -70,6 +70,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>filter_revelant_only</element>
+            <position>5</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-28 13:20:59</sys_created_on>
+            <sys_id>82715aadc3d0de50ee26b3edd4013197</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_instance" sys_domain="global" view="Default view">71303c6f930b0e5079f6bfea2bba100e</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-28 13:20:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

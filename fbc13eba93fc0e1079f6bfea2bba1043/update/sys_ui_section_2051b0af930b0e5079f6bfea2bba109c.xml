@@ -2,99 +2,113 @@
     <sys_ui_section caption="" section_id="2051b0af930b0e5079f6bfea2bba109c" sys_domain="global" table="x_43553_faceoff_opponent_selection_ranking" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>selected_opponent</element>
-            <position>1</position>
+            <position>0</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:11:17</sys_created_on>
-            <sys_id>578138ef930b0e5079f6bfea2bba106e</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>2fb15e64c39c5a50ee26b3edd4013136</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:11:17</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opponent_selecion_instance</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:11:49</sys_created_on>
-            <sys_id>87a17023934b0e5079f6bfea2bba1043</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>6bb15e64c39c5a50ee26b3edd4013137</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:11:49</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>ranking</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-03 08:12:41</sys_created_on>
-            <sys_id>40e1f023934b0e5079f6bfea2bba106a</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>63b15e64c39c5a50ee26b3edd4013138</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-03 08:12:41</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>faceoff_age</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-04 17:05:01</sys_created_on>
-            <sys_id>6345f33b934f8e5079f6bfea2bba10f2</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>7bb15e64c39c5a50ee26b3edd4013138</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-04 17:05:01</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>judge_eligibility</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-04 17:05:25</sys_created_on>
-            <sys_id>9965bff7934f8e5079f6bfea2bba1021</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>73b15e64c39c5a50ee26b3edd4013139</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-04 17:05:25</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>criteria_relevance</element>
-            <position>6</position>
+            <position>5</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-04 17:05:41</sys_created_on>
-            <sys_id>1575f73b934f8e5079f6bfea2bba10ae</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>7bb15e64c39c5a50ee26b3edd4013139</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-04 17:05:41</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>elo_diff</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-06 17:47:07</sys_created_on>
-            <sys_id>a3125a289393829079f6bfea2bba10e0</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>73b15e64c39c5a50ee26b3edd401313a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-06 17:47:07</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>relevant</element>
+            <position>7</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>7bb15e64c39c5a50ee26b3edd401313a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +116,13 @@
             <element>cooldown</element>
             <position>8</position>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-07-09 17:42:48</sys_created_on>
-            <sys_id>75ede9e59393021079f6bfea2bba1004</sys_id>
+            <sys_created_on>2024-08-25 10:48:16</sys_created_on>
+            <sys_id>73b15e64c39c5a50ee26b3edd401313b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_43553_faceoff_opponent_selection_ranking" sys_domain="global" view="Default view">2051b0af930b0e5079f6bfea2bba109c</sys_ui_section>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-07-09 17:42:48</sys_updated_on>
+            <sys_updated_on>2024-08-25 10:48:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

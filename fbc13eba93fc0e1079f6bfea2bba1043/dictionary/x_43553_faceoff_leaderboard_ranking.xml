@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="138b5a6893d3829079f6bfea2bba1086" label="Leaderboard ranking" max_length="40" name="x_43553_faceoff_leaderboard_ranking" type="collection">
+        <element label="Z score" max_length="40" name="z_score" type="float"/>
         <element label="Opponent" max_length="32" name="opponent" reference="x_43553_faceoff_opponent" type="reference"/>
         <element default="1000" label="Elo" max_length="40" name="elo" type="integer"/>
         <element label="Rank" max_length="40" name="rank" type="integer"/>
@@ -7,6 +8,17 @@
         <element default="0" label="Ranked matches" max_length="40" name="faceoff_count" type="integer"/>
         <element label="Seeded?" max_length="40" name="ranked" type="boolean"/>
         <element label="Highest ranking" max_length="40" name="highest_ranking" type="integer"/>
+        <element label="percentile" max_length="15" name="percentile" read_only="true" type="percent_complete"/>
+        <element choice="1" label="Tier" max_length="40" name="tier" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="D" value="D"/>
+                <element inactive_on_update="false" label="S" value="S"/>
+                <element inactive_on_update="false" label="A" value="A"/>
+                <element inactive_on_update="false" label="F" value="F"/>
+                <element inactive_on_update="false" label="C" value="C"/>
+                <element inactive_on_update="false" label="B" value="B"/>
+            </choice>
+        </element>
         <element label="Highest elo" max_length="40" name="highest_elo" type="integer"/>
         <index name="index">
             <element name="leaderboard"/>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="opponent_1" label="Opponent 1" language="en" table="x_43553_faceoff_faceoff_instance">
+    <sys_documentation element="opponent_1" label="This competitor" language="en" table="x_43553_faceoff_faceoff_instance">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>opponent_1</element>
             <help/>
             <hint/>
-            <label>Opponent 1</label>
+            <label>This competitor</label>
             <language>en</language>
             <name>x_43553_faceoff_faceoff_instance</name>
-            <plural/>
+            <plural>This competitors</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>sn-nerd</sys_created_by>
             <sys_created_on>2024-06-21 10:12:21</sys_created_on>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_name>Opponent 1</sys_name>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>This competitor</sys_name>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
             <sys_policy/>
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_documentation_x_43553_faceoff_faceoff_instance_opponent_1_en</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-06-21 10:12:21</sys_updated_on>
+            <sys_updated_on>2024-08-25 08:37:31</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

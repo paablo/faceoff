@@ -73,6 +73,7 @@ FaceOffUtils.GetRandomCompetitorsCriterion = function() {
     var qry = opponentsCriterionGr.addQuery('criterion', randomCriterionSysId);
     var jQry = opponentsCriterionGr.addJoinQuery('x_43553_faceoff_opponent_judgement_eligibility', 'opponent', 'opponent');
     jQry.addCondition('judge', FaceOffUtils.GetCurrentJudgeSysId());
+	opponentsCriterionGr.addQuery('opponent.active','true');
     opponentsCriterionGr.query();
     var totalRecords = opponentsCriterionGr.getRowCount();
     var randomNumber = Math.floor(Math.random() * totalRecords);
@@ -95,7 +96,12 @@ FaceOffUtils.prototype = {
         this.judgeGr = new GlideRecord('x_43553_faceoff_judge');
         this.judgeGr.get(FaceOffUtils.GetCurrentJudgeSysId());
 		this.judgeSysId = this.judgeGr.getValue('sys_id');
+		this.filterRelevantOnly = false;
     },
+
+	setFilterRelevantOnly: function() {
+		this.filterRelevantOnly = true;
+	},
 
 	getDefaultOpponentSelectionAlogGr: function() {
 		var algoGr;
@@ -163,8 +169,8 @@ FaceOffUtils.prototype = {
 
         if (gs.nil(nextFaceOffGr)) {
 			gs.addInfoMessage("Could not find any matches. Finding random games to rank instead...");
-			var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
-			nextFaceOffGr = this.faceOff(opponentsCriterionGr);
+			this.setFilterRelevantOnly();
+			nextFaceOffGr = this.faceOffMostRelevant();
 		}
 		
         return nextFaceOffGr;
@@ -198,6 +204,32 @@ FaceOffUtils.prototype = {
         return opponentCriteriaGr;
     },
 
+	faceOffMostRelevant: function() {
+		var nextFaceOffGr;
+		var initialSelection = new NextLeaderboardAndCompetitorSelection();
+		var relevantSelections = initialSelection.getLeaderboardAndCompetitorSelection();
+
+		relevantSelections.some(selection => {
+			var opponentCriterionGr = this.getOpponentCriteria(
+				selection.opponent_sys_id, 
+				selection.criterion_sys_id
+			);
+			var breakLoop = false;
+			var outputs = this._faceOff(opponentCriterionGr);
+			var hasMatch = outputs['successful'];
+			if (hasMatch) {
+				nextFaceOffGr = outputs['faceoff']; // Reference
+				breakLoop = true; //break the loop, use next best match
+			}
+
+			return breakLoop; // continue
+		} );
+		
+		//todo: loop
+		
+		return nextFaceOffGr;
+	},
+
     faceOffNextBestMatch: function(faceOffGr) {
         var nextFaceOffGr;
         var opponentFound = false;
@@ -217,8 +249,8 @@ FaceOffUtils.prototype = {
             var leaderBoardGr = faceOffGr.leaderboard.getRefRecord();
             gs.addInfoMessage('Could not find opponents to face off for ' + leaderBoardGr.getDisplayValue() + ".");
             gs.addInfoMessage("Finding random competitors to FaceOff");
-            var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
-            nextFaceOffGr = this.faceOff(opponentsCriterionGr);
+            this.setFilterRelevantOnly();
+			nextFaceOffGr = this.faceOffMostRelevant();
         }
         return nextFaceOffGr;
     },
@@ -235,23 +267,14 @@ FaceOffUtils.prototype = {
 
     faceOff: function(opponentCriterionGr) {
         var faceOffGr;
-
-        try {
-            var outputs = this._faceOff(opponentCriterionGr);
-			var hasMatch = outputs['successful'];
-            if (hasMatch) {
-                faceOffGr = outputs['faceoff']; // Reference
-            } else {
-				var opponentSelectionInstanceGr = outputs['selections'];
-				faceOffGr = this.tryAllMatches(opponentSelectionInstanceGr);		
-			}
-        } catch (e) {
-			var errMsg = 'Failed to initiate faceoff. Please try another opponent or criterion. Error: ' + e.toString();
-            gs.addErrorMessage(errMsg);
-			gs.error(errMsg + ":" + e);
-            return opponentCriterionGr;
-        }
-
+		var outputs = this._faceOff(opponentCriterionGr);
+		var hasMatch = outputs['successful'];
+		if (hasMatch) {
+			faceOffGr = outputs['faceoff']; // Reference
+		} else {
+			var opponentSelectionInstanceGr = outputs['selections'];
+			faceOffGr = this.tryAllMatches(opponentSelectionInstanceGr);		
+		}
         return faceOffGr;
     },
 
@@ -279,12 +302,22 @@ FaceOffUtils.prototype = {
 	},
 	
 	_faceOff: function(opponentCriterionGr) {
-		var inputs = {};
-        inputs['opponent_criterion'] = opponentCriterionGr; // GlideRecord of table: x_43553_faceoff_opponent_criterion 
-        inputs['algorithm'] = this.algoGr;
-        inputs['judge'] = this.judgeGr; // GlideRecord of table: x_43553_faceoff_judge 
-		var result = sn_fd.FlowAPI.getRunner().subflow('x_43553_faceoff.faceoff').inForeground().withInputs(inputs).run();
-		var outputs = result.getOutputs();
+		var outputs;
+		try {
+			var inputs = {};
+			inputs['opponent_criterion'] = opponentCriterionGr; // GlideRecord of table: x_43553_faceoff_opponent_criterion 
+			inputs['algorithm'] = this.algoGr;
+			inputs['judge'] = this.judgeGr; // GlideRecord of table: x_43553_faceoff_judge 
+			inputs['filter_relevant'] = this.filterRelevantOnly;
+			var result = sn_fd.FlowAPI.getRunner().subflow('x_43553_faceoff.faceoff').inForeground().withInputs(inputs).run();
+			outputs = result.getOutputs();
+
+		} catch (e) {
+			var errMsg = 'Failed to initiate faceoff. Please try another opponent or criterion. Error: ' + e.toString();
+            gs.addErrorMessage(errMsg);
+			gs.error(errMsg + ":" + e);
+            outputs = opponentCriterionGr;
+		}
 
 		return outputs;
 	},
@@ -293,9 +326,9 @@ FaceOffUtils.prototype = {
         var opponentCriterionGr = this.getOpponentCriteria(opponentSysId, criteriaSysId);
         var nextFaceOffGr = this.faceOff(opponentCriterionGr);
 		if (gs.nil(nextFaceOffGr)) {
-			gs.addInfoMessage("Could not find any matches. Finding random games to rank instead...");
-			var opponentsCriterionGr = FaceOffUtils.GetRandomCompetitorsCriterion();
-			nextFaceOffGr = this.faceOff(opponentsCriterionGr);
+			gs.addInfoMessage("Could not find any matches. Finding relevant games to rank instead...");
+			this.setFilterRelevantOnly();
+			nextFaceOffGr = this.faceOffMostRelevant();
 		}
 		return nextFaceOffGr;
     },
@@ -306,13 +339,13 @@ FaceOffUtils.prototype = {
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 17:01:50</sys_created_on>
         <sys_id>64015b3c931fc29079f6bfea2bba10ec</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>FaceOffUtils</sys_name>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_script_include_64015b3c931fc29079f6bfea2bba10ec</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-08-07 14:53:01</sys_updated_on>
+        <sys_updated_on>2024-09-01 03:17:20</sys_updated_on>
     </sys_script_include>
 </record_update>

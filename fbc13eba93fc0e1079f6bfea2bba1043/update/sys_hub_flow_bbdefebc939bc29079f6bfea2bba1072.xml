@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1887803000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4208012000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category display_value="">{}</category>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>faceoff_judged</internal_name>
-        <label_cache>[{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.faceoff_count","label":"6 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.faceoff_count","label":"5 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}},{"name":"subflow.faceoff.winner","label":"Input➛faceoff➛Winner","reference":"","reference_display":"Winner","type":"choice","base_type":"choice","usedInstances":{"a31fb902-efde-46de-ac06-7e72b7749550":["condition"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["winner"]}},{"name":"subflow.faceoff","label":"Input➛faceoff","reference":"x_43553_faceoff_faceoff_instance","reference_display":"Faceoff Instance","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["record"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["record"],"63971bfb-df4a-4ef7-baba-4e9ab5d06c80":["record"]}},{"name":"subflow.faceoff.opponent_1","label":"Input➛faceoff➛Opponent 1","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["winning_opponent"]}},{"name":"subflow.faceoff.opponent_2","label":"Input➛faceoff➛Opponent 2","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["winning_opponent"],"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"]}},{"name":"subflow.faceoff.leaderboard","label":"Input➛faceoff➛Leaderboard","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_faceoff_instance","column_name":"leaderboard","usedInstances":{"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"],"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"0c8917a0-32d4-40f1-9b83-925c6e41d993":["leaderboard"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.elo","label":"5 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo1"]}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.elo","label":"6 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo2"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record","label":"5 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo1","label":"7 - Calculate new elo➛newelo1","reference_display":"newelo1","type":"integer","base_type":"integer","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bab6003b-aa1f-41f0-ab8d-c458e1bf3ec7"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo2","label":"7 - Calculate new elo➛newelo2","reference_display":"newelo2","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f3b93e6a-6b85-4434-b040-728f0fbea788"}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record","label":"6 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record","label":"6 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo2","label":"7 - Calculate new elo➛newelo2","reference_display":"newelo2","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f3b93e6a-6b85-4434-b040-728f0fbea788"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo1","label":"7 - Calculate new elo➛newelo1","reference_display":"newelo1","type":"integer","base_type":"integer","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bab6003b-aa1f-41f0-ab8d-c458e1bf3ec7"}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record","label":"5 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.elo","label":"6 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo2"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.elo","label":"5 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo1"]}},{"name":"subflow.faceoff.leaderboard","label":"Input➛faceoff➛Leaderboard","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_faceoff_instance","column_name":"leaderboard","usedInstances":{"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"],"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"0c8917a0-32d4-40f1-9b83-925c6e41d993":["leaderboard"],"1e2d189e-bb59-4f88-bc37-2671fc05e9a0":["leaderboard"]}},{"name":"subflow.faceoff.opponent_2","label":"Input➛faceoff➛Opponent 2","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["winning_opponent"],"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"]}},{"name":"subflow.faceoff.opponent_1","label":"Input➛faceoff➛Opponent 1","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["winning_opponent"]}},{"name":"subflow.faceoff","label":"Input➛faceoff","reference":"x_43553_faceoff_faceoff_instance","reference_display":"Faceoff Instance","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["record"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["record"],"63971bfb-df4a-4ef7-baba-4e9ab5d06c80":["record"]}},{"name":"subflow.faceoff.winner","label":"Input➛faceoff➛Winner","reference":"","reference_display":"Winner","type":"choice","base_type":"choice","usedInstances":{"a31fb902-efde-46de-ac06-7e72b7749550":["condition"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["winner"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.faceoff_count","label":"5 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.faceoff_count","label":"6 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}}]</label_cache>
         <master_snapshot>1d2d8f74931fc29079f6bfea2bba1010</master_snapshot>
         <name>Faceoff Judged</name>
         <natlang/>
@@ -35,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bbdefebc939bc29079f6bfea2bba1072</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>Faceoff Judged</sys_name>
         <sys_overrides/>
         <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -43,7 +43,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name>sys_hub_flow_bbdefebc939bc29079f6bfea2bba1072</sys_update_name>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=bbdefebc939bc29079f6bfea2bba1072"/>
@@ -150,7 +150,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e50fbafc939bc29079f6bfea2bba100a"/>
     <sys_hub_flow_output action="delete_multiple" query="model=bbdefebc939bc29079f6bfea2bba1072"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=bbdefebc939bc29079f6bfea2bba1072"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=bbdefebc939bc29079f6bfea2bba1072^sys_idNOT IN1a40c77093dbc29079f6bfea2bba10c9,27904bb093dbc29079f6bfea2bba10c8,63bffa3093dbc29079f6bfea2bba10a7,a886cbf893dbc29079f6bfea2bba101f,c6b6033c93dbc29079f6bfea2bba10d8,d5e60ff893dbc29079f6bfea2bba1055,d77707b893dbc29079f6bfea2bba1070,e0100f7093dbc29079f6bfea2bba10c7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=bbdefebc939bc29079f6bfea2bba1072^sys_idNOT IN1a40c77093dbc29079f6bfea2bba10c9,27904bb093dbc29079f6bfea2bba10c8,63bffa3093dbc29079f6bfea2bba10a7,a886cbf893dbc29079f6bfea2bba101f,b1f23d60c3d85a50ee26b3edd4013197,c6b6033c93dbc29079f6bfea2bba10d8,d5e60ff893dbc29079f6bfea2bba1055,d77707b893dbc29079f6bfea2bba1070,e0100f7093dbc29079f6bfea2bba10c7"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -167,10 +167,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 15:47:17</sys_created_on>
         <sys_id>1a40c77093dbc29079f6bfea2bba10c9</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>2242cffb-cef9-494f-a2e6-46e3919b4ddf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1a40c77093dbc29079f6bfea2bba10c9"/>
@@ -269,10 +269,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 15:48:45</sys_created_on>
         <sys_id>27904bb093dbc29079f6bfea2bba10c8</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>149ad5f0-7e85-42ac-a890-efaa743a01de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=27904bb093dbc29079f6bfea2bba10c8"/>
@@ -371,10 +371,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 15:44:56</sys_created_on>
         <sys_id>63bffa3093dbc29079f6bfea2bba10a7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>bf280eba-44a2-42c1-908e-217dc6cf623f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=63bffa3093dbc29079f6bfea2bba10a7"/>
@@ -497,10 +497,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:14:29</sys_created_on>
         <sys_id>a886cbf893dbc29079f6bfea2bba101f</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>3533fc04-e01a-4a4d-b2ff-dccf5a1a4698</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a886cbf893dbc29079f6bfea2bba101f"/>
@@ -666,6 +666,56 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Rank Leaderboard Action">cbd1bdacc3985a50ee26b3edd4013180</action_type>
+        <action_type_parent display_value="Rank Leaderboard Action">cbd1bdacc3985a50ee26b3edd4013180</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Faceoff Judged">bbdefebc939bc29079f6bfea2bba1072</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-25 08:33:47</sys_created_on>
+        <sys_id>b1f23d60c3d85a50ee26b3edd4013197</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
+        <ui_id>1e2d189e-bb59-4f88-bc37-2671fc05e9a0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b1f23d60c3d85a50ee26b3edd4013197"/>
+    <sys_element_mapping action="delete_multiple" query="id=b1f23d60c3d85a50ee26b3edd4013197"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>leaderboard</field>
+        <id>b1f23d60c3d85a50ee26b3edd4013197</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-25 08:34:01</sys_created_on>
+        <sys_id>1103f560c3d85a50ee26b3edd40131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-25 08:34:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1ea2b160c3d85a50ee26b3edd40131e6</table>
+        <value>{{subflow.faceoff.leaderboard}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>leaderboard</field>
+        <id>b1f23d60c3d85a50ee26b3edd4013197</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-25 08:34:39</sys_created_on>
+        <sys_id>5223f1a0c3d85a50ee26b3edd4013154</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-25 08:34:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cbd1bdacc3985a50ee26b3edd4013180</table>
+        <value>{{subflow.faceoff.leaderboard}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b1f23d60c3d85a50ee26b3edd4013197"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b1f23d60c3d85a50ee26b3edd4013197"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
         <action_type_parent/>
         <attributes/>
@@ -679,10 +729,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:15:24</sys_created_on>
         <sys_id>c6b6033c93dbc29079f6bfea2bba10d8</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>dba23990-63d4-4d16-bdac-130a456b30f4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c6b6033c93dbc29079f6bfea2bba10d8"/>
@@ -805,10 +855,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:16:11</sys_created_on>
         <sys_id>d5e60ff893dbc29079f6bfea2bba1055</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>dfde22a2-7f77-450c-9758-b7efc45098ca</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d5e60ff893dbc29079f6bfea2bba1055"/>
@@ -931,10 +981,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:18:46</sys_created_on>
         <sys_id>d77707b893dbc29079f6bfea2bba1070</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>63971bfb-df4a-4ef7-baba-4e9ab5d06c80</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d77707b893dbc29079f6bfea2bba1070"/>
@@ -1085,10 +1135,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 15:46:21</sys_created_on>
         <sys_id>e0100f7093dbc29079f6bfea2bba10c7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>94e87f56-f3b0-4a8a-a789-e7dab796b641</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e0100f7093dbc29079f6bfea2bba10c7"/>
@@ -1195,155 +1245,7 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e0100f7093dbc29079f6bfea2bba10c7"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0100f7093dbc29079f6bfea2bba10c7"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=bbdefebc939bc29079f6bfea2bba1072^sys_idNOT IN0565464493a34e1079f6bfea2bba1020"/>
-    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Faceoff Judged">bbdefebc939bc29079f6bfea2bba1072</flow>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
-        <order>11</order>
-        <parent_ui_id/>
-        <subflow display_value="Rank Leaderboard">8155c24493a34e1079f6bfea2bba1050</subflow>
-        <subflow_instance_inputs/>
-        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:14</sys_created_on>
-        <sys_id>0565464493a34e1079f6bfea2bba1020</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
-        <ui_id>0c8917a0-32d4-40f1-9b83-925c6e41d993</ui_id>
-    </sys_hub_sub_flow_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=0565464493a34e1079f6bfea2bba1020"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_sub_flow_instance</document>
-        <document_key>0565464493a34e1079f6bfea2bba1020</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:14</sys_created_on>
-        <sys_id>c565464493a34e1079f6bfea2bba10d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:14</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Wait For Completion">c965464493a34e1079f6bfea2bba1021</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=0565464493a34e1079f6bfea2bba1020"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>leaderboard</field>
-        <id>0565464493a34e1079f6bfea2bba1020</id>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:28</sys_created_on>
-        <sys_id>9875c64493a34e1079f6bfea2bba1097</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_8155c24493a34e1079f6bfea2bba1050</table>
-        <value>{{subflow.faceoff.leaderboard}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>0565464493a34e1079f6bfea2bba1020</id>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:14</sys_created_on>
-        <sys_id>4565464493a34e1079f6bfea2bba10d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:14</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_0565464493a34e1079f6bfea2bba1020</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_0565464493a34e1079f6bfea2bba1020^id=0565464493a34e1079f6bfea2bba1020"/>
-    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=0565464493a34e1079f6bfea2bba1020^sys_idNOT INc965464493a34e1079f6bfea2bba1021"/>
-    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>wait_for_completion</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
-        <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <model display_value="">0565464493a34e1079f6bfea2bba1020</model>
-        <model_id>0565464493a34e1079f6bfea2bba1020</model_id>
-        <model_table>sys_hub_flow_logic_ext_input</model_table>
-        <name>var__m_sys_hub_sub_flow_instance_inputs_0565464493a34e1079f6bfea2bba1020</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:14</sys_created_on>
-        <sys_id>c965464493a34e1079f6bfea2bba1021</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:28</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_sub_flow_instance_inputs>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=0565464493a34e1079f6bfea2bba1020"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=bbdefebc939bc29079f6bfea2bba1072"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=bbdefebc939bc29079f6bfea2bba1072^sys_idNOT IN3e008b7093dbc29079f6bfea2bba106e,edaffa3093dbc29079f6bfea2bba109d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -1368,10 +1270,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 15:46:15</sys_created_on>
         <sys_id>3e008b7093dbc29079f6bfea2bba106e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>14af9fb5-3465-4581-8fbc-2da971b6c688</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1403,10 +1305,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 15:44:31</sys_created_on>
         <sys_id>edaffa3093dbc29079f6bfea2bba109d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
         <ui_id>a31fb902-efde-46de-ac06-7e72b7749550</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1606,7 +1508,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>faceoff_judged</internal_name>
-        <label_cache>[{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.faceoff_count","label":"6 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.faceoff_count","label":"5 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}},{"name":"subflow.faceoff.winner","label":"Input➛faceoff➛Winner","reference":"","reference_display":"Winner","type":"choice","base_type":"choice","usedInstances":{"a31fb902-efde-46de-ac06-7e72b7749550":["condition"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["winner"]}},{"name":"subflow.faceoff","label":"Input➛faceoff","reference":"x_43553_faceoff_faceoff_instance","reference_display":"Faceoff Instance","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["record"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["record"],"63971bfb-df4a-4ef7-baba-4e9ab5d06c80":["record"]}},{"name":"subflow.faceoff.opponent_1","label":"Input➛faceoff➛Opponent 1","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["winning_opponent"]}},{"name":"subflow.faceoff.opponent_2","label":"Input➛faceoff➛Opponent 2","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["winning_opponent"],"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"]}},{"name":"subflow.faceoff.leaderboard","label":"Input➛faceoff➛Leaderboard","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_faceoff_instance","column_name":"leaderboard","usedInstances":{"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"],"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"0c8917a0-32d4-40f1-9b83-925c6e41d993":["leaderboard"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.elo","label":"5 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo1"]}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.elo","label":"6 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo2"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record","label":"5 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo1","label":"7 - Calculate new elo➛newelo1","reference_display":"newelo1","type":"integer","base_type":"integer","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bab6003b-aa1f-41f0-ab8d-c458e1bf3ec7"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo2","label":"7 - Calculate new elo➛newelo2","reference_display":"newelo2","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f3b93e6a-6b85-4434-b040-728f0fbea788"}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record","label":"6 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record","label":"6 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo2","label":"7 - Calculate new elo➛newelo2","reference_display":"newelo2","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f3b93e6a-6b85-4434-b040-728f0fbea788"}},{"name":"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698.newelo1","label":"7 - Calculate new elo➛newelo1","reference_display":"newelo1","type":"integer","base_type":"integer","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["elo"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bab6003b-aa1f-41f0-ab8d-c458e1bf3ec7"}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record","label":"5 - Look Up Record➛Leaderboard ranking Record","reference":"x_43553_faceoff_leaderboard_ranking","reference_display":"Leaderboard ranking","type":"reference","base_type":"reference","usedInstances":{"dba23990-63d4-4d16-bdac-130a456b30f4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.elo","label":"6 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["elo"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo2"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.elo","label":"5 - Look Up Record➛Leaderboard ranking Record➛Elo","reference":"","reference_display":"Elo","type":"integer","base_type":"integer","usedInstances":{"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["elo1"]}},{"name":"subflow.faceoff.leaderboard","label":"Input➛faceoff➛Leaderboard","reference":"x_43553_faceoff_faceoff_leaderboard","reference_display":"Faceoff Leaderboard","type":"reference","base_type":"reference","parent_table_name":"x_43553_faceoff_faceoff_instance","column_name":"leaderboard","usedInstances":{"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"],"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"0c8917a0-32d4-40f1-9b83-925c6e41d993":["leaderboard"],"1e2d189e-bb59-4f88-bc37-2671fc05e9a0":["leaderboard"]}},{"name":"subflow.faceoff.opponent_2","label":"Input➛faceoff➛Opponent 2","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["winning_opponent"],"149ad5f0-7e85-42ac-a890-efaa743a01de":["conditions"]}},{"name":"subflow.faceoff.opponent_1","label":"Input➛faceoff➛Opponent 1","reference":"x_43553_faceoff_opponent","reference_display":"Opponent","type":"reference","base_type":"reference","usedInstances":{"2242cffb-cef9-494f-a2e6-46e3919b4ddf":["conditions"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["winning_opponent"]}},{"name":"subflow.faceoff","label":"Input➛faceoff","reference":"x_43553_faceoff_faceoff_instance","reference_display":"Faceoff Instance","type":"reference","base_type":"reference","usedInstances":{"94e87f56-f3b0-4a8a-a789-e7dab796b641":["record"],"bf280eba-44a2-42c1-908e-217dc6cf623f":["record"],"63971bfb-df4a-4ef7-baba-4e9ab5d06c80":["record"]}},{"name":"subflow.faceoff.winner","label":"Input➛faceoff➛Winner","reference":"","reference_display":"Winner","type":"choice","base_type":"choice","usedInstances":{"a31fb902-efde-46de-ac06-7e72b7749550":["condition"],"3533fc04-e01a-4a4d-b2ff-dccf5a1a4698":["winner"]}},{"name":"2242cffb-cef9-494f-a2e6-46e3919b4ddf.Record.faceoff_count","label":"5 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}},{"name":"149ad5f0-7e85-42ac-a890-efaa743a01de.Record.faceoff_count","label":"6 - Look Up Record➛Leaderboard ranking Record➛Faceoff count","reference":"","reference_display":"Faceoff count","type":"integer","base_type":"integer","parent_table_name":"x_43553_faceoff_leaderboard_ranking","column_name":"faceoff_count","usedInstances":{"dfde22a2-7f77-450c-9758-b7efc45098ca":["faceoff_count"],"dba23990-63d4-4d16-bdac-130a456b30f4":["faceoff_count"]}}]</label_cache>
         <master>true</master>
         <name>Faceoff Judged</name>
         <natlang/>
@@ -1623,7 +1525,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1d2d8f74931fc29079f6bfea2bba1010</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1631,7 +1533,7 @@
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_update_name/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:44</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=1d2d8f74931fc29079f6bfea2bba1010"/>
@@ -1738,7 +1640,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=512d8f74931fc29079f6bfea2bba1013"/>
     <sys_hub_flow_output action="delete_multiple" query="model=1d2d8f74931fc29079f6bfea2bba1010"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1d2d8f74931fc29079f6bfea2bba1010"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=1d2d8f74931fc29079f6bfea2bba1010^sys_idNOT IN2d2d8f74931fc29079f6bfea2bba10ae,512d8f74931fc29079f6bfea2bba1089,5d2d8f74931fc29079f6bfea2bba109c,692d8f74931fc29079f6bfea2bba10e5,6d2d8f74931fc29079f6bfea2bba10d2,a92d8f74931fc29079f6bfea2bba10df,d52d8f74931fc29079f6bfea2bba1076,e92d8f74931fc29079f6bfea2bba10d9"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1d2d8f74931fc29079f6bfea2bba1010^sys_idNOT IN2d2d8f74931fc29079f6bfea2bba10ae,512d8f74931fc29079f6bfea2bba1089,5d2d8f74931fc29079f6bfea2bba109c,692d8f74931fc29079f6bfea2bba10e5,6d2d8f74931fc29079f6bfea2bba10d2,a92d8f74931fc29079f6bfea2bba10df,d52d8f74931fc29079f6bfea2bba1076,d72335a0c3d85a50ee26b3edd40131ce,e92d8f74931fc29079f6bfea2bba10d9"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1755,10 +1657,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:29</sys_created_on>
         <sys_id>2d2d8f74931fc29079f6bfea2bba10ae</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>149ad5f0-7e85-42ac-a890-efaa743a01de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2d2d8f74931fc29079f6bfea2bba10ae"/>
@@ -1819,10 +1721,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:29</sys_created_on>
         <sys_id>512d8f74931fc29079f6bfea2bba1089</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>94e87f56-f3b0-4a8a-a789-e7dab796b641</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=512d8f74931fc29079f6bfea2bba1089"/>
@@ -1895,10 +1797,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:29</sys_created_on>
         <sys_id>5d2d8f74931fc29079f6bfea2bba109c</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>2242cffb-cef9-494f-a2e6-46e3919b4ddf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5d2d8f74931fc29079f6bfea2bba109c"/>
@@ -1959,10 +1861,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:30</sys_created_on>
         <sys_id>692d8f74931fc29079f6bfea2bba10e5</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>63971bfb-df4a-4ef7-baba-4e9ab5d06c80</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=692d8f74931fc29079f6bfea2bba10e5"/>
@@ -2049,10 +1951,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:30</sys_created_on>
         <sys_id>6d2d8f74931fc29079f6bfea2bba10d2</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>3533fc04-e01a-4a4d-b2ff-dccf5a1a4698</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6d2d8f74931fc29079f6bfea2bba10d2"/>
@@ -2153,10 +2055,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:30</sys_created_on>
         <sys_id>a92d8f74931fc29079f6bfea2bba10df</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>dfde22a2-7f77-450c-9758-b7efc45098ca</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a92d8f74931fc29079f6bfea2bba10df"/>
@@ -2229,10 +2131,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:29</sys_created_on>
         <sys_id>d52d8f74931fc29079f6bfea2bba1076</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>bf280eba-44a2-42c1-908e-217dc6cf623f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d52d8f74931fc29079f6bfea2bba1076"/>
@@ -2292,6 +2194,44 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Rank Leaderboard Action">1ea2b160c3d85a50ee26b3edd40131e6</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Faceoff Judged">1d2d8f74931fc29079f6bfea2bba1010</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-25 08:34:43</sys_created_on>
+        <sys_id>d72335a0c3d85a50ee26b3edd40131ce</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
+        <ui_id>1e2d189e-bb59-4f88-bc37-2671fc05e9a0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d72335a0c3d85a50ee26b3edd40131ce"/>
+    <sys_element_mapping action="delete_multiple" query="id=d72335a0c3d85a50ee26b3edd40131ce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>leaderboard</field>
+        <id>d72335a0c3d85a50ee26b3edd40131ce</id>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-25 08:34:43</sys_created_on>
+        <sys_id>5b2335a0c3d85a50ee26b3edd40131cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1ea2b160c3d85a50ee26b3edd40131e6</table>
+        <value>{{subflow.faceoff.leaderboard}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d72335a0c3d85a50ee26b3edd40131ce"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d72335a0c3d85a50ee26b3edd40131ce"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
         <action_type_parent/>
         <attributes/>
@@ -2305,10 +2245,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:30</sys_created_on>
         <sys_id>e92d8f74931fc29079f6bfea2bba10d9</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>dba23990-63d4-4d16-bdac-130a456b30f4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e92d8f74931fc29079f6bfea2bba10d9"/>
@@ -2365,155 +2305,7 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e92d8f74931fc29079f6bfea2bba10d9"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e92d8f74931fc29079f6bfea2bba10d9"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1d2d8f74931fc29079f6bfea2bba1010^sys_idNOT IN95754a4493a34e1079f6bfea2bba1003"/>
-    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Faceoff Judged">1d2d8f74931fc29079f6bfea2bba1010</flow>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
-        <order>11</order>
-        <parent_ui_id/>
-        <subflow display_value="Rank Leaderboard">8155c24493a34e1079f6bfea2bba1050</subflow>
-        <subflow_instance_inputs/>
-        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:32</sys_created_on>
-        <sys_id>95754a4493a34e1079f6bfea2bba1003</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
-        <ui_id>0c8917a0-32d4-40f1-9b83-925c6e41d993</ui_id>
-    </sys_hub_sub_flow_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=95754a4493a34e1079f6bfea2bba1003"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_sub_flow_instance</document>
-        <document_key>95754a4493a34e1079f6bfea2bba1003</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:32</sys_created_on>
-        <sys_id>e9754a4493a34e1079f6bfea2bba1013</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:32</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Wait For Completion">51754a4493a34e1079f6bfea2bba1004</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=95754a4493a34e1079f6bfea2bba1003"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>leaderboard</field>
-        <id>95754a4493a34e1079f6bfea2bba1003</id>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:32</sys_created_on>
-        <sys_id>61754a4493a34e1079f6bfea2bba1013</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:32</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_8155c24493a34e1079f6bfea2bba1050</table>
-        <value>{{subflow.faceoff.leaderboard}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>95754a4493a34e1079f6bfea2bba1003</id>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:32</sys_created_on>
-        <sys_id>69754a4493a34e1079f6bfea2bba1013</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:32</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_95754a4493a34e1079f6bfea2bba1003</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_95754a4493a34e1079f6bfea2bba1003^id=95754a4493a34e1079f6bfea2bba1003"/>
-    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=95754a4493a34e1079f6bfea2bba1003^sys_idNOT IN51754a4493a34e1079f6bfea2bba1004"/>
-    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>wait_for_completion</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
-        <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <model display_value="">95754a4493a34e1079f6bfea2bba1003</model>
-        <model_id>95754a4493a34e1079f6bfea2bba1003</model_id>
-        <model_table>sys_hub_flow_logic_ext_input</model_table>
-        <name>var__m_sys_hub_sub_flow_instance_inputs_95754a4493a34e1079f6bfea2bba1003</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>sn-nerd</sys_created_by>
-        <sys_created_on>2024-07-17 13:50:32</sys_created_on>
-        <sys_id>51754a4493a34e1079f6bfea2bba1004</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-17 13:50:32</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_sub_flow_instance_inputs>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=95754a4493a34e1079f6bfea2bba1003"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1d2d8f74931fc29079f6bfea2bba1010"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=1d2d8f74931fc29079f6bfea2bba1010^sys_idNOT IN192d8f74931fc29079f6bfea2bba1061,552d8f74931fc29079f6bfea2bba105d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -2538,10 +2330,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:29</sys_created_on>
         <sys_id>192d8f74931fc29079f6bfea2bba1061</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>14af9fb5-3465-4581-8fbc-2da971b6c688</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2573,10 +2365,10 @@
         <sys_created_by>sn-nerd</sys_created_by>
         <sys_created_on>2024-07-07 16:43:29</sys_created_on>
         <sys_id>552d8f74931fc29079f6bfea2bba105d</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:33</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:43</sys_updated_on>
         <ui_id>a31fb902-efde-46de-ac06-7e72b7749550</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2778,10 +2570,10 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f12dcf74931fc29079f6bfea2bba103b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>sn-nerd</sys_updated_by>
-        <sys_updated_on>2024-07-29 12:04:34</sys_updated_on>
+        <sys_updated_on>2024-08-25 08:34:45</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

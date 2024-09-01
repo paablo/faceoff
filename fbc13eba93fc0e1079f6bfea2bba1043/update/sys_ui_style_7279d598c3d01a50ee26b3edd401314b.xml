@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>tier</element>
+        <name>x_43553_faceoff_leaderboard_ranking</name>
+        <style>background-color:#ff7e7e</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-24 12:08:45</sys_created_on>
+        <sys_id>7279d598c3d01a50ee26b3edd401314b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_43553_faceoff_leaderboard_ranking</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_ui_style_7279d598c3d01a50ee26b3edd401314b</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-24 12:09:23</sys_updated_on>
+        <themed_style/>
+        <value>S</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=7279d598c3d01a50ee26b3edd401314b"/>
+</record_update>

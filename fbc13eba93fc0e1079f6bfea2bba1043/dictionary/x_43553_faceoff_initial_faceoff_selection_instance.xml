@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="818f1386c3549290ee26b3edd40131d6" label="Leaderboard Selection Instance" max_length="40" name="x_43553_faceoff_initial_faceoff_selection_instance" type="collection">
+        <element label="FaceOff Instance" max_length="32" name="faceoff_instance" reference="x_43553_faceoff_faceoff_instance" type="reference"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="faceoff_instance"/>
+        </index>
+    </element>
+</database>

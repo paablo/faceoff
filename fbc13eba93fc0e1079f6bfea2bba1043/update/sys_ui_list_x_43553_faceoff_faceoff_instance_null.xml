@@ -3,152 +3,167 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>5ef91cdec3c05e10ee26b3edd40131ed</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>e244a34ec3549290ee26b3edd40131e8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>criterion</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>sys_created_on</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>56f91cdec3c05e10ee26b3edd40131ee</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>ea44a34ec3549290ee26b3edd40131e8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>judge</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>criterion</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>5af91cdec3c05e10ee26b3edd40131ee</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>ee44a34ec3549290ee26b3edd40131e8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>leaderboard</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>judge</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>5ef91cdec3c05e10ee26b3edd40131ee</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>e244a34ec3549290ee26b3edd40131e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>opponent_1</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>leaderboard</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>52f91cdec3c05e10ee26b3edd40131ef</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>e644a34ec3549290ee26b3edd40131e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>opponent_1_avater</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>opponent_1</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>56f91cdec3c05e10ee26b3edd40131ef</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>ea44a34ec3549290ee26b3edd40131e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>opponent_2</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>opponent_1_avater</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>5af91cdec3c05e10ee26b3edd40131ef</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>ee44a34ec3549290ee26b3edd40131e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>opponent_2_avatar</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>opponent_2</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>5ef91cdec3c05e10ee26b3edd40131ef</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>e244a34ec3549290ee26b3edd40131ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>status</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>opponent_2_avatar</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>52f91cdec3c05e10ee26b3edd40131f0</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>e644a34ec3549290ee26b3edd40131ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>winner</element>
-            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1af91cdec3c05e10ee26b3edd40131eb</list_id>
+            <element>status</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
             <sum>false</sum>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
-            <sys_id>56f91cdec3c05e10ee26b3edd40131f0</sys_id>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>ea44a34ec3549290ee26b3edd40131ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>winner</element>
+            <list_id display_value="x_43553_faceoff_faceoff_instance" element="NULL" name="x_43553_faceoff_faceoff_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6a44a34ec3549290ee26b3edd40131e6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
+            <sys_id>ee44a34ec3549290ee26b3edd40131ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -162,10 +177,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>sn-nerd</sys_created_by>
-            <sys_created_on>2024-08-18 02:18:38</sys_created_on>
+            <sys_created_on>2024-08-30 08:39:48</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1af91cdec3c05e10ee26b3edd40131eb</sys_id>
+            <sys_id>6a44a34ec3549290ee26b3edd40131e6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_43553_faceoff_faceoff_instance</sys_name>
             <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
@@ -173,7 +188,7 @@
             <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
             <sys_update_name>sys_ui_list_x_43553_faceoff_faceoff_instance_null</sys_update_name>
             <sys_updated_by>sn-nerd</sys_updated_by>
-            <sys_updated_on>2024-08-18 02:18:38</sys_updated_on>
+            <sys_updated_on>2024-08-30 08:39:48</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

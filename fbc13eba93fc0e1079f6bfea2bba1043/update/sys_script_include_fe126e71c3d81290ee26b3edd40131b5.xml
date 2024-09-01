@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_43553_faceoff.NextLeaderboardAndCompetitorSelection </api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>NextLeaderboardAndCompetitorSelection </name>
+        <script><![CDATA[var NextLeaderboardAndCompetitorSelection = Class.create();
+NextLeaderboardAndCompetitorSelection.prototype = {
+    initialize: function() {
+    },
+
+    // Main function to get the leaderboard and competitor selection
+    getLeaderboardAndCompetitorSelection: function() {
+        var criterionRankCount = this._getTotalRankingsForUser('leaderboard.criterion');
+        var gameRankCountOpponent1 = this._getTotalRankingsForUser('opponent_1');
+        var gameRankCountOpponent2 = this._getTotalRankingsForUser('opponent_2');
+
+        var mergedGameRankCount = this._mergeRankingsBySysId(gameRankCountOpponent1, gameRankCountOpponent2);
+
+        return this._calculateRelevanceScores(criterionRankCount, mergedGameRankCount);
+    },
+
+    // Private function to get total rankings for a user based on a specified aggregate field
+    _getTotalRankingsForUser: function(aggregateField) {
+        var aggregates = [];
+        var ga = new GlideAggregate('x_43553_faceoff_faceoff_instance');
+        ga.addQuery('judge', FaceOffUtils.GetCurrentJudgeSysId());
+        ga.addQuery('status', 'completed');
+        ga.addQuery(aggregateField, '!=', 'NULL');
+        ga.groupBy(aggregateField);
+        ga.addAggregate('COUNT');
+        ga.query();
+        
+        while (ga.next()) {
+            aggregates.push({
+                'aggregate': ga.getDisplayValue(aggregateField),
+                'sys_id': ga.getValue(aggregateField),
+                'count': parseInt(ga.getAggregate('COUNT'), 10)
+            });
+        }
+        
+        return aggregates.sort(function(a, b) {
+            return b.count - a.count;
+        });
+    },
+
+    // Private function to merge rankings by sys_id
+    _mergeRankingsBySysId: function(rankings1, rankings2) {
+        var map = {};
+        rankings1.forEach(function(item) {
+            map[item.sys_id] = item;
+        });
+
+        rankings2.forEach(function(item) {
+            if (map[item.sys_id]) {
+                map[item.sys_id].count += item.count;
+            } else {
+                rankings1.push(item);
+            }
+        });
+
+        return rankings1;
+    },
+
+    // Private function to get count by sys_id
+    _getCountBySysId: function(rankings, sysId) {
+        var result = rankings.find(function(item) {
+            return item.sys_id === sysId;
+        });
+        return result ? result.count : 0;
+    },
+
+    // Private function to calculate relevance scores
+    _calculateRelevanceScores: function(criterionRankCount, gameRankCountOpponent) {
+        var results = [];
+        var gr = new GlideRecord('x_43553_faceoff_users_rankable_criterions');
+        gr.addQuery('opcr_opponent.active', 'true');
+        gr.addQuery('myco_judge', FaceOffUtils.GetCurrentJudgeSysId());
+        gr.orderBy('myco_rank');
+        gr.setLimit(100);
+        gr.query();
+
+        while (gr.next()) {
+            var criteriaRelevance = parseInt(gr.getValue('opcr_rank'), 10) * 10;
+            var competitorRelevance = parseInt(gr.getValue('myco_rank'), 10) * 10;
+            var criteriaRankedCount = this._getCountBySysId(criterionRankCount, gr.getValue('opcr_criterion')) * 10;
+            var gameRankedCount = this._getCountBySysId(gameRankCountOpponent, gr.getValue('opcr_opponent')) * 10;
+
+            var relevanceScore = criteriaRelevance + competitorRelevance + criteriaRankedCount + gameRankedCount;
+
+            results.push({
+                'criterion_name': gr.getDisplayValue('opcr_criterion'),
+                'opponent_name': gr.getDisplayValue('opcr_opponent'),
+				'criterion_sys_id': gr.getValue('opcr_criterion'),
+                'opponent_sys_id': gr.getValue('opcr_opponent'),
+                'criteria_relevance': criteriaRelevance,
+                'competitor_relevance': competitorRelevance,
+                'criteria_ranked': criteriaRankedCount,
+                'game_ranked': gameRankedCount,
+                'relevance_score': relevanceScore
+            });
+        }
+
+        return results.sort(function(a, b) {
+            return a.relevance_score - b.relevance_score;
+        });
+    },
+
+    type: 'NextLeaderboardAndCompetitorSelection'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-29 09:12:21</sys_created_on>
+        <sys_id>fe126e71c3d81290ee26b3edd40131b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NextLeaderboardAndCompetitorSelection </sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_script_include_fe126e71c3d81290ee26b3edd40131b5</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-08-30 08:32:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

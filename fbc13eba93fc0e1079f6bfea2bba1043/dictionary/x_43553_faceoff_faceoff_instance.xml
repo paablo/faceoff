@@ -7,11 +7,18 @@
                 <element inactive_on_update="false" label="Opponent 2" sequence="1" value="0"/>
             </choice>
         </element>
-        <element label="Opponent 2" max_length="32" name="opponent_2" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="That competitor" max_length="32" name="opponent_2" reference="x_43553_faceoff_opponent" type="reference"/>
         <element label="Opponent selections" max_length="32" name="opponent_selections" reference="x_43553_faceoff_opponent_selection_instance" type="reference"/>
+        <element choice="1" default="explore" label="Iniated by" max_length="40" name="iniated_by" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Explore" value="explore"/>
+                <element inactive_on_update="false" label="Criterion" value="criterion"/>
+                <element inactive_on_update="false" label="Competitor" value="competitor"/>
+            </choice>
+        </element>
         <element label="Leaderboard" max_length="32" name="leaderboard" reference="x_43553_faceoff_faceoff_leaderboard" reference_cascade_rule="delete" type="reference"/>
-        <element label="Opponent 1" max_length="32" name="opponent_1" reference="x_43553_faceoff_opponent" type="reference"/>
-        <element label="Opponent 1 avatar" max_length="40" name="opponent_1_avater" type="user_image"/>
+        <element label="This competitor" max_length="32" name="opponent_1" reference="x_43553_faceoff_opponent" type="reference"/>
+        <element label="This competitor avatar" max_length="40" name="opponent_1_avater" type="user_image"/>
         <element choice="1" default="New" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="New"/>
@@ -22,7 +29,8 @@
         <element label="Criterion" max_length="32" name="criterion" reference="x_43553_faceoff_criterion" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Winning opponent" max_length="32" name="winning_opponent" reference="x_43553_faceoff_opponent" type="reference"/>
-        <element label="Opponent 2 avatar" max_length="40" name="opponent_2_avatar" type="user_image"/>
+        <element label="That competitor avatar" max_length="40" name="opponent_2_avatar" type="user_image"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return current.getDisplayValue('leaderboard') + ` (${current.number})`;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:current.getDisplayValue('leaderboard');// + ' - ' + current.getDisplayValue('number');  " display="true" label="Display" max_length="128" name="display" type="string"/>
         <index name="index">
             <element name="criterion"/>
         </index>

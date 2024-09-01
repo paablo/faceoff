@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_43553_faceoff.LeaderboardTierRanker</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>LeaderboardTierRanker</name>
+        <script><![CDATA[var LeaderboardTierRanker = Class.create();
+LeaderboardTierRanker.prototype = {
+    initialize: function() {},
+
+    calculateMean: function(arr) {
+        var sum = arr.reduce(function(acc, obj) {
+            return acc + obj.elo;
+        }, 0);
+        return sum / arr.length;
+    },
+
+    calculateStdDev: function(arr, mean) {
+        var squareDiffs = arr.map(function(obj) {
+            return Math.pow(obj.elo - mean, 2);
+        });
+        var avgSquareDiff = this.calculateMean(squareDiffs.map(function(diff) {
+            return {
+                elo: diff
+            };
+        }));
+        return Math.sqrt(avgSquareDiff);
+    },
+
+    getZScore: function(value, mean, stdDev) {
+        return (value - mean) / stdDev;
+    },
+    // Function to calculate the error function (erf) for a given value x.
+    erf: function(x) {
+        // Constants used in the approximation of the error function
+        var a1 = 0.254829592;
+        var a2 = -0.284496736;
+        var a3 = 1.421413741;
+        var a4 = -1.453152027;
+        var a5 = 1.061405429;
+        var p = 0.3275911;
+
+        // Save the sign of x, as the error function is odd (erf(-x) = -erf(x))
+        var sign = (x >= 0) ? 1 : -1;
+        x = Math.abs(x);
+
+        // Abramowitz and Stegun formula 7.1.26 for erf approximation
+        var t = 1.0 / (1.0 + p * x);
+        var y = 1.0 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * Math.exp(-x * x);
+
+        // Return the error function value with the original sign
+        return sign * y;
+    },
+
+    // Function to calculate the cumulative distribution function (CDF) for a given z-score.
+    cdf: function(z) {
+        // The CDF is calculated using the error function
+        return (1.0 + this.erf(z / Math.sqrt(2))) / 2.0;
+    },
+
+    // Function to convert a z-score to a two-tailed percentile.
+    zScoreToPercentile: function(z) {
+        // Calculate the cumulative probability using the CDF function
+        var cumulativeProbability = this.cdf(z);
+
+        // Convert the cumulative probability to a percentile (0-100 scale)
+        var percentile = cumulativeProbability * 100;
+
+        return percentile;
+    },
+
+    getTier: function(zScore) {
+        if (zScore >= 1.645) return 'S'; // 95th percentile and above
+        else if (zScore >= 0.674) return 'A'; // 75th to 95th percentile
+        else if (zScore >= 0) return 'B'; // 50th to 75th percentile
+        else if (zScore >= -0.674) return 'C'; // 25th to 50th percentile
+        else if (zScore >= -1.645) return 'D'; // 5th to 25th percentile
+        else return 'F'; // Below 5th percentile
+    },
+
+    normalizeAndRank: function(arr) {
+        var mean = this.calculateMean(arr);
+        var stdDev = this.calculateStdDev(arr, mean);
+        gs.info('Mean: ' + mean);
+        gs.info('StdDev: ' + stdDev);
+
+        return arr.map(function(obj) {
+            var zScore = this.getZScore(obj.elo, mean, stdDev);
+            var tier = this.getTier(zScore);
+			var percentile = this.zScoreToPercentile(zScore);
+            return {
+                sys_id: obj.sys_id,
+                name: obj.name,
+                elo: obj.elo,
+                z: zScore,
+                tier: tier,
+				percentile: percentile
+            };
+        }, this);
+    },
+
+    fetchElos: function(leaderboard) {
+        var elos = [];
+        var lbrGr = new GlideRecord('x_43553_faceoff_leaderboard_ranking');
+        lbrGr.addEncodedQuery('ranked=true^leaderboard=' + leaderboard);
+        lbrGr.query();
+
+        while (lbrGr.next()) {
+            elos.push({
+                sys_id: lbrGr.getDisplayValue('sys_id'),
+                name: lbrGr.getDisplayValue('opponent'),
+                elo: parseInt(lbrGr.getValue('elo')),
+                highest_elo: parseInt(lbrGr.getValue('highest_elo')),
+                highest_ranking: parseInt(lbrGr.getValue('highest_ranking')),
+                ranked_matches: parseInt(lbrGr.getValue('ranked_matches'))
+            });
+        }
+
+        return elos;
+    },
+
+    sortElos: function(elos) {
+        function compareByElo(a, b) {
+            return b.elo - a.elo;
+        }
+
+        function compareByHighestElo(a, b) {
+            return b.highest_elo - a.highest_elo;
+        }
+
+        // Lower is better
+        function compareByHighestRanking(a, b) {
+            return a.highest_ranking - b.highest_ranking;
+        }
+
+        function compareByRankedMatches(a, b) {
+            return b.ranked_matches - a.ranked_matches;
+        }
+
+        // Function to compare by opponent's name alphabetically
+        function compareByName(a, b) {
+            return a.name.localeCompare(b.name);
+        }
+
+        return elos.sort(function(a, b) {
+            // Apply the sorting criteria in order of precedence
+            return (
+                compareByElo(a, b) ||
+                compareByHighestElo(a, b) ||
+                compareByHighestRanking(a, b) ||
+                compareByRankedMatches(a, b) ||
+                compareByName(a, b)
+            );
+        });
+    },
+
+
+    assignRanks: function(sortedElos) {
+        return sortedElos.map(function(record, index) {
+            record.rank = index + 1; // 1-based index
+            return record;
+        });
+    },
+
+    fetchAndRank: function(leaderboard) {
+        var elos = this.fetchElos(leaderboard);
+        var rankedElos = this.normalizeAndRank(elos);
+        var sortedElos = this.sortElos(rankedElos);
+        return this.assignRanks(sortedElos);
+    },
+
+    updateRecords: function(rankedElos) {
+        for (var i = 0; i < rankedElos.length; i++) {
+            var record = rankedElos[i];
+            var updateGr = new GlideRecord('x_43553_faceoff_leaderboard_ranking');
+            if (updateGr.get(record.sys_id)) {
+                updateGr.setValue('tier', record.tier);
+                updateGr.setValue('z_score', record.z); // Assuming 'z_score' is the field name
+                updateGr.setValue('rank', record.rank);
+				updateGr.setValue('percentile', record.percentile);
+                updateGr.update();
+            }
+        }
+    },
+
+    type: 'LeaderboardTierRanker'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-08-24 11:50:57</sys_created_on>
+        <sys_id>d5665d54c3d01a50ee26b3edd401315c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>LeaderboardTierRanker</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sys_script_include_d5665d54c3d01a50ee26b3edd401315c</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-09-01 03:12:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

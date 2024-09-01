@@ -13,6 +13,7 @@
         <element display="true" label="Name" mandatory="true" max_length="40" name="namen" type="string"/>
         <element label="Opponent source" max_length="32" name="opponent_source" reference="x_43553_faceoff_opponent_primary_data_source" type="reference"/>
         <element label="Description" max_length="40" name="description" type="string"/>
+        <element default="1500" label="Relevancy threshold" max_length="255" name="relevancy_threshold" type="integer"/>
         <element label="Opponent weight" max_length="40" name="opponent_weight" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element default="100" function_definition="100" label="Age weight" mandatory="true" max_length="40" name="age_weight" type="integer"/>

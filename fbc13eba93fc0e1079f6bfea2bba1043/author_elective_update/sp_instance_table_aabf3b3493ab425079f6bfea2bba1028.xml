@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>leaderboard.ladder_name,leaderboard.ranking_confidence,opponent.name,opponent.avatar,faceoff_count,tier</field_list>
+        <filter table="x_43553_faceoff_leaderboard_ranking">rank=1^ORtier=S<item endquery="false" field="rank" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item display_value="S" endquery="false" field="tier" goto="false" newquery="false" operator="=" or="true" value="S"/>
+        </filter>
+        <glyph>trophy</glyph>
+        <id/>
+        <maximum_entries>20</maximum_entries>
+        <order>2</order>
+        <order_by>faceoff_count</order_by>
+        <order_direction>desc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">b2fbb3fc936b425079f6bfea2bba100d</sp_column>
+        <sp_page display_value="fo_form">5e4fab78932b425079f6bfea2bba10c7</sp_page>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-07-20 06:40:10</sys_created_on>
+        <sys_id>aabf3b3493ab425079f6bfea2bba1028</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Top Games</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_update_name>sp_instance_table_aabf3b3493ab425079f6bfea2bba1028</sys_update_name>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-09-01 02:12:17</sys_updated_on>
+        <table>x_43553_faceoff_leaderboard_ranking</table>
+        <title>Top Games</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=aabf3b3493ab425079f6bfea2bba1028"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</application>
+        <file_path/>
+        <instance_id>09bfd7861b52f19039a54089bd4bcbe4</instance_id>
+        <instance_name>dev205791</instance_name>
+        <name>sp_instance_table_aabf3b3493ab425079f6bfea2bba1028</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list>leaderboard.ladder_name,leaderboard.ranking_confidence,opponent.name,opponent.avatar,faceoff_count,tier</field_list><filter table="x_43553_faceoff_leaderboard_ranking">rank=1^ORtier=S<item endquery="false" field="rank" goto="false" newquery="false" operator="=" or="false" value="1"/><item display_value="S" endquery="false" field="tier" goto="false" newquery="false" operator="=" or="true" value="S"/></filter><glyph>trophy</glyph><id/><maximum_entries>20</maximum_entries><order>2</order><order_by>faceoff_count</order_by><order_direction>desc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="1">b2fbb3fc936b425079f6bfea2bba100d</sp_column><sp_page display_value="fo_form">5e4fab78932b425079f6bfea2bba10c7</sp_page><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>sn-nerd</sys_created_by><sys_created_on>2024-07-20 06:40:10</sys_created_on><sys_id>aabf3b3493ab425079f6bfea2bba1028</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Top Games</sys_name><sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package><sys_policy/><sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope><sys_update_name>sp_instance_table_aabf3b3493ab425079f6bfea2bba1028</sys_update_name><sys_updated_by>sn-nerd</sys_updated_by><sys_updated_on>2024-09-01 02:12:17</sys_updated_on><table>x_43553_faceoff_leaderboard_ranking</table><title>Top Games</title><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=aabf3b3493ab425079f6bfea2bba1028"/></record_update>]]></payload>
+        <payload_hash>345156359</payload_hash>
+        <record_name>Top Games</record_name>
+        <reverted_from/>
+        <source>372c4946c38cda10ee26b3edd40131a0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-09-01 02:12:17</sys_created_on>
+        <sys_id>edce10b2c3185690ee26b3edd4013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191ab5ac05d0000001</sys_recorded_at>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-09-01 02:12:17</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>e1ce10b2051856906579aabc1b512b30</update_guid>
+        <update_guid_history>e1ce10b2051856906579aabc1b512b30:345156359,f80c922c19dc5a50e57b398348b8041d:729332008,0c85bda8d8d85a504d0c1d6e495b77f1:555267439,ce468a20e83742508f5c7f5b28719d48:-1405755481,22060620ee37425079bedb7ef60c3d07:1095625006,f828bef3d3674e10066515d8147a74a9:1908387919,d74e7f7e2e630a1097d481b89de8fea7:-1911812936,164c6bf22b230a1086c902dce549342f:-1218842958,fe5048c1b7ab42505c1f49cd807d8d56:1001451857,0b0080053aab42509f8758e4d6168fe8:1121458436,a6bf3b34b5ab4250cee89cb0bcfe472a:1058625576</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Top Games">dad2acf6c3185690ee26b3edd40131da</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sn-nerd</sys_created_by>
+        <sys_created_on>2024-09-01 02:30:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>bf270dd197e64d7ca836c0945f8a0810</sys_id>
+        <sys_metadata>aabf3b3493ab425079f6bfea2bba1028</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Top Games</sys_name>
+        <sys_package display_value="FaceOff" source="x_43553_faceoff">fbc13eba93fc0e1079f6bfea2bba1043</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FaceOff">fbc13eba93fc0e1079f6bfea2bba1043</sys_scope>
+        <sys_scope_delete display_value="">aba82428f36d4ec0ba439d57831bef10</sys_scope_delete>
+        <sys_update_name>sp_instance_table_aabf3b3493ab425079f6bfea2bba1028</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_aabf3b3493ab425079f6bfea2bba1028">edce10b2c3185690ee26b3edd4013130</sys_update_version>
+        <sys_updated_by>sn-nerd</sys_updated_by>
+        <sys_updated_on>2024-09-01 02:30:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

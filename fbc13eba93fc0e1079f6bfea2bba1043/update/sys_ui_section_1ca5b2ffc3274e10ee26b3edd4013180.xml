@@ -182,6 +182,48 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tier</element>
+            <position>13</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-24 12:00:03</sys_created_on>
+            <sys_id>ed985d18c3d01a50ee26b3edd4013132</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Leaderboard ranking" display_value="Leaderboard ranking" name="x_43553_faceoff_leaderboard_ranking" sys_domain="global" view="Default view">1ca5b2ffc3274e10ee26b3edd4013180</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-24 12:00:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>z_score</element>
+            <position>14</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-08-24 12:01:13</sys_created_on>
+            <sys_id>e6d8d158c3d01a50ee26b3edd40131e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Leaderboard ranking" display_value="Leaderboard ranking" name="x_43553_faceoff_leaderboard_ranking" sys_domain="global" view="Default view">1ca5b2ffc3274e10ee26b3edd4013180</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-08-24 12:01:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>percentile</element>
+            <position>15</position>
+            <sys_created_by>sn-nerd</sys_created_by>
+            <sys_created_on>2024-09-01 02:56:30</sys_created_on>
+            <sys_id>15e8a8b6c3585690ee26b3edd4013105</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Leaderboard ranking" display_value="Leaderboard ranking" name="x_43553_faceoff_leaderboard_ranking" sys_domain="global" view="Default view">1ca5b2ffc3274e10ee26b3edd4013180</sys_ui_section>
+            <sys_updated_by>sn-nerd</sys_updated_by>
+            <sys_updated_on>2024-09-01 02:56:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Leaderboard ranking</caption>
             <header>false</header>
